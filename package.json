@@ -9,11 +9,13 @@
     "eject": "react-scripts-ts eject",
     "postreceive": "npm run build",
     "precommit": "lint-staged && bash -c 'CI=true npm test'",
-    "prepush": "lint-staged && bash -c 'CI=true npm run build && CI=true npm test'"
+    "prepush": "lint-staged && bash -c 'CI=true npm run build && CI=true npm test'",
+    "lint": "tslint --project tsconfig.json",
+    "fix": "tslint --project tsconfig.json --fix"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
-      "tslint --fix",
+      "tslint",
       "git add"
     ]
   },
