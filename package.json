@@ -21,18 +21,15 @@
   "lint-staged": {
     "definitions/**/*.ts": [
       "npm run tslint",
-      "npm run prettier",
-      "git add"
+      "npm run prettier"
     ],
     "src/**/*.{ts,tsx}": [
       "npm run test:CI",
       "npm run tslint",
-      "npm run prettier",
-      "git add"
+      "npm run prettier"
     ],
     "tslint.json": [
-      "npm run tslint:check",
-      "git add"
+      "npm run tslint:check"
     ]
   },
   "dependencies": {
