@@ -10,6 +10,9 @@
 !tsconfig.test.json
 !tslint.json
 
+!definitions
+!definitions/**/*
+
 !public
 !public/**/*
 
