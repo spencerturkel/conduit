@@ -10,12 +10,17 @@
     "postreceive": "npm run build",
     "precommit": "lint-staged && bash -c 'CI=true npm test'",
     "prepush": "lint-staged && bash -c 'CI=true npm run build && CI=true npm test'",
-    "lint": "tslint --project tsconfig.json",
-    "fix": "tslint --project tsconfig.json --fix"
+    "prettier": "bash -c 'prettier ./src/**/*.ts ./src/**/*.tsx -l'",
+    "prettier-write": "bash -c 'prettier ./src/**/*.ts ./src/**/*.tsx --write'",
+    "tslint": "tslint --project tsconfig.json",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "tslint-fix": "tslint --project tsconfig.json --fix",
+    "fix": "npm run prettier-write; npm run tslint-fix"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
-      "tslint",
+      "npm run tslint",
+      "npm run prettier",
       "git add"
     ]
   },
@@ -32,6 +37,8 @@
     "@types/react-dom": "^16.0.3",
     "husky": "^0.14.3",
     "lint-staged": "^6.0.0",
+    "prettier": "^1.9.1",
+    "tslint-config-prettier": "^1.6.0",
     "tslint": "^5.8.0",
     "typescript": "^2.6.2"
   }
