@@ -1,0 +1,17 @@
+**/*
+
+!.gitattributes
+!.gitignore
+
+!package.json
+!package-lock.json
+!README.md
+!tsconfig.json
+!tsconfig.test.json
+!tslint.json
+
+!public
+!public/**/*
+
+!src
+!src/**/*
