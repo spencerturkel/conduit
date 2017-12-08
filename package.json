@@ -29,6 +29,10 @@
       "npm run tslint",
       "npm run prettier",
       "git add"
+    ],
+    "tslint.json": [
+      "npm run tslint:check",
+      "git add"
     ]
   },
   "dependencies": {
