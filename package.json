@@ -4,19 +4,24 @@
   "private": true,
   "scripts": {
     "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
+    "build": "react-scripts-ts build && react-snapshot",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
+    "postreceive": "npm run build",
     "precommit": "lint-staged && CI=true npm test",
     "prepush": "lint-staged && CI=true npm run build && CI=true npm test"
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx}": ["tslint --fix", "git add"]
+    "src/**/*.{ts,tsx}": [
+      "tslint --fix",
+      "git add"
+    ]
   },
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts-ts": "2.8.0"
+    "react-scripts-ts": "2.8.0",
+    "react-snapshot": "^1.3.0"
   },
   "devDependencies": {
     "@types/jest": "^21.1.8",
@@ -25,6 +30,7 @@
     "@types/react-dom": "^16.0.3",
     "husky": "^0.14.3",
     "lint-staged": "^6.0.0",
-    "tslint": "^5.8.0"
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
   }
 }
