@@ -19,6 +19,10 @@
     "tsc": "tsc --noEmit"
   },
   "lint-staged": {
+    "definitions/**/*.ts": [
+      "npm run tsc",
+      "git add"
+    ],
     "src/**/*.{ts,tsx}": [
       "npm run tsc",
       "npm run tslint",
