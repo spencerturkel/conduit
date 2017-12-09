@@ -18,7 +18,7 @@ function TestHeader({activeLink}: {activeLink: string}) {
     return <Result />;
 }
 
-let sut: ReactWrapper<{activeLink: string}> | undefined;
+let sut: ReactWrapper<{activeLink: string}>;
 
 beforeEach(() => {
     sut = mount(<TestHeader activeLink="/" />);
@@ -33,5 +33,5 @@ it('adds the active class to the active link', () => {
 
     sut.setProps({activeLink});
 
-    expect(sut.find(`a[href="${activeLink}"]`).length).toBe(1);
+    expect(sut.find(`a[href="${activeLink}"][className~="active"]`).length).toBe(1);
 });
