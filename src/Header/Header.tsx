@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 export interface LinkProps {
-    activeClass: string;
+    activeClass?: string;
     children?: React.ReactNode;
     className: string;
     to: string;
