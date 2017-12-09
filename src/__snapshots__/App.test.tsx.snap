@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`matches the snapshot 1`] = `
+exports[`shallow tests matches the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -15,295 +15,117 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
-      "children": Array [
-        <HelmetWrapper
-          defer={true}
-          encodeSpecialCharacters={true}
->
-          <title>
-                    Helmet Works
-          </title>
-</HelmetWrapper>,
-        <div
-          className="App-header"
->
-          <img
-                    alt="logo"
-                    className="App-logo"
-                    src="logo.svg"
-          />
-          <h2>
-                    Welcome to React
-          </h2>
+      "children": <div>
+        <AppHeader />
+        <Home />
+        <AppFooter />
 </div>,
-        <p
-          className="App-intro"
->
-          To get started, edit 
-          <code>
-                    src/App.tsx
-          </code>
-           and save to reload.
-</p>,
-      ],
-      "className": "App",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": <title>
-            Helmet Works
-</title>,
-          "defer": true,
-          "encodeSpecialCharacters": true,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Helmet Works",
-          },
-          "ref": null,
-          "rendered": "Helmet Works",
-          "type": "title",
-        },
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <img
-              alt="logo"
-              className="App-logo"
-              src="logo.svg"
-/>,
-            <h2>
-              Welcome to React
-</h2>,
-          ],
-          "className": "App-header",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "alt": "logo",
-              "className": "App-logo",
-              "src": "logo.svg",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "img",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Welcome to React",
-            },
-            "ref": null,
-            "rendered": "Welcome to React",
-            "type": "h2",
-          },
-        ],
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "To get started, edit ",
-            <code>
-              src/App.tsx
-</code>,
-            " and save to reload.",
-          ],
-          "className": "App-intro",
-        },
-        "ref": null,
-        "rendered": Array [
-          "To get started, edit ",
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "src/App.tsx",
-            },
-            "ref": null,
-            "rendered": "src/App.tsx",
-            "type": "code",
-          },
-          " and save to reload.",
-        ],
-        "type": "p",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <HelmetWrapper
-            defer={true}
-            encodeSpecialCharacters={true}
->
-            <title>
-                        Helmet Works
-            </title>
-</HelmetWrapper>,
-          <div
-            className="App-header"
->
-            <img
-                        alt="logo"
-                        className="App-logo"
-                        src="logo.svg"
-            />
-            <h2>
-                        Welcome to React
-            </h2>
-</div>,
-          <p
-            className="App-intro"
->
-            To get started, edit 
-            <code>
-                        src/App.tsx
-            </code>
-             and save to reload.
-</p>,
+          <AppHeader />,
+          <Home />,
+          <AppFooter />,
         ],
-        "className": "App",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <title>
-              Helmet Works
-</title>,
-            "defer": true,
-            "encodeSpecialCharacters": true,
-          },
+          "nodeType": "function",
+          "props": Object {},
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Helmet Works",
-            },
-            "ref": null,
-            "rendered": "Helmet Works",
-            "type": "title",
-          },
+          "rendered": null,
           "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <img
-                alt="logo"
-                className="App-logo"
-                src="logo.svg"
-/>,
-              <h2>
-                Welcome to React
-</h2>,
-            ],
-            "className": "App-header",
-          },
+          "nodeType": "function",
+          "props": Object {},
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "alt": "logo",
-                "className": "App-logo",
-                "src": "logo.svg",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "img",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Welcome to React",
-              },
-              "ref": null,
-              "rendered": "Welcome to React",
-              "type": "h2",
-            },
-          ],
-          "type": "div",
+          "rendered": null,
+          "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "To get started, edit ",
-              <code>
-                src/App.tsx
-</code>,
-              " and save to reload.",
-            ],
-            "className": "App-intro",
-          },
+          "nodeType": "function",
+          "props": Object {},
           "ref": null,
-          "rendered": Array [
-            "To get started, edit ",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "src/App.tsx",
-              },
-              "ref": null,
-              "rendered": "src/App.tsx",
-              "type": "code",
-            },
-            " and save to reload.",
-          ],
-          "type": "p",
+          "rendered": null,
+          "type": [Function],
         },
       ],
       "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <div>
+          <AppHeader />
+          <Home />
+          <AppFooter />
+</div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <AppHeader />,
+            <Home />,
+            <AppFooter />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

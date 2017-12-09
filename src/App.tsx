@@ -1,27 +1,38 @@
 import * as React from 'react';
-import Helmet from 'react-helmet';
+import {BrowserRouter, Link, NavLink} from 'react-router-dom';
 
-import './App.css';
+import Footer, {LinkProps as FooterLinkProps} from './Footer/Footer';
+import Header, {LinkProps as HeaderLinkProps} from './Header/Header';
+import Home from './Home/Home';
 
-const logo = require('./logo.svg');
-
-class App extends React.Component {
-    render() {
-        return (
-            <div className="App">
-                <Helmet>
-                    <title>Helmet Works</title>
-                </Helmet>
-                <div className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <h2>Welcome to React</h2>
-                </div>
-                <p className="App-intro">
-                    To get started, edit <code>src/App.tsx</code> and save to reload.
-                </p>
-            </div>
-        );
+function AppHeader() {
+    function HeaderLink({activeClass: activeClassName, ...rest}: HeaderLinkProps) {
+        return <NavLink {...{activeClassName, ...rest}} />;
     }
+
+    const Result = Header(HeaderLink);
+
+    return <Result />;
 }
+
+function AppFooter() {
+    function FooterLink(props: FooterLinkProps) {
+        return <Link {...props} />;
+    }
+
+    const Result = Footer(FooterLink);
+
+    return <Result />;
+}
+
+const App = () => (
+    <BrowserRouter>
+        <div>
+            <AppHeader />
+            <Home />
+            <AppFooter />
+        </div>
+    </BrowserRouter>
+);
 
 export default App;

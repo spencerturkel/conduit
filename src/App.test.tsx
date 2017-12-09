@@ -1,4 +1,4 @@
-import {shallow} from 'enzyme';
+import {shallow, ShallowWrapper} from 'enzyme';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
@@ -9,13 +9,14 @@ it('renders without crashing', () => {
     ReactDOM.render(<App />, div);
 });
 
-it('has some children', () => {
-    const app = shallow(<App />);
+describe('shallow tests', () => {
+    let sut: ShallowWrapper;
 
-    expect(app.getElements().some(() => true)).toBe(true);
-});
+    beforeEach(() => {
+        sut = shallow(<App />);
+    });
 
-it('matches the snapshot', () => {
-    const app = shallow(<App />);
-    expect(app).toMatchSnapshot();
+    it('matches the snapshot', () => {
+        expect(sut).toMatchSnapshot();
+    });
 });
