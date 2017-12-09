@@ -112,7 +112,7 @@ ReactWrapper {
                                     className="nav-item"
                         >
                                     <Unknown
-                                                activeClass="active"
+                                                activeClassName="active"
                                                 className="nav-link"
                                                 to="/"
                                     >
@@ -123,7 +123,7 @@ ReactWrapper {
                                     className="nav-item"
                         >
                                     <Unknown
-                                                activeClass="active"
+                                                activeClassName="active"
                                                 className="nav-link"
                                                 to="/new-post"
                                     >
@@ -137,7 +137,7 @@ ReactWrapper {
                                     className="nav-item"
                         >
                                     <Unknown
-                                                activeClass="active"
+                                                activeClassName="active"
                                                 className="nav-link"
                                                 to="/settings"
                                     >
@@ -151,7 +151,7 @@ ReactWrapper {
                                     className="nav-item"
                         >
                                     <Unknown
-                                                activeClass="active"
+                                                activeClassName="active"
                                                 className="nav-link"
                                                 to="/sign-up"
                                     >
@@ -242,7 +242,7 @@ ReactWrapper {
                                     className="nav-item"
                   >
                                     <Unknown
-                                                      activeClass="active"
+                                                      activeClassName="active"
                                                       className="nav-link"
                                                       to="/"
                                     >
@@ -253,7 +253,7 @@ ReactWrapper {
                                     className="nav-item"
                   >
                                     <Unknown
-                                                      activeClass="active"
+                                                      activeClassName="active"
                                                       className="nav-link"
                                                       to="/new-post"
                                     >
@@ -267,7 +267,7 @@ ReactWrapper {
                                     className="nav-item"
                   >
                                     <Unknown
-                                                      activeClass="active"
+                                                      activeClassName="active"
                                                       className="nav-link"
                                                       to="/settings"
                                     >
@@ -281,7 +281,7 @@ ReactWrapper {
                                     className="nav-item"
                   >
                                     <Unknown
-                                                      activeClass="active"
+                                                      activeClassName="active"
                                                       className="nav-link"
                                                       to="/sign-up"
                                     >
@@ -385,7 +385,7 @@ ReactWrapper {
                       className="nav-item"
 >
                       <Unknown
-                                            activeClass="active"
+                                            activeClassName="active"
                                             className="nav-link"
                                             to="/"
                       >
@@ -396,7 +396,7 @@ ReactWrapper {
                       className="nav-item"
 >
                       <Unknown
-                                            activeClass="active"
+                                            activeClassName="active"
                                             className="nav-link"
                                             to="/new-post"
                       >
@@ -410,7 +410,7 @@ ReactWrapper {
                       className="nav-item"
 >
                       <Unknown
-                                            activeClass="active"
+                                            activeClassName="active"
                                             className="nav-link"
                                             to="/settings"
                       >
@@ -424,7 +424,7 @@ ReactWrapper {
                       className="nav-item"
 >
                       <Unknown
-                                            activeClass="active"
+                                            activeClassName="active"
                                             className="nav-link"
                                             to="/sign-up"
                       >
@@ -451,7 +451,7 @@ ReactWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": <Unknown
-                        activeClass="active"
+                        activeClassName="active"
                         className="nav-link"
                         to="/"
 >
@@ -466,7 +466,7 @@ ReactWrapper {
                         "key": undefined,
                         "nodeType": "function",
                         "props": Object {
-                          "activeClass": "active",
+                          "activeClassName": "active",
                           "children": "Home",
                           "className": "nav-link",
                           "to": "/",
@@ -515,7 +515,7 @@ ReactWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": <Unknown
-                        activeClass="active"
+                        activeClassName="active"
                         className="nav-link"
                         to="/new-post"
 >
@@ -533,7 +533,7 @@ ReactWrapper {
                         "key": undefined,
                         "nodeType": "function",
                         "props": Object {
-                          "activeClass": "active",
+                          "activeClassName": "active",
                           "children": Array [
                             <i
                               className="ion-compose"
@@ -610,7 +610,7 @@ ReactWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": <Unknown
-                        activeClass="active"
+                        activeClassName="active"
                         className="nav-link"
                         to="/settings"
 >
@@ -628,7 +628,7 @@ ReactWrapper {
                         "key": undefined,
                         "nodeType": "function",
                         "props": Object {
-                          "activeClass": "active",
+                          "activeClassName": "active",
                           "children": Array [
                             <i
                               className="ion-gear-a"
@@ -702,7 +702,7 @@ ReactWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": <Unknown
-                        activeClass="active"
+                        activeClassName="active"
                         className="nav-link"
                         to="/sign-up"
 >
@@ -717,7 +717,7 @@ ReactWrapper {
                         "key": undefined,
                         "nodeType": "function",
                         "props": Object {
-                          "activeClass": "active",
+                          "activeClassName": "active",
                           "children": "Sign up",
                           "className": "nav-link",
                           "to": "/sign-up",
@@ -860,7 +860,7 @@ ReactWrapper {
                                           className="nav-item"
                             >
                                           <Unknown
-                                                        activeClass="active"
+                                                        activeClassName="active"
                                                         className="nav-link"
                                                         to="/"
                                           >
@@ -871,7 +871,7 @@ ReactWrapper {
                                           className="nav-item"
                             >
                                           <Unknown
-                                                        activeClass="active"
+                                                        activeClassName="active"
                                                         className="nav-link"
                                                         to="/new-post"
                                           >
@@ -885,7 +885,7 @@ ReactWrapper {
                                           className="nav-item"
                             >
                                           <Unknown
-                                                        activeClass="active"
+                                                        activeClassName="active"
                                                         className="nav-link"
                                                         to="/settings"
                                           >
@@ -899,7 +899,7 @@ ReactWrapper {
                                           className="nav-item"
                             >
                                           <Unknown
-                                                        activeClass="active"
+                                                        activeClassName="active"
                                                         className="nav-link"
                                                         to="/sign-up"
                                           >
@@ -990,7 +990,7 @@ ReactWrapper {
                                         className="nav-item"
                     >
                                         <Unknown
-                                                            activeClass="active"
+                                                            activeClassName="active"
                                                             className="nav-link"
                                                             to="/"
                                         >
@@ -1001,7 +1001,7 @@ ReactWrapper {
                                         className="nav-item"
                     >
                                         <Unknown
-                                                            activeClass="active"
+                                                            activeClassName="active"
                                                             className="nav-link"
                                                             to="/new-post"
                                         >
@@ -1015,7 +1015,7 @@ ReactWrapper {
                                         className="nav-item"
                     >
                                         <Unknown
-                                                            activeClass="active"
+                                                            activeClassName="active"
                                                             className="nav-link"
                                                             to="/settings"
                                         >
@@ -1029,7 +1029,7 @@ ReactWrapper {
                                         className="nav-item"
                     >
                                         <Unknown
-                                                            activeClass="active"
+                                                            activeClassName="active"
                                                             className="nav-link"
                                                             to="/sign-up"
                                         >
@@ -1133,7 +1133,7 @@ ReactWrapper {
                         className="nav-item"
 >
                         <Unknown
-                                                activeClass="active"
+                                                activeClassName="active"
                                                 className="nav-link"
                                                 to="/"
                         >
@@ -1144,7 +1144,7 @@ ReactWrapper {
                         className="nav-item"
 >
                         <Unknown
-                                                activeClass="active"
+                                                activeClassName="active"
                                                 className="nav-link"
                                                 to="/new-post"
                         >
@@ -1158,7 +1158,7 @@ ReactWrapper {
                         className="nav-item"
 >
                         <Unknown
-                                                activeClass="active"
+                                                activeClassName="active"
                                                 className="nav-link"
                                                 to="/settings"
                         >
@@ -1172,7 +1172,7 @@ ReactWrapper {
                         className="nav-item"
 >
                         <Unknown
-                                                activeClass="active"
+                                                activeClassName="active"
                                                 className="nav-link"
                                                 to="/sign-up"
                         >
@@ -1199,7 +1199,7 @@ ReactWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "children": <Unknown
-                          activeClass="active"
+                          activeClassName="active"
                           className="nav-link"
                           to="/"
 >
@@ -1214,7 +1214,7 @@ ReactWrapper {
                           "key": undefined,
                           "nodeType": "function",
                           "props": Object {
-                            "activeClass": "active",
+                            "activeClassName": "active",
                             "children": "Home",
                             "className": "nav-link",
                             "to": "/",
@@ -1263,7 +1263,7 @@ ReactWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "children": <Unknown
-                          activeClass="active"
+                          activeClassName="active"
                           className="nav-link"
                           to="/new-post"
 >
@@ -1281,7 +1281,7 @@ ReactWrapper {
                           "key": undefined,
                           "nodeType": "function",
                           "props": Object {
-                            "activeClass": "active",
+                            "activeClassName": "active",
                             "children": Array [
                               <i
                                 className="ion-compose"
@@ -1358,7 +1358,7 @@ ReactWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "children": <Unknown
-                          activeClass="active"
+                          activeClassName="active"
                           className="nav-link"
                           to="/settings"
 >
@@ -1376,7 +1376,7 @@ ReactWrapper {
                           "key": undefined,
                           "nodeType": "function",
                           "props": Object {
-                            "activeClass": "active",
+                            "activeClassName": "active",
                             "children": Array [
                               <i
                                 className="ion-gear-a"
@@ -1450,7 +1450,7 @@ ReactWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "children": <Unknown
-                          activeClass="active"
+                          activeClassName="active"
                           className="nav-link"
                           to="/sign-up"
 >
@@ -1465,7 +1465,7 @@ ReactWrapper {
                           "key": undefined,
                           "nodeType": "function",
                           "props": Object {
-                            "activeClass": "active",
+                            "activeClassName": "active",
                             "children": "Sign up",
                             "className": "nav-link",
                             "to": "/sign-up",

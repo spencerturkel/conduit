@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 export interface LinkProps {
-    activeClass?: string;
+    activeClassName?: string;
     children?: React.ReactNode;
     className: string;
     to: string;
@@ -15,22 +15,22 @@ const Header = (Link: React.ComponentType<LinkProps>): React.StatelessComponent 
             </Link>
             <ul className="nav navbar-nav pull-xs-right">
                 <li className="nav-item">
-                    <Link activeClass="active" className="nav-link" to="/">
+                    <Link activeClassName="active" className="nav-link" to="/">
                         Home
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link activeClass="active" className="nav-link" to="/new-post">
+                    <Link activeClassName="active" className="nav-link" to="/new-post">
                         <i className="ion-compose" />&nbsp;New Post
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link activeClass="active" className="nav-link" to="/settings">
+                    <Link activeClassName="active" className="nav-link" to="/settings">
                         <i className="ion-gear-a" />&nbsp;Settings
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link activeClass="active" className="nav-link" to="/sign-up">
+                    <Link activeClassName="active" className="nav-link" to="/sign-up">
                         Sign up
                     </Link>
                 </li>

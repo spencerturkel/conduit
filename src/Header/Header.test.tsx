@@ -6,7 +6,9 @@ import Header, {LinkProps} from './Header';
 function HeaderLink(activeLink: string): React.StatelessComponent<LinkProps> {
     return props => (
         <a
-            className={props.className + (props.activeClass && activeLink === props.to ? ' ' + props.activeClass : '')}
+            className={
+                props.className + (props.activeClassName && activeLink === props.to ? ' ' + props.activeClassName : '')
+            }
             href={props.to}>
             {props.children}
         </a>
