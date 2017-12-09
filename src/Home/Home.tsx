@@ -25,7 +25,12 @@ const Home = (PopularTags: ComponentType, ArticleListing: ComponentType): Statel
         </div>
     );
 
-    sfc.displayName = `Home(${PopularTags.displayName || PopularTags.name})`;
+    sfc.displayName =
+        'Home(' +
+        (PopularTags.displayName || PopularTags.name) +
+        ', ' +
+        (ArticleListing.displayName || ArticleListing.name) +
+        ')';
 
     return sfc;
 };

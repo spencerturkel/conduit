@@ -3,7 +3,7 @@
 exports[`should match snapshot 1`] = `
 ReactWrapper {
   "length": 1,
-  Symbol(enzyme.__unrendered__): <Home() />,
+  Symbol(enzyme.__unrendered__): <Home(, ) />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
