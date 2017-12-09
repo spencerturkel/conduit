@@ -2,7 +2,8 @@ import {mount, ReactWrapper} from 'enzyme';
 import * as React from 'react';
 import {ReactElement} from 'react';
 
-import Footer, {LinkProps} from './Footer';
+import {LinkProps} from '../link-props';
+import Footer from './Footer';
 
 function Link({className, children, to}: LinkProps): ReactElement<LinkProps> {
     return (

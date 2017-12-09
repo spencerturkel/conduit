@@ -1,9 +1,10 @@
 import {mount, ReactWrapper} from 'enzyme';
 import * as React from 'react';
 
-import Header, {LinkProps} from './Header';
+import {NavLinkProps} from '../nav-link-props';
+import Header from './Header';
 
-function HeaderLink(activeLink: string): React.StatelessComponent<LinkProps> {
+function HeaderLink(activeLink: string): React.StatelessComponent<NavLinkProps> {
     return props => (
         <a
             className={

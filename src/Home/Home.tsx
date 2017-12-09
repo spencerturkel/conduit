@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {ComponentType, StatelessComponent} from 'react';
 
-const Home = (PopularTags: ComponentType): StatelessComponent => {
+const Home = (PopularTags: ComponentType<{}>): StatelessComponent => {
     const sfc: StatelessComponent = () => (
         <div className="home-page">
             <div className="banner">

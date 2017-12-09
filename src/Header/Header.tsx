@@ -1,14 +1,9 @@
 import * as React from 'react';
 import {ComponentType, StatelessComponent} from 'react';
 
-export interface LinkProps {
-    activeClassName?: string;
-    children?: React.ReactNode;
-    className: string;
-    to: string;
-}
+import {NavLinkProps} from '../nav-link-props';
 
-const Header = (Link: ComponentType<LinkProps>): StatelessComponent => {
+const Header = (Link: ComponentType<NavLinkProps>): StatelessComponent => {
     const sfc: StatelessComponent = () => (
         <nav className="navbar navbar-light">
             <div className="container">

@@ -1,11 +1,7 @@
 import * as React from 'react';
-import {ComponentType, ReactNode, StatelessComponent} from 'react';
+import {ComponentType, StatelessComponent} from 'react';
 
-export interface LinkProps {
-    children: ReactNode;
-    className: string;
-    to: string;
-}
+import {LinkProps} from '../link-props';
 
 const Footer = (Link: ComponentType<LinkProps>): StatelessComponent => {
     const sfc: StatelessComponent = () => (

@@ -3,7 +3,20 @@
 exports[`should match snapshot 1`] = `
 ReactWrapper {
   "length": 1,
-  Symbol(enzyme.__unrendered__): <PopularTags />,
+  Symbol(enzyme.__unrendered__): <PopularTags
+    tags={
+        Array [
+            Object {
+              "link": "/programming",
+              "name": "programming",
+            },
+            Object {
+              "link": "/reactjs",
+              "name": "reactjs",
+            },
+          ]
+    }
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -16,7 +29,18 @@ ReactWrapper {
     "instance": null,
     "key": undefined,
     "nodeType": "function",
-    "props": Object {},
+    "props": Object {
+      "tags": Array [
+        Object {
+          "link": "/programming",
+          "name": "programming",
+        },
+        Object {
+          "link": "/reactjs",
+          "name": "reactjs",
+        },
+      ],
+    },
     "ref": null,
     "rendered": Object {
       "instance": <div
@@ -29,52 +53,16 @@ ReactWrapper {
                 class="tag-list"
         >
                 <a
-                        href=""
+                        href="/programming"
                         class="tag-pill tag-default"
                 >
                         programming
                 </a>
                 <a
-                        href=""
+                        href="/reactjs"
                         class="tag-pill tag-default"
                 >
-                        javascript
-                </a>
-                <a
-                        href=""
-                        class="tag-pill tag-default"
-                >
-                        emberjs
-                </a>
-                <a
-                        href=""
-                        class="tag-pill tag-default"
-                >
-                        angularjs
-                </a>
-                <a
-                        href=""
-                        class="tag-pill tag-default"
-                >
-                        react
-                </a>
-                <a
-                        href=""
-                        class="tag-pill tag-default"
-                >
-                        mean
-                </a>
-                <a
-                        href=""
-                        class="tag-pill tag-default"
-                >
-                        node
-                </a>
-                <a
-                        href=""
-                        class="tag-pill tag-default"
-                >
-                        rails
+                        reactjs
                 </a>
         </div>
 </div>,
@@ -90,51 +78,15 @@ ReactWrapper {
 >
             <a
                         className="tag-pill tag-default"
-                        href=""
+                        href="/programming"
             >
                         programming
             </a>
             <a
                         className="tag-pill tag-default"
-                        href=""
+                        href="/reactjs"
             >
-                        javascript
-            </a>
-            <a
-                        className="tag-pill tag-default"
-                        href=""
-            >
-                        emberjs
-            </a>
-            <a
-                        className="tag-pill tag-default"
-                        href=""
-            >
-                        angularjs
-            </a>
-            <a
-                        className="tag-pill tag-default"
-                        href=""
-            >
-                        react
-            </a>
-            <a
-                        className="tag-pill tag-default"
-                        href=""
-            >
-                        mean
-            </a>
-            <a
-                        className="tag-pill tag-default"
-                        href=""
-            >
-                        node
-            </a>
-            <a
-                        className="tag-pill tag-default"
-                        href=""
-            >
-                        rails
+                        reactjs
             </a>
 </div>,
         ],
@@ -162,52 +114,16 @@ ReactWrapper {
             class="tag-list"
 >
             <a
-                        href=""
+                        href="/programming"
                         class="tag-pill tag-default"
             >
                         programming
             </a>
             <a
-                        href=""
+                        href="/reactjs"
                         class="tag-pill tag-default"
             >
-                        javascript
-            </a>
-            <a
-                        href=""
-                        class="tag-pill tag-default"
-            >
-                        emberjs
-            </a>
-            <a
-                        href=""
-                        class="tag-pill tag-default"
-            >
-                        angularjs
-            </a>
-            <a
-                        href=""
-                        class="tag-pill tag-default"
-            >
-                        react
-            </a>
-            <a
-                        href=""
-                        class="tag-pill tag-default"
-            >
-                        mean
-            </a>
-            <a
-                        href=""
-                        class="tag-pill tag-default"
-            >
-                        node
-            </a>
-            <a
-                        href=""
-                        class="tag-pill tag-default"
-            >
-                        rails
+                        reactjs
             </a>
 </div>,
           "key": undefined,
@@ -216,51 +132,15 @@ ReactWrapper {
             "children": Array [
               <a
                 className="tag-pill tag-default"
-                href=""
+                href="/programming"
 >
                 programming
 </a>,
               <a
                 className="tag-pill tag-default"
-                href=""
+                href="/reactjs"
 >
-                javascript
-</a>,
-              <a
-                className="tag-pill tag-default"
-                href=""
->
-                emberjs
-</a>,
-              <a
-                className="tag-pill tag-default"
-                href=""
->
-                angularjs
-</a>,
-              <a
-                className="tag-pill tag-default"
-                href=""
->
-                react
-</a>,
-              <a
-                className="tag-pill tag-default"
-                href=""
->
-                mean
-</a>,
-              <a
-                className="tag-pill tag-default"
-                href=""
->
-                node
-</a>,
-              <a
-                className="tag-pill tag-default"
-                href=""
->
-                rails
+                reactjs
 </a>,
             ],
             "className": "tag-list",
@@ -269,7 +149,7 @@ ReactWrapper {
           "rendered": Array [
             Object {
               "instance": <a
-                href=""
+                href="/programming"
                 class="tag-pill tag-default"
 >
                 programming
@@ -279,7 +159,7 @@ ReactWrapper {
               "props": Object {
                 "children": "programming",
                 "className": "tag-pill tag-default",
-                "href": "",
+                "href": "/programming",
               },
               "ref": null,
               "rendered": Array [
@@ -289,141 +169,21 @@ ReactWrapper {
             },
             Object {
               "instance": <a
-                href=""
+                href="/reactjs"
                 class="tag-pill tag-default"
 >
-                javascript
+                reactjs
 </a>,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "javascript",
+                "children": "reactjs",
                 "className": "tag-pill tag-default",
-                "href": "",
+                "href": "/reactjs",
               },
               "ref": null,
               "rendered": Array [
-                "javascript",
-              ],
-              "type": "a",
-            },
-            Object {
-              "instance": <a
-                href=""
-                class="tag-pill tag-default"
->
-                emberjs
-</a>,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "emberjs",
-                "className": "tag-pill tag-default",
-                "href": "",
-              },
-              "ref": null,
-              "rendered": Array [
-                "emberjs",
-              ],
-              "type": "a",
-            },
-            Object {
-              "instance": <a
-                href=""
-                class="tag-pill tag-default"
->
-                angularjs
-</a>,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "angularjs",
-                "className": "tag-pill tag-default",
-                "href": "",
-              },
-              "ref": null,
-              "rendered": Array [
-                "angularjs",
-              ],
-              "type": "a",
-            },
-            Object {
-              "instance": <a
-                href=""
-                class="tag-pill tag-default"
->
-                react
-</a>,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "react",
-                "className": "tag-pill tag-default",
-                "href": "",
-              },
-              "ref": null,
-              "rendered": Array [
-                "react",
-              ],
-              "type": "a",
-            },
-            Object {
-              "instance": <a
-                href=""
-                class="tag-pill tag-default"
->
-                mean
-</a>,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "mean",
-                "className": "tag-pill tag-default",
-                "href": "",
-              },
-              "ref": null,
-              "rendered": Array [
-                "mean",
-              ],
-              "type": "a",
-            },
-            Object {
-              "instance": <a
-                href=""
-                class="tag-pill tag-default"
->
-                node
-</a>,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "node",
-                "className": "tag-pill tag-default",
-                "href": "",
-              },
-              "ref": null,
-              "rendered": Array [
-                "node",
-              ],
-              "type": "a",
-            },
-            Object {
-              "instance": <a
-                href=""
-                class="tag-pill tag-default"
->
-                rails
-</a>,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "rails",
-                "className": "tag-pill tag-default",
-                "href": "",
-              },
-              "ref": null,
-              "rendered": Array [
-                "rails",
+                "reactjs",
               ],
               "type": "a",
             },
@@ -440,7 +200,18 @@ ReactWrapper {
       "instance": null,
       "key": undefined,
       "nodeType": "function",
-      "props": Object {},
+      "props": Object {
+        "tags": Array [
+          Object {
+            "link": "/programming",
+            "name": "programming",
+          },
+          Object {
+            "link": "/reactjs",
+            "name": "reactjs",
+          },
+        ],
+      },
       "ref": null,
       "rendered": Object {
         "instance": <div
@@ -453,52 +224,16 @@ ReactWrapper {
                     class="tag-list"
           >
                     <a
-                              href=""
+                              href="/programming"
                               class="tag-pill tag-default"
                     >
                               programming
                     </a>
                     <a
-                              href=""
+                              href="/reactjs"
                               class="tag-pill tag-default"
                     >
-                              javascript
-                    </a>
-                    <a
-                              href=""
-                              class="tag-pill tag-default"
-                    >
-                              emberjs
-                    </a>
-                    <a
-                              href=""
-                              class="tag-pill tag-default"
-                    >
-                              angularjs
-                    </a>
-                    <a
-                              href=""
-                              class="tag-pill tag-default"
-                    >
-                              react
-                    </a>
-                    <a
-                              href=""
-                              class="tag-pill tag-default"
-                    >
-                              mean
-                    </a>
-                    <a
-                              href=""
-                              class="tag-pill tag-default"
-                    >
-                              node
-                    </a>
-                    <a
-                              href=""
-                              class="tag-pill tag-default"
-                    >
-                              rails
+                              reactjs
                     </a>
           </div>
 </div>,
@@ -514,51 +249,15 @@ ReactWrapper {
 >
               <a
                             className="tag-pill tag-default"
-                            href=""
+                            href="/programming"
               >
                             programming
               </a>
               <a
                             className="tag-pill tag-default"
-                            href=""
+                            href="/reactjs"
               >
-                            javascript
-              </a>
-              <a
-                            className="tag-pill tag-default"
-                            href=""
-              >
-                            emberjs
-              </a>
-              <a
-                            className="tag-pill tag-default"
-                            href=""
-              >
-                            angularjs
-              </a>
-              <a
-                            className="tag-pill tag-default"
-                            href=""
-              >
-                            react
-              </a>
-              <a
-                            className="tag-pill tag-default"
-                            href=""
-              >
-                            mean
-              </a>
-              <a
-                            className="tag-pill tag-default"
-                            href=""
-              >
-                            node
-              </a>
-              <a
-                            className="tag-pill tag-default"
-                            href=""
-              >
-                            rails
+                            reactjs
               </a>
 </div>,
           ],
@@ -586,52 +285,16 @@ ReactWrapper {
               class="tag-list"
 >
               <a
-                            href=""
+                            href="/programming"
                             class="tag-pill tag-default"
               >
                             programming
               </a>
               <a
-                            href=""
+                            href="/reactjs"
                             class="tag-pill tag-default"
               >
-                            javascript
-              </a>
-              <a
-                            href=""
-                            class="tag-pill tag-default"
-              >
-                            emberjs
-              </a>
-              <a
-                            href=""
-                            class="tag-pill tag-default"
-              >
-                            angularjs
-              </a>
-              <a
-                            href=""
-                            class="tag-pill tag-default"
-              >
-                            react
-              </a>
-              <a
-                            href=""
-                            class="tag-pill tag-default"
-              >
-                            mean
-              </a>
-              <a
-                            href=""
-                            class="tag-pill tag-default"
-              >
-                            node
-              </a>
-              <a
-                            href=""
-                            class="tag-pill tag-default"
-              >
-                            rails
+                            reactjs
               </a>
 </div>,
             "key": undefined,
@@ -640,51 +303,15 @@ ReactWrapper {
               "children": Array [
                 <a
                   className="tag-pill tag-default"
-                  href=""
+                  href="/programming"
 >
                   programming
 </a>,
                 <a
                   className="tag-pill tag-default"
-                  href=""
+                  href="/reactjs"
 >
-                  javascript
-</a>,
-                <a
-                  className="tag-pill tag-default"
-                  href=""
->
-                  emberjs
-</a>,
-                <a
-                  className="tag-pill tag-default"
-                  href=""
->
-                  angularjs
-</a>,
-                <a
-                  className="tag-pill tag-default"
-                  href=""
->
-                  react
-</a>,
-                <a
-                  className="tag-pill tag-default"
-                  href=""
->
-                  mean
-</a>,
-                <a
-                  className="tag-pill tag-default"
-                  href=""
->
-                  node
-</a>,
-                <a
-                  className="tag-pill tag-default"
-                  href=""
->
-                  rails
+                  reactjs
 </a>,
               ],
               "className": "tag-list",
@@ -693,7 +320,7 @@ ReactWrapper {
             "rendered": Array [
               Object {
                 "instance": <a
-                  href=""
+                  href="/programming"
                   class="tag-pill tag-default"
 >
                   programming
@@ -703,7 +330,7 @@ ReactWrapper {
                 "props": Object {
                   "children": "programming",
                   "className": "tag-pill tag-default",
-                  "href": "",
+                  "href": "/programming",
                 },
                 "ref": null,
                 "rendered": Array [
@@ -713,141 +340,21 @@ ReactWrapper {
               },
               Object {
                 "instance": <a
-                  href=""
+                  href="/reactjs"
                   class="tag-pill tag-default"
 >
-                  javascript
+                  reactjs
 </a>,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "javascript",
+                  "children": "reactjs",
                   "className": "tag-pill tag-default",
-                  "href": "",
+                  "href": "/reactjs",
                 },
                 "ref": null,
                 "rendered": Array [
-                  "javascript",
-                ],
-                "type": "a",
-              },
-              Object {
-                "instance": <a
-                  href=""
-                  class="tag-pill tag-default"
->
-                  emberjs
-</a>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "emberjs",
-                  "className": "tag-pill tag-default",
-                  "href": "",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "emberjs",
-                ],
-                "type": "a",
-              },
-              Object {
-                "instance": <a
-                  href=""
-                  class="tag-pill tag-default"
->
-                  angularjs
-</a>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "angularjs",
-                  "className": "tag-pill tag-default",
-                  "href": "",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "angularjs",
-                ],
-                "type": "a",
-              },
-              Object {
-                "instance": <a
-                  href=""
-                  class="tag-pill tag-default"
->
-                  react
-</a>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "react",
-                  "className": "tag-pill tag-default",
-                  "href": "",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "react",
-                ],
-                "type": "a",
-              },
-              Object {
-                "instance": <a
-                  href=""
-                  class="tag-pill tag-default"
->
-                  mean
-</a>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "mean",
-                  "className": "tag-pill tag-default",
-                  "href": "",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "mean",
-                ],
-                "type": "a",
-              },
-              Object {
-                "instance": <a
-                  href=""
-                  class="tag-pill tag-default"
->
-                  node
-</a>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "node",
-                  "className": "tag-pill tag-default",
-                  "href": "",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "node",
-                ],
-                "type": "a",
-              },
-              Object {
-                "instance": <a
-                  href=""
-                  class="tag-pill tag-default"
->
-                  rails
-</a>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "rails",
-                  "className": "tag-pill tag-default",
-                  "href": "",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "rails",
+                  "reactjs",
                 ],
                 "type": "a",
               },

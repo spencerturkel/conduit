@@ -1,35 +1,20 @@
 import * as React from 'react';
 import {StatelessComponent} from 'react';
 
-const PopularTags: StatelessComponent = () => (
+export interface PopularTagsProps {
+    tags: Array<{name: string; link: string}>;
+}
+
+const PopularTags: StatelessComponent<PopularTagsProps> = ({tags}: PopularTagsProps) => (
     <div className="sidebar">
         <p>Popular Tags</p>
 
         <div className="tag-list">
-            <a href="" className="tag-pill tag-default">
-                programming
-            </a>
-            <a href="" className="tag-pill tag-default">
-                javascript
-            </a>
-            <a href="" className="tag-pill tag-default">
-                emberjs
-            </a>
-            <a href="" className="tag-pill tag-default">
-                angularjs
-            </a>
-            <a href="" className="tag-pill tag-default">
-                react
-            </a>
-            <a href="" className="tag-pill tag-default">
-                mean
-            </a>
-            <a href="" className="tag-pill tag-default">
-                node
-            </a>
-            <a href="" className="tag-pill tag-default">
-                rails
-            </a>
+            {tags.map(({name, link}) => (
+                <a href={link} className="tag-pill tag-default">
+                    {name}
+                </a>
+            ))}
         </div>
     </div>
 );
