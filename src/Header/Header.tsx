@@ -2,6 +2,7 @@ import * as React from 'react';
 import {ComponentType, StatelessComponent} from 'react';
 
 import {NavLinkProps} from '../nav-link-props';
+import setDisplayName from '../set-display-name';
 
 const Header = (Link: ComponentType<NavLinkProps>): StatelessComponent => {
     const sfc: StatelessComponent = () => (
@@ -36,7 +37,7 @@ const Header = (Link: ComponentType<NavLinkProps>): StatelessComponent => {
         </nav>
     );
 
-    sfc.displayName = `Header(${Link.displayName || Link.name})`;
+    setDisplayName(sfc, Header, Link);
 
     return sfc;
 };

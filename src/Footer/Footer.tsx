@@ -2,6 +2,7 @@ import * as React from 'react';
 import {ComponentType, StatelessComponent} from 'react';
 
 import {LinkProps} from '../link-props';
+import setDisplayName from '../set-display-name';
 
 const Footer = (Link: ComponentType<LinkProps>): StatelessComponent => {
     const sfc: StatelessComponent = () => (
@@ -18,7 +19,7 @@ const Footer = (Link: ComponentType<LinkProps>): StatelessComponent => {
         </footer>
     );
 
-    sfc.displayName = `Footer(${Link.displayName || Link.name})`;
+    setDisplayName(sfc, Footer, Link);
 
     return sfc;
 };

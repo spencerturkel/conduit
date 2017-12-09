@@ -1,6 +1,8 @@
 import * as React from 'react';
 import {ComponentType, StatelessComponent} from 'react';
 
+import setDisplayName from '../set-display-name';
+
 const Home = (PopularTags: ComponentType, ArticleListing: ComponentType): StatelessComponent => {
     const sfc: StatelessComponent = () => (
         <div className="home-page">
@@ -25,12 +27,7 @@ const Home = (PopularTags: ComponentType, ArticleListing: ComponentType): Statel
         </div>
     );
 
-    sfc.displayName =
-        'Home(' +
-        (PopularTags.displayName || PopularTags.name) +
-        ', ' +
-        (ArticleListing.displayName || ArticleListing.name) +
-        ')';
+    setDisplayName(sfc, Home, PopularTags, ArticleListing);
 
     return sfc;
 };
