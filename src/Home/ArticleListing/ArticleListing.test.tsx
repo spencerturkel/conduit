@@ -1,14 +1,12 @@
 import {mount, ReactWrapper} from 'enzyme';
 import * as React from 'react';
 
-import Home from './Home';
-
-const TestHome = Home(() => <div>Popular Tags</div>, () => <div>Article Listing</div>);
+import ArticleListing from './ArticleListing';
 
 let sut: ReactWrapper;
 
 beforeEach(() => {
-    sut = mount(<TestHome />);
+    sut = mount(<ArticleListing />);
 });
 
 it('should match snapshot', () => {
