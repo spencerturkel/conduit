@@ -18,9 +18,9 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <div>
-        <AppHeader />
+        <Header(NavLink) />
         <Home />
-        <AppFooter />
+        <Footer(Link) />
 </div>,
     },
     "ref": null,
@@ -30,9 +30,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <AppHeader />,
+          <Header(NavLink) />,
           <Home />,
-          <AppFooter />,
+          <Footer(Link) />,
         ],
       },
       "ref": null,
@@ -76,9 +76,9 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <div>
-          <AppHeader />
+          <Header(NavLink) />
           <Home />
-          <AppFooter />
+          <Footer(Link) />
 </div>,
       },
       "ref": null,
@@ -88,9 +88,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <AppHeader />,
+            <Header(NavLink) />,
             <Home />,
-            <AppFooter />,
+            <Footer(Link) />,
           ],
         },
         "ref": null,
