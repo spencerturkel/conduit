@@ -1,0 +1,871 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+ReactWrapper {
+  "length": 1,
+  Symbol(enzyme.__unrendered__): <PopularTags />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {},
+    "ref": null,
+    "rendered": Object {
+      "instance": <div
+        class="sidebar"
+>
+        <p>
+                Popular Tags
+        </p>
+        <div
+                class="tag-list"
+        >
+                <a
+                        href=""
+                        class="tag-pill tag-default"
+                >
+                        programming
+                </a>
+                <a
+                        href=""
+                        class="tag-pill tag-default"
+                >
+                        javascript
+                </a>
+                <a
+                        href=""
+                        class="tag-pill tag-default"
+                >
+                        emberjs
+                </a>
+                <a
+                        href=""
+                        class="tag-pill tag-default"
+                >
+                        angularjs
+                </a>
+                <a
+                        href=""
+                        class="tag-pill tag-default"
+                >
+                        react
+                </a>
+                <a
+                        href=""
+                        class="tag-pill tag-default"
+                >
+                        mean
+                </a>
+                <a
+                        href=""
+                        class="tag-pill tag-default"
+                >
+                        node
+                </a>
+                <a
+                        href=""
+                        class="tag-pill tag-default"
+                >
+                        rails
+                </a>
+        </div>
+</div>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p>
+            Popular Tags
+</p>,
+          <div
+            className="tag-list"
+>
+            <a
+                        className="tag-pill tag-default"
+                        href=""
+            >
+                        programming
+            </a>
+            <a
+                        className="tag-pill tag-default"
+                        href=""
+            >
+                        javascript
+            </a>
+            <a
+                        className="tag-pill tag-default"
+                        href=""
+            >
+                        emberjs
+            </a>
+            <a
+                        className="tag-pill tag-default"
+                        href=""
+            >
+                        angularjs
+            </a>
+            <a
+                        className="tag-pill tag-default"
+                        href=""
+            >
+                        react
+            </a>
+            <a
+                        className="tag-pill tag-default"
+                        href=""
+            >
+                        mean
+            </a>
+            <a
+                        className="tag-pill tag-default"
+                        href=""
+            >
+                        node
+            </a>
+            <a
+                        className="tag-pill tag-default"
+                        href=""
+            >
+                        rails
+            </a>
+</div>,
+        ],
+        "className": "sidebar",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <p>
+            Popular Tags
+</p>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Popular Tags",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Popular Tags",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": <div
+            class="tag-list"
+>
+            <a
+                        href=""
+                        class="tag-pill tag-default"
+            >
+                        programming
+            </a>
+            <a
+                        href=""
+                        class="tag-pill tag-default"
+            >
+                        javascript
+            </a>
+            <a
+                        href=""
+                        class="tag-pill tag-default"
+            >
+                        emberjs
+            </a>
+            <a
+                        href=""
+                        class="tag-pill tag-default"
+            >
+                        angularjs
+            </a>
+            <a
+                        href=""
+                        class="tag-pill tag-default"
+            >
+                        react
+            </a>
+            <a
+                        href=""
+                        class="tag-pill tag-default"
+            >
+                        mean
+            </a>
+            <a
+                        href=""
+                        class="tag-pill tag-default"
+            >
+                        node
+            </a>
+            <a
+                        href=""
+                        class="tag-pill tag-default"
+            >
+                        rails
+            </a>
+</div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <a
+                className="tag-pill tag-default"
+                href=""
+>
+                programming
+</a>,
+              <a
+                className="tag-pill tag-default"
+                href=""
+>
+                javascript
+</a>,
+              <a
+                className="tag-pill tag-default"
+                href=""
+>
+                emberjs
+</a>,
+              <a
+                className="tag-pill tag-default"
+                href=""
+>
+                angularjs
+</a>,
+              <a
+                className="tag-pill tag-default"
+                href=""
+>
+                react
+</a>,
+              <a
+                className="tag-pill tag-default"
+                href=""
+>
+                mean
+</a>,
+              <a
+                className="tag-pill tag-default"
+                href=""
+>
+                node
+</a>,
+              <a
+                className="tag-pill tag-default"
+                href=""
+>
+                rails
+</a>,
+            ],
+            "className": "tag-list",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <a
+                href=""
+                class="tag-pill tag-default"
+>
+                programming
+</a>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "programming",
+                "className": "tag-pill tag-default",
+                "href": "",
+              },
+              "ref": null,
+              "rendered": Array [
+                "programming",
+              ],
+              "type": "a",
+            },
+            Object {
+              "instance": <a
+                href=""
+                class="tag-pill tag-default"
+>
+                javascript
+</a>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "javascript",
+                "className": "tag-pill tag-default",
+                "href": "",
+              },
+              "ref": null,
+              "rendered": Array [
+                "javascript",
+              ],
+              "type": "a",
+            },
+            Object {
+              "instance": <a
+                href=""
+                class="tag-pill tag-default"
+>
+                emberjs
+</a>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "emberjs",
+                "className": "tag-pill tag-default",
+                "href": "",
+              },
+              "ref": null,
+              "rendered": Array [
+                "emberjs",
+              ],
+              "type": "a",
+            },
+            Object {
+              "instance": <a
+                href=""
+                class="tag-pill tag-default"
+>
+                angularjs
+</a>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "angularjs",
+                "className": "tag-pill tag-default",
+                "href": "",
+              },
+              "ref": null,
+              "rendered": Array [
+                "angularjs",
+              ],
+              "type": "a",
+            },
+            Object {
+              "instance": <a
+                href=""
+                class="tag-pill tag-default"
+>
+                react
+</a>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "react",
+                "className": "tag-pill tag-default",
+                "href": "",
+              },
+              "ref": null,
+              "rendered": Array [
+                "react",
+              ],
+              "type": "a",
+            },
+            Object {
+              "instance": <a
+                href=""
+                class="tag-pill tag-default"
+>
+                mean
+</a>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "mean",
+                "className": "tag-pill tag-default",
+                "href": "",
+              },
+              "ref": null,
+              "rendered": Array [
+                "mean",
+              ],
+              "type": "a",
+            },
+            Object {
+              "instance": <a
+                href=""
+                class="tag-pill tag-default"
+>
+                node
+</a>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "node",
+                "className": "tag-pill tag-default",
+                "href": "",
+              },
+              "ref": null,
+              "rendered": Array [
+                "node",
+              ],
+              "type": "a",
+            },
+            Object {
+              "instance": <a
+                href=""
+                class="tag-pill tag-default"
+>
+                rails
+</a>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "rails",
+                "className": "tag-pill tag-default",
+                "href": "",
+              },
+              "ref": null,
+              "rendered": Array [
+                "rails",
+              ],
+              "type": "a",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {},
+      "ref": null,
+      "rendered": Object {
+        "instance": <div
+          class="sidebar"
+>
+          <p>
+                    Popular Tags
+          </p>
+          <div
+                    class="tag-list"
+          >
+                    <a
+                              href=""
+                              class="tag-pill tag-default"
+                    >
+                              programming
+                    </a>
+                    <a
+                              href=""
+                              class="tag-pill tag-default"
+                    >
+                              javascript
+                    </a>
+                    <a
+                              href=""
+                              class="tag-pill tag-default"
+                    >
+                              emberjs
+                    </a>
+                    <a
+                              href=""
+                              class="tag-pill tag-default"
+                    >
+                              angularjs
+                    </a>
+                    <a
+                              href=""
+                              class="tag-pill tag-default"
+                    >
+                              react
+                    </a>
+                    <a
+                              href=""
+                              class="tag-pill tag-default"
+                    >
+                              mean
+                    </a>
+                    <a
+                              href=""
+                              class="tag-pill tag-default"
+                    >
+                              node
+                    </a>
+                    <a
+                              href=""
+                              class="tag-pill tag-default"
+                    >
+                              rails
+                    </a>
+          </div>
+</div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p>
+              Popular Tags
+</p>,
+            <div
+              className="tag-list"
+>
+              <a
+                            className="tag-pill tag-default"
+                            href=""
+              >
+                            programming
+              </a>
+              <a
+                            className="tag-pill tag-default"
+                            href=""
+              >
+                            javascript
+              </a>
+              <a
+                            className="tag-pill tag-default"
+                            href=""
+              >
+                            emberjs
+              </a>
+              <a
+                            className="tag-pill tag-default"
+                            href=""
+              >
+                            angularjs
+              </a>
+              <a
+                            className="tag-pill tag-default"
+                            href=""
+              >
+                            react
+              </a>
+              <a
+                            className="tag-pill tag-default"
+                            href=""
+              >
+                            mean
+              </a>
+              <a
+                            className="tag-pill tag-default"
+                            href=""
+              >
+                            node
+              </a>
+              <a
+                            className="tag-pill tag-default"
+                            href=""
+              >
+                            rails
+              </a>
+</div>,
+          ],
+          "className": "sidebar",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <p>
+              Popular Tags
+</p>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Popular Tags",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Popular Tags",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": <div
+              class="tag-list"
+>
+              <a
+                            href=""
+                            class="tag-pill tag-default"
+              >
+                            programming
+              </a>
+              <a
+                            href=""
+                            class="tag-pill tag-default"
+              >
+                            javascript
+              </a>
+              <a
+                            href=""
+                            class="tag-pill tag-default"
+              >
+                            emberjs
+              </a>
+              <a
+                            href=""
+                            class="tag-pill tag-default"
+              >
+                            angularjs
+              </a>
+              <a
+                            href=""
+                            class="tag-pill tag-default"
+              >
+                            react
+              </a>
+              <a
+                            href=""
+                            class="tag-pill tag-default"
+              >
+                            mean
+              </a>
+              <a
+                            href=""
+                            class="tag-pill tag-default"
+              >
+                            node
+              </a>
+              <a
+                            href=""
+                            class="tag-pill tag-default"
+              >
+                            rails
+              </a>
+</div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <a
+                  className="tag-pill tag-default"
+                  href=""
+>
+                  programming
+</a>,
+                <a
+                  className="tag-pill tag-default"
+                  href=""
+>
+                  javascript
+</a>,
+                <a
+                  className="tag-pill tag-default"
+                  href=""
+>
+                  emberjs
+</a>,
+                <a
+                  className="tag-pill tag-default"
+                  href=""
+>
+                  angularjs
+</a>,
+                <a
+                  className="tag-pill tag-default"
+                  href=""
+>
+                  react
+</a>,
+                <a
+                  className="tag-pill tag-default"
+                  href=""
+>
+                  mean
+</a>,
+                <a
+                  className="tag-pill tag-default"
+                  href=""
+>
+                  node
+</a>,
+                <a
+                  className="tag-pill tag-default"
+                  href=""
+>
+                  rails
+</a>,
+              ],
+              "className": "tag-list",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <a
+                  href=""
+                  class="tag-pill tag-default"
+>
+                  programming
+</a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "programming",
+                  "className": "tag-pill tag-default",
+                  "href": "",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "programming",
+                ],
+                "type": "a",
+              },
+              Object {
+                "instance": <a
+                  href=""
+                  class="tag-pill tag-default"
+>
+                  javascript
+</a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "javascript",
+                  "className": "tag-pill tag-default",
+                  "href": "",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "javascript",
+                ],
+                "type": "a",
+              },
+              Object {
+                "instance": <a
+                  href=""
+                  class="tag-pill tag-default"
+>
+                  emberjs
+</a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "emberjs",
+                  "className": "tag-pill tag-default",
+                  "href": "",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "emberjs",
+                ],
+                "type": "a",
+              },
+              Object {
+                "instance": <a
+                  href=""
+                  class="tag-pill tag-default"
+>
+                  angularjs
+</a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "angularjs",
+                  "className": "tag-pill tag-default",
+                  "href": "",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "angularjs",
+                ],
+                "type": "a",
+              },
+              Object {
+                "instance": <a
+                  href=""
+                  class="tag-pill tag-default"
+>
+                  react
+</a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "react",
+                  "className": "tag-pill tag-default",
+                  "href": "",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "react",
+                ],
+                "type": "a",
+              },
+              Object {
+                "instance": <a
+                  href=""
+                  class="tag-pill tag-default"
+>
+                  mean
+</a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "mean",
+                  "className": "tag-pill tag-default",
+                  "href": "",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "mean",
+                ],
+                "type": "a",
+              },
+              Object {
+                "instance": <a
+                  href=""
+                  class="tag-pill tag-default"
+>
+                  node
+</a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "node",
+                  "className": "tag-pill tag-default",
+                  "href": "",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "node",
+                ],
+                "type": "a",
+              },
+              Object {
+                "instance": <a
+                  href=""
+                  class="tag-pill tag-default"
+>
+                  rails
+</a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "rails",
+                  "className": "tag-pill tag-default",
+                  "href": "",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "rails",
+                ],
+                "type": "a",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
