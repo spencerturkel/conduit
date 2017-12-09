@@ -1,0 +1,2177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+ReactWrapper {
+  "length": 1,
+  Symbol(enzyme.__unrendered__): <ArticleListing />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {},
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": <div
+          class="feed-toggle"
+>
+          <ul
+                    class="nav nav-pills outline-active"
+          >
+                    <li
+                              class="nav-item"
+                    >
+                              <a
+                                        class="nav-link disabled"
+                                        href=""
+                              >
+                                        Your Feed
+                              </a>
+                    </li>
+                    <li
+                              class="nav-item"
+                    >
+                              <a
+                                        class="nav-link active"
+                                        href=""
+                              >
+                                        Global Feed
+                              </a>
+                    </li>
+          </ul>
+</div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <ul
+            className="nav nav-pills outline-active"
+>
+            <li
+                        className="nav-item"
+            >
+                        <a
+                                    className="nav-link disabled"
+                                    href=""
+                        >
+                                    Your Feed
+                        </a>
+            </li>
+            <li
+                        className="nav-item"
+            >
+                        <a
+                                    className="nav-link active"
+                                    href=""
+                        >
+                                    Global Feed
+                        </a>
+            </li>
+</ul>,
+          "className": "feed-toggle",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <ul
+              class="nav nav-pills outline-active"
+>
+              <li
+                            class="nav-item"
+              >
+                            <a
+                                          class="nav-link disabled"
+                                          href=""
+                            >
+                                          Your Feed
+                            </a>
+              </li>
+              <li
+                            class="nav-item"
+              >
+                            <a
+                                          class="nav-link active"
+                                          href=""
+                            >
+                                          Global Feed
+                            </a>
+              </li>
+</ul>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li
+                  className="nav-item"
+>
+                  <a
+                                    className="nav-link disabled"
+                                    href=""
+                  >
+                                    Your Feed
+                  </a>
+</li>,
+                <li
+                  className="nav-item"
+>
+                  <a
+                                    className="nav-link active"
+                                    href=""
+                  >
+                                    Global Feed
+                  </a>
+</li>,
+              ],
+              "className": "nav nav-pills outline-active",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <li
+                  class="nav-item"
+>
+                  <a
+                                    class="nav-link disabled"
+                                    href=""
+                  >
+                                    Your Feed
+                  </a>
+</li>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    className="nav-link disabled"
+                    href=""
+>
+                    Your Feed
+</a>,
+                  "className": "nav-item",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <a
+                      class="nav-link disabled"
+                      href=""
+>
+                      Your Feed
+</a>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Your Feed",
+                      "className": "nav-link disabled",
+                      "href": "",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Your Feed",
+                    ],
+                    "type": "a",
+                  },
+                ],
+                "type": "li",
+              },
+              Object {
+                "instance": <li
+                  class="nav-item"
+>
+                  <a
+                                    class="nav-link active"
+                                    href=""
+                  >
+                                    Global Feed
+                  </a>
+</li>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    className="nav-link active"
+                    href=""
+>
+                    Global Feed
+</a>,
+                  "className": "nav-item",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <a
+                      class="nav-link active"
+                      href=""
+>
+                      Global Feed
+</a>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Global Feed",
+                      "className": "nav-link active",
+                      "href": "",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Global Feed",
+                    ],
+                    "type": "a",
+                  },
+                ],
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": <div
+          class="article-preview"
+>
+          <div
+                    class="article-meta"
+          >
+                    <a
+                              href="/profile"
+                    >
+                              <img
+                                        src="http://i.imgur.com/Qr71crq.jpg"
+                              />
+                    </a>
+                    <div
+                              class="info"
+                    >
+                              <a
+                                        href=""
+                                        class="author"
+                              >
+                                        Eric Simons
+                              </a>
+                              <span
+                                        class="date"
+                              >
+                                        January 20th
+                              </span>
+                    </div>
+                    <button
+                              class="btn btn-outline-primary btn-sm pull-xs-right"
+                    >
+                              <i
+                                        class="ion-heart"
+                              />
+                              29
+                    </button>
+          </div>
+          <a
+                    href=""
+                    class="preview-link"
+          >
+                    <h1>
+                              How to build webapps that scale
+                    </h1>
+                    <p>
+                              This is the description for the post.
+                    </p>
+                    <span>
+                              Read more...
+                    </span>
+          </a>
+</div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="article-meta"
+>
+              <a
+                            href="/profile"
+              >
+                            <img
+                                          src="http://i.imgur.com/Qr71crq.jpg"
+                            />
+              </a>
+              <div
+                            className="info"
+              >
+                            <a
+                                          className="author"
+                                          href=""
+                            >
+                                          Eric Simons
+                            </a>
+                            <span
+                                          className="date"
+                            >
+                                          January 20th
+                            </span>
+              </div>
+              <button
+                            className="btn btn-outline-primary btn-sm pull-xs-right"
+              >
+                            <i
+                                          className="ion-heart"
+                            />
+                             29
+              </button>
+</div>,
+            <a
+              className="preview-link"
+              href=""
+>
+              <h1>
+                            How to build webapps that scale
+              </h1>
+              <p>
+                            This is the description for the post.
+              </p>
+              <span>
+                            Read more...
+              </span>
+</a>,
+          ],
+          "className": "article-preview",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <div
+              class="article-meta"
+>
+              <a
+                            href="/profile"
+              >
+                            <img
+                                          src="http://i.imgur.com/Qr71crq.jpg"
+                            />
+              </a>
+              <div
+                            class="info"
+              >
+                            <a
+                                          href=""
+                                          class="author"
+                            >
+                                          Eric Simons
+                            </a>
+                            <span
+                                          class="date"
+                            >
+                                          January 20th
+                            </span>
+              </div>
+              <button
+                            class="btn btn-outline-primary btn-sm pull-xs-right"
+              >
+                            <i
+                                          class="ion-heart"
+                            />
+                            29
+              </button>
+</div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <a
+                  href="/profile"
+>
+                  <img
+                                    src="http://i.imgur.com/Qr71crq.jpg"
+                  />
+</a>,
+                <div
+                  className="info"
+>
+                  <a
+                                    className="author"
+                                    href=""
+                  >
+                                    Eric Simons
+                  </a>
+                  <span
+                                    className="date"
+                  >
+                                    January 20th
+                  </span>
+</div>,
+                <button
+                  className="btn btn-outline-primary btn-sm pull-xs-right"
+>
+                  <i
+                                    className="ion-heart"
+                  />
+                   29
+</button>,
+              ],
+              "className": "article-meta",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <a
+                  href="/profile"
+>
+                  <img
+                                    src="http://i.imgur.com/Qr71crq.jpg"
+                  />
+</a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <img
+                    src="http://i.imgur.com/Qr71crq.jpg"
+/>,
+                  "href": "/profile",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <img
+                      src="http://i.imgur.com/Qr71crq.jpg"
+/>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "src": "http://i.imgur.com/Qr71crq.jpg",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      undefined,
+                    ],
+                    "type": "img",
+                  },
+                ],
+                "type": "a",
+              },
+              Object {
+                "instance": <div
+                  class="info"
+>
+                  <a
+                                    href=""
+                                    class="author"
+                  >
+                                    Eric Simons
+                  </a>
+                  <span
+                                    class="date"
+                  >
+                                    January 20th
+                  </span>
+</div>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <a
+                      className="author"
+                      href=""
+>
+                      Eric Simons
+</a>,
+                    <span
+                      className="date"
+>
+                      January 20th
+</span>,
+                  ],
+                  "className": "info",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <a
+                      href=""
+                      class="author"
+>
+                      Eric Simons
+</a>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Eric Simons",
+                      "className": "author",
+                      "href": "",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Eric Simons",
+                    ],
+                    "type": "a",
+                  },
+                  Object {
+                    "instance": <span
+                      class="date"
+>
+                      January 20th
+</span>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "January 20th",
+                      "className": "date",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "January 20th",
+                    ],
+                    "type": "span",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": <button
+                  class="btn btn-outline-primary btn-sm pull-xs-right"
+>
+                  <i
+                                    class="ion-heart"
+                  />
+                  29
+</button>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <i
+                      className="ion-heart"
+/>,
+                    " 29",
+                  ],
+                  "className": "btn btn-outline-primary btn-sm pull-xs-right",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <i
+                      class="ion-heart"
+/>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "ion-heart",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      undefined,
+                    ],
+                    "type": "i",
+                  },
+                  " 29",
+                ],
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": <a
+              href=""
+              class="preview-link"
+>
+              <h1>
+                            How to build webapps that scale
+              </h1>
+              <p>
+                            This is the description for the post.
+              </p>
+              <span>
+                            Read more...
+              </span>
+</a>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h1>
+                  How to build webapps that scale
+</h1>,
+                <p>
+                  This is the description for the post.
+</p>,
+                <span>
+                  Read more...
+</span>,
+              ],
+              "className": "preview-link",
+              "href": "",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <h1>
+                  How to build webapps that scale
+</h1>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "How to build webapps that scale",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "How to build webapps that scale",
+                ],
+                "type": "h1",
+              },
+              Object {
+                "instance": <p>
+                  This is the description for the post.
+</p>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "This is the description for the post.",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "This is the description for the post.",
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": <span>
+                  Read more...
+</span>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Read more...",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Read more...",
+                ],
+                "type": "span",
+              },
+            ],
+            "type": "a",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": <div
+          class="article-preview"
+>
+          <div
+                    class="article-meta"
+          >
+                    <a
+                              href="/profile"
+                    >
+                              <img
+                                        src="http://i.imgur.com/N4VcUeJ.jpg"
+                              />
+                    </a>
+                    <div
+                              class="info"
+                    >
+                              <a
+                                        href=""
+                                        class="author"
+                              >
+                                        Albert Pai
+                              </a>
+                              <span
+                                        class="date"
+                              >
+                                        January 20th
+                              </span>
+                    </div>
+                    <button
+                              class="btn btn-outline-primary btn-sm pull-xs-right"
+                    >
+                              <i
+                                        class="ion-heart"
+                              />
+                              32
+                    </button>
+          </div>
+          <a
+                    href=""
+                    class="preview-link"
+          >
+                    <h1>
+                              The song you won't ever stop singing. No matter how hard you try.
+                    </h1>
+                    <p>
+                              This is the description for the post.
+                    </p>
+                    <span>
+                              Read more...
+                    </span>
+          </a>
+</div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="article-meta"
+>
+              <a
+                            href="/profile"
+              >
+                            <img
+                                          src="http://i.imgur.com/N4VcUeJ.jpg"
+                            />
+              </a>
+              <div
+                            className="info"
+              >
+                            <a
+                                          className="author"
+                                          href=""
+                            >
+                                          Albert Pai
+                            </a>
+                            <span
+                                          className="date"
+                            >
+                                          January 20th
+                            </span>
+              </div>
+              <button
+                            className="btn btn-outline-primary btn-sm pull-xs-right"
+              >
+                            <i
+                                          className="ion-heart"
+                            />
+                             32
+              </button>
+</div>,
+            <a
+              className="preview-link"
+              href=""
+>
+              <h1>
+                            The song you won't ever stop singing. No matter how hard you try.
+              </h1>
+              <p>
+                            This is the description for the post.
+              </p>
+              <span>
+                            Read more...
+              </span>
+</a>,
+          ],
+          "className": "article-preview",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <div
+              class="article-meta"
+>
+              <a
+                            href="/profile"
+              >
+                            <img
+                                          src="http://i.imgur.com/N4VcUeJ.jpg"
+                            />
+              </a>
+              <div
+                            class="info"
+              >
+                            <a
+                                          href=""
+                                          class="author"
+                            >
+                                          Albert Pai
+                            </a>
+                            <span
+                                          class="date"
+                            >
+                                          January 20th
+                            </span>
+              </div>
+              <button
+                            class="btn btn-outline-primary btn-sm pull-xs-right"
+              >
+                            <i
+                                          class="ion-heart"
+                            />
+                            32
+              </button>
+</div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <a
+                  href="/profile"
+>
+                  <img
+                                    src="http://i.imgur.com/N4VcUeJ.jpg"
+                  />
+</a>,
+                <div
+                  className="info"
+>
+                  <a
+                                    className="author"
+                                    href=""
+                  >
+                                    Albert Pai
+                  </a>
+                  <span
+                                    className="date"
+                  >
+                                    January 20th
+                  </span>
+</div>,
+                <button
+                  className="btn btn-outline-primary btn-sm pull-xs-right"
+>
+                  <i
+                                    className="ion-heart"
+                  />
+                   32
+</button>,
+              ],
+              "className": "article-meta",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <a
+                  href="/profile"
+>
+                  <img
+                                    src="http://i.imgur.com/N4VcUeJ.jpg"
+                  />
+</a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <img
+                    src="http://i.imgur.com/N4VcUeJ.jpg"
+/>,
+                  "href": "/profile",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <img
+                      src="http://i.imgur.com/N4VcUeJ.jpg"
+/>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "src": "http://i.imgur.com/N4VcUeJ.jpg",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      undefined,
+                    ],
+                    "type": "img",
+                  },
+                ],
+                "type": "a",
+              },
+              Object {
+                "instance": <div
+                  class="info"
+>
+                  <a
+                                    href=""
+                                    class="author"
+                  >
+                                    Albert Pai
+                  </a>
+                  <span
+                                    class="date"
+                  >
+                                    January 20th
+                  </span>
+</div>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <a
+                      className="author"
+                      href=""
+>
+                      Albert Pai
+</a>,
+                    <span
+                      className="date"
+>
+                      January 20th
+</span>,
+                  ],
+                  "className": "info",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <a
+                      href=""
+                      class="author"
+>
+                      Albert Pai
+</a>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Albert Pai",
+                      "className": "author",
+                      "href": "",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Albert Pai",
+                    ],
+                    "type": "a",
+                  },
+                  Object {
+                    "instance": <span
+                      class="date"
+>
+                      January 20th
+</span>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "January 20th",
+                      "className": "date",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "January 20th",
+                    ],
+                    "type": "span",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": <button
+                  class="btn btn-outline-primary btn-sm pull-xs-right"
+>
+                  <i
+                                    class="ion-heart"
+                  />
+                  32
+</button>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <i
+                      className="ion-heart"
+/>,
+                    " 32",
+                  ],
+                  "className": "btn btn-outline-primary btn-sm pull-xs-right",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <i
+                      class="ion-heart"
+/>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "ion-heart",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      undefined,
+                    ],
+                    "type": "i",
+                  },
+                  " 32",
+                ],
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": <a
+              href=""
+              class="preview-link"
+>
+              <h1>
+                            The song you won't ever stop singing. No matter how hard you try.
+              </h1>
+              <p>
+                            This is the description for the post.
+              </p>
+              <span>
+                            Read more...
+              </span>
+</a>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h1>
+                  The song you won't ever stop singing. No matter how hard you try.
+</h1>,
+                <p>
+                  This is the description for the post.
+</p>,
+                <span>
+                  Read more...
+</span>,
+              ],
+              "className": "preview-link",
+              "href": "",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <h1>
+                  The song you won't ever stop singing. No matter how hard you try.
+</h1>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "The song you won't ever stop singing. No matter how hard you try.",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "The song you won't ever stop singing. No matter how hard you try.",
+                ],
+                "type": "h1",
+              },
+              Object {
+                "instance": <p>
+                  This is the description for the post.
+</p>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "This is the description for the post.",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "This is the description for the post.",
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": <span>
+                  Read more...
+</span>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Read more...",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Read more...",
+                ],
+                "type": "span",
+              },
+            ],
+            "type": "a",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {},
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <div
+            class="feed-toggle"
+>
+            <ul
+                        class="nav nav-pills outline-active"
+            >
+                        <li
+                                    class="nav-item"
+                        >
+                                    <a
+                                                class="nav-link disabled"
+                                                href=""
+                                    >
+                                                Your Feed
+                                    </a>
+                        </li>
+                        <li
+                                    class="nav-item"
+                        >
+                                    <a
+                                                class="nav-link active"
+                                                href=""
+                                    >
+                                                Global Feed
+                                    </a>
+                        </li>
+            </ul>
+</div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <ul
+              className="nav nav-pills outline-active"
+>
+              <li
+                            className="nav-item"
+              >
+                            <a
+                                          className="nav-link disabled"
+                                          href=""
+                            >
+                                          Your Feed
+                            </a>
+              </li>
+              <li
+                            className="nav-item"
+              >
+                            <a
+                                          className="nav-link active"
+                                          href=""
+                            >
+                                          Global Feed
+                            </a>
+              </li>
+</ul>,
+            "className": "feed-toggle",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <ul
+                class="nav nav-pills outline-active"
+>
+                <li
+                                class="nav-item"
+                >
+                                <a
+                                                class="nav-link disabled"
+                                                href=""
+                                >
+                                                Your Feed
+                                </a>
+                </li>
+                <li
+                                class="nav-item"
+                >
+                                <a
+                                                class="nav-link active"
+                                                href=""
+                                >
+                                                Global Feed
+                                </a>
+                </li>
+</ul>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li
+                    className="nav-item"
+>
+                    <a
+                                        className="nav-link disabled"
+                                        href=""
+                    >
+                                        Your Feed
+                    </a>
+</li>,
+                  <li
+                    className="nav-item"
+>
+                    <a
+                                        className="nav-link active"
+                                        href=""
+                    >
+                                        Global Feed
+                    </a>
+</li>,
+                ],
+                "className": "nav nav-pills outline-active",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <li
+                    class="nav-item"
+>
+                    <a
+                                        class="nav-link disabled"
+                                        href=""
+                    >
+                                        Your Feed
+                    </a>
+</li>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <a
+                      className="nav-link disabled"
+                      href=""
+>
+                      Your Feed
+</a>,
+                    "className": "nav-item",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <a
+                        class="nav-link disabled"
+                        href=""
+>
+                        Your Feed
+</a>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Your Feed",
+                        "className": "nav-link disabled",
+                        "href": "",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Your Feed",
+                      ],
+                      "type": "a",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": <li
+                    class="nav-item"
+>
+                    <a
+                                        class="nav-link active"
+                                        href=""
+                    >
+                                        Global Feed
+                    </a>
+</li>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <a
+                      className="nav-link active"
+                      href=""
+>
+                      Global Feed
+</a>,
+                    "className": "nav-item",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <a
+                        class="nav-link active"
+                        href=""
+>
+                        Global Feed
+</a>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Global Feed",
+                        "className": "nav-link active",
+                        "href": "",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Global Feed",
+                      ],
+                      "type": "a",
+                    },
+                  ],
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": <div
+            class="article-preview"
+>
+            <div
+                        class="article-meta"
+            >
+                        <a
+                                    href="/profile"
+                        >
+                                    <img
+                                                src="http://i.imgur.com/Qr71crq.jpg"
+                                    />
+                        </a>
+                        <div
+                                    class="info"
+                        >
+                                    <a
+                                                href=""
+                                                class="author"
+                                    >
+                                                Eric Simons
+                                    </a>
+                                    <span
+                                                class="date"
+                                    >
+                                                January 20th
+                                    </span>
+                        </div>
+                        <button
+                                    class="btn btn-outline-primary btn-sm pull-xs-right"
+                        >
+                                    <i
+                                                class="ion-heart"
+                                    />
+                                    29
+                        </button>
+            </div>
+            <a
+                        href=""
+                        class="preview-link"
+            >
+                        <h1>
+                                    How to build webapps that scale
+                        </h1>
+                        <p>
+                                    This is the description for the post.
+                        </p>
+                        <span>
+                                    Read more...
+                        </span>
+            </a>
+</div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="article-meta"
+>
+                <a
+                                href="/profile"
+                >
+                                <img
+                                                src="http://i.imgur.com/Qr71crq.jpg"
+                                />
+                </a>
+                <div
+                                className="info"
+                >
+                                <a
+                                                className="author"
+                                                href=""
+                                >
+                                                Eric Simons
+                                </a>
+                                <span
+                                                className="date"
+                                >
+                                                January 20th
+                                </span>
+                </div>
+                <button
+                                className="btn btn-outline-primary btn-sm pull-xs-right"
+                >
+                                <i
+                                                className="ion-heart"
+                                />
+                                 29
+                </button>
+</div>,
+              <a
+                className="preview-link"
+                href=""
+>
+                <h1>
+                                How to build webapps that scale
+                </h1>
+                <p>
+                                This is the description for the post.
+                </p>
+                <span>
+                                Read more...
+                </span>
+</a>,
+            ],
+            "className": "article-preview",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <div
+                class="article-meta"
+>
+                <a
+                                href="/profile"
+                >
+                                <img
+                                                src="http://i.imgur.com/Qr71crq.jpg"
+                                />
+                </a>
+                <div
+                                class="info"
+                >
+                                <a
+                                                href=""
+                                                class="author"
+                                >
+                                                Eric Simons
+                                </a>
+                                <span
+                                                class="date"
+                                >
+                                                January 20th
+                                </span>
+                </div>
+                <button
+                                class="btn btn-outline-primary btn-sm pull-xs-right"
+                >
+                                <i
+                                                class="ion-heart"
+                                />
+                                29
+                </button>
+</div>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <a
+                    href="/profile"
+>
+                    <img
+                                        src="http://i.imgur.com/Qr71crq.jpg"
+                    />
+</a>,
+                  <div
+                    className="info"
+>
+                    <a
+                                        className="author"
+                                        href=""
+                    >
+                                        Eric Simons
+                    </a>
+                    <span
+                                        className="date"
+                    >
+                                        January 20th
+                    </span>
+</div>,
+                  <button
+                    className="btn btn-outline-primary btn-sm pull-xs-right"
+>
+                    <i
+                                        className="ion-heart"
+                    />
+                     29
+</button>,
+                ],
+                "className": "article-meta",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <a
+                    href="/profile"
+>
+                    <img
+                                        src="http://i.imgur.com/Qr71crq.jpg"
+                    />
+</a>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      src="http://i.imgur.com/Qr71crq.jpg"
+/>,
+                    "href": "/profile",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <img
+                        src="http://i.imgur.com/Qr71crq.jpg"
+/>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "src": "http://i.imgur.com/Qr71crq.jpg",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        undefined,
+                      ],
+                      "type": "img",
+                    },
+                  ],
+                  "type": "a",
+                },
+                Object {
+                  "instance": <div
+                    class="info"
+>
+                    <a
+                                        href=""
+                                        class="author"
+                    >
+                                        Eric Simons
+                    </a>
+                    <span
+                                        class="date"
+                    >
+                                        January 20th
+                    </span>
+</div>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <a
+                        className="author"
+                        href=""
+>
+                        Eric Simons
+</a>,
+                      <span
+                        className="date"
+>
+                        January 20th
+</span>,
+                    ],
+                    "className": "info",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <a
+                        href=""
+                        class="author"
+>
+                        Eric Simons
+</a>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Eric Simons",
+                        "className": "author",
+                        "href": "",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Eric Simons",
+                      ],
+                      "type": "a",
+                    },
+                    Object {
+                      "instance": <span
+                        class="date"
+>
+                        January 20th
+</span>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "January 20th",
+                        "className": "date",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "January 20th",
+                      ],
+                      "type": "span",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": <button
+                    class="btn btn-outline-primary btn-sm pull-xs-right"
+>
+                    <i
+                                        class="ion-heart"
+                    />
+                    29
+</button>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <i
+                        className="ion-heart"
+/>,
+                      " 29",
+                    ],
+                    "className": "btn btn-outline-primary btn-sm pull-xs-right",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <i
+                        class="ion-heart"
+/>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "ion-heart",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        undefined,
+                      ],
+                      "type": "i",
+                    },
+                    " 29",
+                  ],
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": <a
+                href=""
+                class="preview-link"
+>
+                <h1>
+                                How to build webapps that scale
+                </h1>
+                <p>
+                                This is the description for the post.
+                </p>
+                <span>
+                                Read more...
+                </span>
+</a>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h1>
+                    How to build webapps that scale
+</h1>,
+                  <p>
+                    This is the description for the post.
+</p>,
+                  <span>
+                    Read more...
+</span>,
+                ],
+                "className": "preview-link",
+                "href": "",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <h1>
+                    How to build webapps that scale
+</h1>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "How to build webapps that scale",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "How to build webapps that scale",
+                  ],
+                  "type": "h1",
+                },
+                Object {
+                  "instance": <p>
+                    This is the description for the post.
+</p>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "This is the description for the post.",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "This is the description for the post.",
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": <span>
+                    Read more...
+</span>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Read more...",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Read more...",
+                  ],
+                  "type": "span",
+                },
+              ],
+              "type": "a",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": <div
+            class="article-preview"
+>
+            <div
+                        class="article-meta"
+            >
+                        <a
+                                    href="/profile"
+                        >
+                                    <img
+                                                src="http://i.imgur.com/N4VcUeJ.jpg"
+                                    />
+                        </a>
+                        <div
+                                    class="info"
+                        >
+                                    <a
+                                                href=""
+                                                class="author"
+                                    >
+                                                Albert Pai
+                                    </a>
+                                    <span
+                                                class="date"
+                                    >
+                                                January 20th
+                                    </span>
+                        </div>
+                        <button
+                                    class="btn btn-outline-primary btn-sm pull-xs-right"
+                        >
+                                    <i
+                                                class="ion-heart"
+                                    />
+                                    32
+                        </button>
+            </div>
+            <a
+                        href=""
+                        class="preview-link"
+            >
+                        <h1>
+                                    The song you won't ever stop singing. No matter how hard you try.
+                        </h1>
+                        <p>
+                                    This is the description for the post.
+                        </p>
+                        <span>
+                                    Read more...
+                        </span>
+            </a>
+</div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="article-meta"
+>
+                <a
+                                href="/profile"
+                >
+                                <img
+                                                src="http://i.imgur.com/N4VcUeJ.jpg"
+                                />
+                </a>
+                <div
+                                className="info"
+                >
+                                <a
+                                                className="author"
+                                                href=""
+                                >
+                                                Albert Pai
+                                </a>
+                                <span
+                                                className="date"
+                                >
+                                                January 20th
+                                </span>
+                </div>
+                <button
+                                className="btn btn-outline-primary btn-sm pull-xs-right"
+                >
+                                <i
+                                                className="ion-heart"
+                                />
+                                 32
+                </button>
+</div>,
+              <a
+                className="preview-link"
+                href=""
+>
+                <h1>
+                                The song you won't ever stop singing. No matter how hard you try.
+                </h1>
+                <p>
+                                This is the description for the post.
+                </p>
+                <span>
+                                Read more...
+                </span>
+</a>,
+            ],
+            "className": "article-preview",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <div
+                class="article-meta"
+>
+                <a
+                                href="/profile"
+                >
+                                <img
+                                                src="http://i.imgur.com/N4VcUeJ.jpg"
+                                />
+                </a>
+                <div
+                                class="info"
+                >
+                                <a
+                                                href=""
+                                                class="author"
+                                >
+                                                Albert Pai
+                                </a>
+                                <span
+                                                class="date"
+                                >
+                                                January 20th
+                                </span>
+                </div>
+                <button
+                                class="btn btn-outline-primary btn-sm pull-xs-right"
+                >
+                                <i
+                                                class="ion-heart"
+                                />
+                                32
+                </button>
+</div>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <a
+                    href="/profile"
+>
+                    <img
+                                        src="http://i.imgur.com/N4VcUeJ.jpg"
+                    />
+</a>,
+                  <div
+                    className="info"
+>
+                    <a
+                                        className="author"
+                                        href=""
+                    >
+                                        Albert Pai
+                    </a>
+                    <span
+                                        className="date"
+                    >
+                                        January 20th
+                    </span>
+</div>,
+                  <button
+                    className="btn btn-outline-primary btn-sm pull-xs-right"
+>
+                    <i
+                                        className="ion-heart"
+                    />
+                     32
+</button>,
+                ],
+                "className": "article-meta",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <a
+                    href="/profile"
+>
+                    <img
+                                        src="http://i.imgur.com/N4VcUeJ.jpg"
+                    />
+</a>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      src="http://i.imgur.com/N4VcUeJ.jpg"
+/>,
+                    "href": "/profile",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <img
+                        src="http://i.imgur.com/N4VcUeJ.jpg"
+/>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "src": "http://i.imgur.com/N4VcUeJ.jpg",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        undefined,
+                      ],
+                      "type": "img",
+                    },
+                  ],
+                  "type": "a",
+                },
+                Object {
+                  "instance": <div
+                    class="info"
+>
+                    <a
+                                        href=""
+                                        class="author"
+                    >
+                                        Albert Pai
+                    </a>
+                    <span
+                                        class="date"
+                    >
+                                        January 20th
+                    </span>
+</div>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <a
+                        className="author"
+                        href=""
+>
+                        Albert Pai
+</a>,
+                      <span
+                        className="date"
+>
+                        January 20th
+</span>,
+                    ],
+                    "className": "info",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <a
+                        href=""
+                        class="author"
+>
+                        Albert Pai
+</a>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Albert Pai",
+                        "className": "author",
+                        "href": "",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Albert Pai",
+                      ],
+                      "type": "a",
+                    },
+                    Object {
+                      "instance": <span
+                        class="date"
+>
+                        January 20th
+</span>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "January 20th",
+                        "className": "date",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "January 20th",
+                      ],
+                      "type": "span",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": <button
+                    class="btn btn-outline-primary btn-sm pull-xs-right"
+>
+                    <i
+                                        class="ion-heart"
+                    />
+                    32
+</button>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <i
+                        className="ion-heart"
+/>,
+                      " 32",
+                    ],
+                    "className": "btn btn-outline-primary btn-sm pull-xs-right",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <i
+                        class="ion-heart"
+/>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "ion-heart",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        undefined,
+                      ],
+                      "type": "i",
+                    },
+                    " 32",
+                  ],
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": <a
+                href=""
+                class="preview-link"
+>
+                <h1>
+                                The song you won't ever stop singing. No matter how hard you try.
+                </h1>
+                <p>
+                                This is the description for the post.
+                </p>
+                <span>
+                                Read more...
+                </span>
+</a>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h1>
+                    The song you won't ever stop singing. No matter how hard you try.
+</h1>,
+                  <p>
+                    This is the description for the post.
+</p>,
+                  <span>
+                    Read more...
+</span>,
+                ],
+                "className": "preview-link",
+                "href": "",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <h1>
+                    The song you won't ever stop singing. No matter how hard you try.
+</h1>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "The song you won't ever stop singing. No matter how hard you try.",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "The song you won't ever stop singing. No matter how hard you try.",
+                  ],
+                  "type": "h1",
+                },
+                Object {
+                  "instance": <p>
+                    This is the description for the post.
+</p>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "This is the description for the post.",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "This is the description for the post.",
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": <span>
+                    Read more...
+</span>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Read more...",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Read more...",
+                  ],
+                  "type": "span",
+                },
+              ],
+              "type": "a",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
