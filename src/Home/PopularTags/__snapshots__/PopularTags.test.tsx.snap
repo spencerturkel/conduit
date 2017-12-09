@@ -154,7 +154,7 @@ ReactWrapper {
 >
                 programming
 </a>,
-              "key": undefined,
+              "key": "programming",
               "nodeType": "host",
               "props": Object {
                 "children": "programming",
@@ -174,7 +174,7 @@ ReactWrapper {
 >
                 reactjs
 </a>,
-              "key": undefined,
+              "key": "reactjs",
               "nodeType": "host",
               "props": Object {
                 "children": "reactjs",
@@ -325,7 +325,7 @@ ReactWrapper {
 >
                   programming
 </a>,
-                "key": undefined,
+                "key": "programming",
                 "nodeType": "host",
                 "props": Object {
                   "children": "programming",
@@ -345,7 +345,7 @@ ReactWrapper {
 >
                   reactjs
 </a>,
-                "key": undefined,
+                "key": "reactjs",
                 "nodeType": "host",
                 "props": Object {
                   "children": "reactjs",

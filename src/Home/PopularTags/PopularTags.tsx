@@ -11,7 +11,7 @@ const PopularTags: StatelessComponent<PopularTagsProps> = ({tags}: PopularTagsPr
 
         <div className="tag-list">
             {tags.map(({name, link}) => (
-                <a href={link} className="tag-pill tag-default">
+                <a href={link} key={name} className="tag-pill tag-default">
                     {name}
                 </a>
             ))}
