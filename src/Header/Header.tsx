@@ -1,32 +1,38 @@
 import * as React from 'react';
 
-const Header = () => (
+export interface LinkProps {
+    activeClass: string;
+    children?: React.ReactNode;
+    className: string;
+    to: string;
+}
+
+const Header = (Link: React.ComponentType<LinkProps>): React.StatelessComponent => () => (
     <nav className="navbar navbar-light">
         <div className="container">
-            <a className="navbar-brand" href="/">
+            <Link className="navbar-brand" to="/">
                 conduit
-            </a>
+            </Link>
             <ul className="nav navbar-nav pull-xs-right">
                 <li className="nav-item">
-                    {/* TODO: Set active based on route */}
-                    <a className="nav-link active" href="">
+                    <Link activeClass="active" className="nav-link" to="/">
                         Home
-                    </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="">
+                    <Link activeClass="active" className="nav-link" to="/new-post">
                         <i className="ion-compose" />&nbsp;New Post
-                    </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="">
+                    <Link activeClass="active" className="nav-link" to="/settings">
                         <i className="ion-gear-a" />&nbsp;Settings
-                    </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="">
+                    <Link activeClass="active" className="nav-link" to="/sign-up">
                         Sign up
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </div>

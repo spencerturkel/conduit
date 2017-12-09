@@ -1,10 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`matches snapshot 1`] = `
-ShallowWrapper {
+ReactWrapper {
   "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Header />,
+  Symbol(enzyme.__unrendered__): <TestHeader
+    activeLink="/"
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -12,748 +13,1501 @@ ShallowWrapper {
     "simulateEvent": [Function],
     "unmount": [Function],
   },
+  Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
-      "children": <div
-        className="container"
->
-        <a
-                className="navbar-brand"
-                href="/"
-        >
-                conduit
-        </a>
-        <ul
-                className="nav navbar-nav pull-xs-right"
-        >
-                <li
-                        className="nav-item"
-                >
-                        <a
-                                className="nav-link active"
-                                href=""
-                        >
-                                Home
-                        </a>
-                </li>
-                <li
-                        className="nav-item"
-                >
-                        <a
-                                className="nav-link"
-                                href=""
-                        >
-                                <i
-                                        className="ion-compose"
-                                />
-                                 New Post
-                        </a>
-                </li>
-                <li
-                        className="nav-item"
-                >
-                        <a
-                                className="nav-link"
-                                href=""
-                        >
-                                <i
-                                        className="ion-gear-a"
-                                />
-                                 Settings
-                        </a>
-                </li>
-                <li
-                        className="nav-item"
-                >
-                        <a
-                                className="nav-link"
-                                href=""
-                        >
-                                Sign up
-                        </a>
-                </li>
-        </ul>
-</div>,
-      "className": "navbar navbar-light",
+      "activeLink": "/",
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <a
-            className="navbar-brand"
-            href="/"
->
-            conduit
-</a>,
-          <ul
-            className="nav navbar-nav pull-xs-right"
->
-            <li
-                        className="nav-item"
-            >
-                        <a
-                                    className="nav-link active"
-                                    href=""
-                        >
-                                    Home
-                        </a>
-            </li>
-            <li
-                        className="nav-item"
-            >
-                        <a
-                                    className="nav-link"
-                                    href=""
-                        >
-                                    <i
-                                                className="ion-compose"
-                                    />
-                                     New Post
-                        </a>
-            </li>
-            <li
-                        className="nav-item"
-            >
-                        <a
-                                    className="nav-link"
-                                    href=""
-                        >
-                                    <i
-                                                className="ion-gear-a"
-                                    />
-                                     Settings
-                        </a>
-            </li>
-            <li
-                        className="nav-item"
-            >
-                        <a
-                                    className="nav-link"
-                                    href=""
-                        >
-                                    Sign up
-                        </a>
-            </li>
-</ul>,
-        ],
-        "className": "container",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "conduit",
-            "className": "navbar-brand",
-            "href": "/",
-          },
-          "ref": null,
-          "rendered": "conduit",
-          "type": "a",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <li
-                className="nav-item"
->
-                <a
-                                className="nav-link active"
-                                href=""
-                >
-                                Home
-                </a>
-</li>,
-              <li
-                className="nav-item"
->
-                <a
-                                className="nav-link"
-                                href=""
-                >
-                                <i
-                                                className="ion-compose"
-                                />
-                                 New Post
-                </a>
-</li>,
-              <li
-                className="nav-item"
->
-                <a
-                                className="nav-link"
-                                href=""
-                >
-                                <i
-                                                className="ion-gear-a"
-                                />
-                                 Settings
-                </a>
-</li>,
-              <li
-                className="nav-item"
->
-                <a
-                                className="nav-link"
-                                href=""
-                >
-                                Sign up
-                </a>
-</li>,
-            ],
-            "className": "nav navbar-nav pull-xs-right",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <a
-                  className="nav-link active"
-                  href=""
->
-                  Home
-</a>,
-                "className": "nav-item",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Home",
-                  "className": "nav-link active",
-                  "href": "",
-                },
-                "ref": null,
-                "rendered": "Home",
-                "type": "a",
-              },
-              "type": "li",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <a
-                  className="nav-link"
-                  href=""
->
-                  <i
-                                    className="ion-compose"
-                  />
-                   New Post
-</a>,
-                "className": "nav-item",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <i
-                      className="ion-compose"
-/>,
-                    " New Post",
-                  ],
-                  "className": "nav-link",
-                  "href": "",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "ion-compose",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "i",
-                  },
-                  " New Post",
-                ],
-                "type": "a",
-              },
-              "type": "li",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <a
-                  className="nav-link"
-                  href=""
->
-                  <i
-                                    className="ion-gear-a"
-                  />
-                   Settings
-</a>,
-                "className": "nav-item",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <i
-                      className="ion-gear-a"
-/>,
-                    " Settings",
-                  ],
-                  "className": "nav-link",
-                  "href": "",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "ion-gear-a",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "i",
-                  },
-                  " Settings",
-                ],
-                "type": "a",
-              },
-              "type": "li",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <a
-                  className="nav-link"
-                  href=""
->
-                  Sign up
-</a>,
-                "className": "nav-item",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Sign up",
-                  "className": "nav-link",
-                  "href": "",
-                },
-                "ref": null,
-                "rendered": "Sign up",
-                "type": "a",
-              },
-              "type": "li",
-            },
-          ],
-          "type": "ul",
-        },
-      ],
-      "type": "div",
-    },
-    "type": "nav",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <div
-          className="container"
->
-          <a
-                    className="navbar-brand"
-                    href="/"
-          >
-                    conduit
-          </a>
-          <ul
-                    className="nav navbar-nav pull-xs-right"
-          >
-                    <li
-                              className="nav-item"
-                    >
-                              <a
-                                        className="nav-link active"
-                                        href=""
-                              >
-                                        Home
-                              </a>
-                    </li>
-                    <li
-                              className="nav-item"
-                    >
-                              <a
-                                        className="nav-link"
-                                        href=""
-                              >
-                                        <i
-                                                  className="ion-compose"
-                                        />
-                                         New Post
-                              </a>
-                    </li>
-                    <li
-                              className="nav-item"
-                    >
-                              <a
-                                        className="nav-link"
-                                        href=""
-                              >
-                                        <i
-                                                  className="ion-gear-a"
-                                        />
-                                         Settings
-                              </a>
-                    </li>
-                    <li
-                              className="nav-item"
-                    >
-                              <a
-                                        className="nav-link"
-                                        href=""
-                              >
-                                        Sign up
-                              </a>
-                    </li>
-          </ul>
-</div>,
-        "className": "navbar navbar-light",
-      },
+      "nodeType": "function",
+      "props": Object {},
       "ref": null,
       "rendered": Object {
-        "instance": null,
+        "instance": <nav
+          class="navbar navbar-light"
+>
+          <div
+                    class="container"
+          >
+                    <a
+                              class="navbar-brand"
+                              href="/"
+                    >
+                              conduit
+                    </a>
+                    <ul
+                              class="nav navbar-nav pull-xs-right"
+                    >
+                              <li
+                                        class="nav-item"
+                              >
+                                        <a
+                                                  class="nav-link active"
+                                                  href="/"
+                                        >
+                                                  Home
+                                        </a>
+                              </li>
+                              <li
+                                        class="nav-item"
+                              >
+                                        <a
+                                                  class="nav-link"
+                                                  href="/new-post"
+                                        >
+                                                  <i
+                                                            class="ion-compose"
+                                                  />
+                                                  New Post
+                                        </a>
+                              </li>
+                              <li
+                                        class="nav-item"
+                              >
+                                        <a
+                                                  class="nav-link"
+                                                  href="/settings"
+                                        >
+                                                  <i
+                                                            class="ion-gear-a"
+                                                  />
+                                                  Settings
+                                        </a>
+                              </li>
+                              <li
+                                        class="nav-item"
+                              >
+                                        <a
+                                                  class="nav-link"
+                                                  href="/sign-up"
+                                        >
+                                                  Sign up
+                                        </a>
+                              </li>
+                    </ul>
+          </div>
+</nav>,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            <a
-              className="navbar-brand"
-              href="/"
+          "children": <div
+            className="container"
 >
-              conduit
-</a>,
+            <Unknown
+                        className="navbar-brand"
+                        to="/"
+            >
+                        conduit
+            </Unknown>
             <ul
-              className="nav navbar-nav pull-xs-right"
->
-              <li
-                            className="nav-item"
-              >
-                            <a
-                                          className="nav-link active"
-                                          href=""
-                            >
-                                          Home
-                            </a>
-              </li>
-              <li
-                            className="nav-item"
-              >
-                            <a
-                                          className="nav-link"
-                                          href=""
-                            >
-                                          <i
-                                                        className="ion-compose"
-                                          />
-                                           New Post
-                            </a>
-              </li>
-              <li
-                            className="nav-item"
-              >
-                            <a
-                                          className="nav-link"
-                                          href=""
-                            >
-                                          <i
-                                                        className="ion-gear-a"
-                                          />
-                                           Settings
-                            </a>
-              </li>
-              <li
-                            className="nav-item"
-              >
-                            <a
-                                          className="nav-link"
-                                          href=""
-                            >
-                                          Sign up
-                            </a>
-              </li>
-</ul>,
-          ],
-          "className": "container",
+                        className="nav navbar-nav pull-xs-right"
+            >
+                        <li
+                                    className="nav-item"
+                        >
+                                    <Unknown
+                                                activeClass="active"
+                                                className="nav-link"
+                                                to="/"
+                                    >
+                                                Home
+                                    </Unknown>
+                        </li>
+                        <li
+                                    className="nav-item"
+                        >
+                                    <Unknown
+                                                activeClass="active"
+                                                className="nav-link"
+                                                to="/new-post"
+                                    >
+                                                <i
+                                                            className="ion-compose"
+                                                />
+                                                 New Post
+                                    </Unknown>
+                        </li>
+                        <li
+                                    className="nav-item"
+                        >
+                                    <Unknown
+                                                activeClass="active"
+                                                className="nav-link"
+                                                to="/settings"
+                                    >
+                                                <i
+                                                            className="ion-gear-a"
+                                                />
+                                                 Settings
+                                    </Unknown>
+                        </li>
+                        <li
+                                    className="nav-item"
+                        >
+                                    <Unknown
+                                                activeClass="active"
+                                                className="nav-link"
+                                                to="/sign-up"
+                                    >
+                                                Sign up
+                                    </Unknown>
+                        </li>
+            </ul>
+</div>,
+          "className": "navbar navbar-light",
         },
         "ref": null,
         "rendered": Array [
           Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "conduit",
-              "className": "navbar-brand",
-              "href": "/",
-            },
-            "ref": null,
-            "rendered": "conduit",
-            "type": "a",
-          },
-          Object {
-            "instance": null,
+            "instance": <div
+              class="container"
+>
+              <a
+                            class="navbar-brand"
+                            href="/"
+              >
+                            conduit
+              </a>
+              <ul
+                            class="nav navbar-nav pull-xs-right"
+              >
+                            <li
+                                          class="nav-item"
+                            >
+                                          <a
+                                                        class="nav-link active"
+                                                        href="/"
+                                          >
+                                                        Home
+                                          </a>
+                            </li>
+                            <li
+                                          class="nav-item"
+                            >
+                                          <a
+                                                        class="nav-link"
+                                                        href="/new-post"
+                                          >
+                                                        <i
+                                                                      class="ion-compose"
+                                                        />
+                                                        New Post
+                                          </a>
+                            </li>
+                            <li
+                                          class="nav-item"
+                            >
+                                          <a
+                                                        class="nav-link"
+                                                        href="/settings"
+                                          >
+                                                        <i
+                                                                      class="ion-gear-a"
+                                                        />
+                                                        Settings
+                                          </a>
+                            </li>
+                            <li
+                                          class="nav-item"
+                            >
+                                          <a
+                                                        class="nav-link"
+                                                        href="/sign-up"
+                                          >
+                                                        Sign up
+                                          </a>
+                            </li>
+              </ul>
+</div>,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <li
-                  className="nav-item"
+                <Unknown
+                  className="navbar-brand"
+                  to="/"
 >
-                  <a
-                                    className="nav-link active"
-                                    href=""
-                  >
-                                    Home
-                  </a>
-</li>,
-                <li
-                  className="nav-item"
+                  conduit
+</Unknown>,
+                <ul
+                  className="nav navbar-nav pull-xs-right"
 >
-                  <a
-                                    className="nav-link"
-                                    href=""
+                  <li
+                                    className="nav-item"
                   >
-                                    <i
-                                                      className="ion-compose"
-                                    />
-                                     New Post
-                  </a>
-</li>,
-                <li
-                  className="nav-item"
->
-                  <a
-                                    className="nav-link"
-                                    href=""
+                                    <Unknown
+                                                      activeClass="active"
+                                                      className="nav-link"
+                                                      to="/"
+                                    >
+                                                      Home
+                                    </Unknown>
+                  </li>
+                  <li
+                                    className="nav-item"
                   >
-                                    <i
-                                                      className="ion-gear-a"
-                                    />
-                                     Settings
-                  </a>
-</li>,
-                <li
-                  className="nav-item"
->
-                  <a
-                                    className="nav-link"
-                                    href=""
+                                    <Unknown
+                                                      activeClass="active"
+                                                      className="nav-link"
+                                                      to="/new-post"
+                                    >
+                                                      <i
+                                                                        className="ion-compose"
+                                                      />
+                                                       New Post
+                                    </Unknown>
+                  </li>
+                  <li
+                                    className="nav-item"
                   >
-                                    Sign up
-                  </a>
-</li>,
+                                    <Unknown
+                                                      activeClass="active"
+                                                      className="nav-link"
+                                                      to="/settings"
+                                    >
+                                                      <i
+                                                                        className="ion-gear-a"
+                                                      />
+                                                       Settings
+                                    </Unknown>
+                  </li>
+                  <li
+                                    className="nav-item"
+                  >
+                                    <Unknown
+                                                      activeClass="active"
+                                                      className="nav-link"
+                                                      to="/sign-up"
+                                    >
+                                                      Sign up
+                                    </Unknown>
+                  </li>
+</ul>,
               ],
-              "className": "nav navbar-nav pull-xs-right",
+              "className": "container",
             },
             "ref": null,
             "rendered": Array [
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "function",
                 "props": Object {
-                  "children": <a
-                    className="nav-link active"
-                    href=""
->
-                    Home
-</a>,
-                  "className": "nav-item",
+                  "children": "conduit",
+                  "className": "navbar-brand",
+                  "to": "/",
                 },
                 "ref": null,
                 "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Home",
-                    "className": "nav-link active",
-                    "href": "",
-                  },
-                  "ref": null,
-                  "rendered": "Home",
-                  "type": "a",
-                },
-                "type": "li",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <a
-                    className="nav-link"
-                    href=""
+                  "instance": <a
+                    class="navbar-brand"
+                    href="/"
 >
-                    <i
-                                        className="ion-compose"
-                    />
-                     New Post
+                    conduit
 </a>,
-                  "className": "nav-item",
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      <i
-                        className="ion-compose"
-/>,
-                      " New Post",
-                    ],
-                    "className": "nav-link",
-                    "href": "",
+                    "children": "conduit",
+                    "className": "navbar-brand",
+                    "href": "/",
                   },
                   "ref": null,
                   "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "className": "ion-compose",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "i",
-                    },
-                    " New Post",
+                    "conduit",
                   ],
                   "type": "a",
                 },
-                "type": "li",
+                "type": [Function],
               },
               Object {
-                "instance": null,
+                "instance": <ul
+                  class="nav navbar-nav pull-xs-right"
+>
+                  <li
+                                    class="nav-item"
+                  >
+                                    <a
+                                                      class="nav-link active"
+                                                      href="/"
+                                    >
+                                                      Home
+                                    </a>
+                  </li>
+                  <li
+                                    class="nav-item"
+                  >
+                                    <a
+                                                      class="nav-link"
+                                                      href="/new-post"
+                                    >
+                                                      <i
+                                                                        class="ion-compose"
+                                                      />
+                                                      New Post
+                                    </a>
+                  </li>
+                  <li
+                                    class="nav-item"
+                  >
+                                    <a
+                                                      class="nav-link"
+                                                      href="/settings"
+                                    >
+                                                      <i
+                                                                        class="ion-gear-a"
+                                                      />
+                                                      Settings
+                                    </a>
+                  </li>
+                  <li
+                                    class="nav-item"
+                  >
+                                    <a
+                                                      class="nav-link"
+                                                      href="/sign-up"
+                                    >
+                                                      Sign up
+                                    </a>
+                  </li>
+</ul>,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": <a
-                    className="nav-link"
-                    href=""
+                  "children": Array [
+                    <li
+                      className="nav-item"
 >
-                    <i
-                                        className="ion-gear-a"
-                    />
-                     Settings
-</a>,
-                  "className": "nav-item",
+                      <Unknown
+                                            activeClass="active"
+                                            className="nav-link"
+                                            to="/"
+                      >
+                                            Home
+                      </Unknown>
+</li>,
+                    <li
+                      className="nav-item"
+>
+                      <Unknown
+                                            activeClass="active"
+                                            className="nav-link"
+                                            to="/new-post"
+                      >
+                                            <i
+                                                                  className="ion-compose"
+                                            />
+                                             New Post
+                      </Unknown>
+</li>,
+                    <li
+                      className="nav-item"
+>
+                      <Unknown
+                                            activeClass="active"
+                                            className="nav-link"
+                                            to="/settings"
+                      >
+                                            <i
+                                                                  className="ion-gear-a"
+                                            />
+                                             Settings
+                      </Unknown>
+</li>,
+                    <li
+                      className="nav-item"
+>
+                      <Unknown
+                                            activeClass="active"
+                                            className="nav-link"
+                                            to="/sign-up"
+                      >
+                                            Sign up
+                      </Unknown>
+</li>,
+                  ],
+                  "className": "nav navbar-nav pull-xs-right",
                 },
                 "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <i
-                        className="ion-gear-a"
-/>,
-                      " Settings",
+                "rendered": Array [
+                  Object {
+                    "instance": <li
+                      class="nav-item"
+>
+                      <a
+                                            class="nav-link active"
+                                            href="/"
+                      >
+                                            Home
+                      </a>
+</li>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <Unknown
+                        activeClass="active"
+                        className="nav-link"
+                        to="/"
+>
+                        Home
+</Unknown>,
+                      "className": "nav-item",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "activeClass": "active",
+                          "children": "Home",
+                          "className": "nav-link",
+                          "to": "/",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": <a
+                            class="nav-link active"
+                            href="/"
+>
+                            Home
+</a>,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Home",
+                            "className": "nav-link active",
+                            "href": "/",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Home",
+                          ],
+                          "type": "a",
+                        },
+                        "type": [Function],
+                      },
                     ],
-                    "className": "nav-link",
-                    "href": "",
+                    "type": "li",
                   },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "className": "ion-gear-a",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "i",
-                    },
-                    " Settings",
-                  ],
-                  "type": "a",
-                },
-                "type": "li",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <a
-                    className="nav-link"
-                    href=""
+                  Object {
+                    "instance": <li
+                      class="nav-item"
 >
-                    Sign up
+                      <a
+                                            class="nav-link"
+                                            href="/new-post"
+                      >
+                                            <i
+                                                                  class="ion-compose"
+                                            />
+                                            New Post
+                      </a>
+</li>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <Unknown
+                        activeClass="active"
+                        className="nav-link"
+                        to="/new-post"
+>
+                        <i
+                                                className="ion-compose"
+                        />
+                         New Post
+</Unknown>,
+                      "className": "nav-item",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "activeClass": "active",
+                          "children": Array [
+                            <i
+                              className="ion-compose"
+/>,
+                            " New Post",
+                          ],
+                          "className": "nav-link",
+                          "to": "/new-post",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": <a
+                            class="nav-link"
+                            href="/new-post"
+>
+                            <i
+                                                        class="ion-compose"
+                            />
+                            New Post
 </a>,
-                  "className": "nav-item",
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Sign up",
-                    "className": "nav-link",
-                    "href": "",
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <i
+                                className="ion-compose"
+/>,
+                              " New Post",
+                            ],
+                            "className": "nav-link",
+                            "href": "/new-post",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": <i
+                                class="ion-compose"
+/>,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "className": "ion-compose",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                undefined,
+                              ],
+                              "type": "i",
+                            },
+                            " New Post",
+                          ],
+                          "type": "a",
+                        },
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "li",
                   },
-                  "ref": null,
-                  "rendered": "Sign up",
-                  "type": "a",
-                },
-                "type": "li",
+                  Object {
+                    "instance": <li
+                      class="nav-item"
+>
+                      <a
+                                            class="nav-link"
+                                            href="/settings"
+                      >
+                                            <i
+                                                                  class="ion-gear-a"
+                                            />
+                                            Settings
+                      </a>
+</li>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <Unknown
+                        activeClass="active"
+                        className="nav-link"
+                        to="/settings"
+>
+                        <i
+                                                className="ion-gear-a"
+                        />
+                         Settings
+</Unknown>,
+                      "className": "nav-item",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "activeClass": "active",
+                          "children": Array [
+                            <i
+                              className="ion-gear-a"
+/>,
+                            " Settings",
+                          ],
+                          "className": "nav-link",
+                          "to": "/settings",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": <a
+                            class="nav-link"
+                            href="/settings"
+>
+                            <i
+                                                        class="ion-gear-a"
+                            />
+                            Settings
+</a>,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <i
+                                className="ion-gear-a"
+/>,
+                              " Settings",
+                            ],
+                            "className": "nav-link",
+                            "href": "/settings",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": <i
+                                class="ion-gear-a"
+/>,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "className": "ion-gear-a",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                undefined,
+                              ],
+                              "type": "i",
+                            },
+                            " Settings",
+                          ],
+                          "type": "a",
+                        },
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": <li
+                      class="nav-item"
+>
+                      <a
+                                            class="nav-link"
+                                            href="/sign-up"
+                      >
+                                            Sign up
+                      </a>
+</li>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <Unknown
+                        activeClass="active"
+                        className="nav-link"
+                        to="/sign-up"
+>
+                        Sign up
+</Unknown>,
+                      "className": "nav-item",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "activeClass": "active",
+                          "children": "Sign up",
+                          "className": "nav-link",
+                          "to": "/sign-up",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": <a
+                            class="nav-link"
+                            href="/sign-up"
+>
+                            Sign up
+</a>,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Sign up",
+                            "className": "nav-link",
+                            "href": "/sign-up",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Sign up",
+                          ],
+                          "type": "a",
+                        },
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "li",
+                  },
+                ],
+                "type": "ul",
               },
             ],
-            "type": "ul",
+            "type": "div",
           },
         ],
-        "type": "div",
+        "type": "nav",
       },
-      "type": "nav",
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "activeLink": "/",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": Object {
+          "instance": <nav
+            class="navbar navbar-light"
+>
+            <div
+                        class="container"
+            >
+                        <a
+                                    class="navbar-brand"
+                                    href="/"
+                        >
+                                    conduit
+                        </a>
+                        <ul
+                                    class="nav navbar-nav pull-xs-right"
+                        >
+                                    <li
+                                                class="nav-item"
+                                    >
+                                                <a
+                                                            class="nav-link active"
+                                                            href="/"
+                                                >
+                                                            Home
+                                                </a>
+                                    </li>
+                                    <li
+                                                class="nav-item"
+                                    >
+                                                <a
+                                                            class="nav-link"
+                                                            href="/new-post"
+                                                >
+                                                            <i
+                                                                        class="ion-compose"
+                                                            />
+                                                            New Post
+                                                </a>
+                                    </li>
+                                    <li
+                                                class="nav-item"
+                                    >
+                                                <a
+                                                            class="nav-link"
+                                                            href="/settings"
+                                                >
+                                                            <i
+                                                                        class="ion-gear-a"
+                                                            />
+                                                            Settings
+                                                </a>
+                                    </li>
+                                    <li
+                                                class="nav-item"
+                                    >
+                                                <a
+                                                            class="nav-link"
+                                                            href="/sign-up"
+                                                >
+                                                            Sign up
+                                                </a>
+                                    </li>
+                        </ul>
+            </div>
+</nav>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="container"
+>
+              <Unknown
+                            className="navbar-brand"
+                            to="/"
+              >
+                            conduit
+              </Unknown>
+              <ul
+                            className="nav navbar-nav pull-xs-right"
+              >
+                            <li
+                                          className="nav-item"
+                            >
+                                          <Unknown
+                                                        activeClass="active"
+                                                        className="nav-link"
+                                                        to="/"
+                                          >
+                                                        Home
+                                          </Unknown>
+                            </li>
+                            <li
+                                          className="nav-item"
+                            >
+                                          <Unknown
+                                                        activeClass="active"
+                                                        className="nav-link"
+                                                        to="/new-post"
+                                          >
+                                                        <i
+                                                                      className="ion-compose"
+                                                        />
+                                                         New Post
+                                          </Unknown>
+                            </li>
+                            <li
+                                          className="nav-item"
+                            >
+                                          <Unknown
+                                                        activeClass="active"
+                                                        className="nav-link"
+                                                        to="/settings"
+                                          >
+                                                        <i
+                                                                      className="ion-gear-a"
+                                                        />
+                                                         Settings
+                                          </Unknown>
+                            </li>
+                            <li
+                                          className="nav-item"
+                            >
+                                          <Unknown
+                                                        activeClass="active"
+                                                        className="nav-link"
+                                                        to="/sign-up"
+                                          >
+                                                        Sign up
+                                          </Unknown>
+                            </li>
+              </ul>
+</div>,
+            "className": "navbar navbar-light",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <div
+                class="container"
+>
+                <a
+                                class="navbar-brand"
+                                href="/"
+                >
+                                conduit
+                </a>
+                <ul
+                                class="nav navbar-nav pull-xs-right"
+                >
+                                <li
+                                                class="nav-item"
+                                >
+                                                <a
+                                                                class="nav-link active"
+                                                                href="/"
+                                                >
+                                                                Home
+                                                </a>
+                                </li>
+                                <li
+                                                class="nav-item"
+                                >
+                                                <a
+                                                                class="nav-link"
+                                                                href="/new-post"
+                                                >
+                                                                <i
+                                                                                class="ion-compose"
+                                                                />
+                                                                New Post
+                                                </a>
+                                </li>
+                                <li
+                                                class="nav-item"
+                                >
+                                                <a
+                                                                class="nav-link"
+                                                                href="/settings"
+                                                >
+                                                                <i
+                                                                                class="ion-gear-a"
+                                                                />
+                                                                Settings
+                                                </a>
+                                </li>
+                                <li
+                                                class="nav-item"
+                                >
+                                                <a
+                                                                class="nav-link"
+                                                                href="/sign-up"
+                                                >
+                                                                Sign up
+                                                </a>
+                                </li>
+                </ul>
+</div>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Unknown
+                    className="navbar-brand"
+                    to="/"
+>
+                    conduit
+</Unknown>,
+                  <ul
+                    className="nav navbar-nav pull-xs-right"
+>
+                    <li
+                                        className="nav-item"
+                    >
+                                        <Unknown
+                                                            activeClass="active"
+                                                            className="nav-link"
+                                                            to="/"
+                                        >
+                                                            Home
+                                        </Unknown>
+                    </li>
+                    <li
+                                        className="nav-item"
+                    >
+                                        <Unknown
+                                                            activeClass="active"
+                                                            className="nav-link"
+                                                            to="/new-post"
+                                        >
+                                                            <i
+                                                                                className="ion-compose"
+                                                            />
+                                                             New Post
+                                        </Unknown>
+                    </li>
+                    <li
+                                        className="nav-item"
+                    >
+                                        <Unknown
+                                                            activeClass="active"
+                                                            className="nav-link"
+                                                            to="/settings"
+                                        >
+                                                            <i
+                                                                                className="ion-gear-a"
+                                                            />
+                                                             Settings
+                                        </Unknown>
+                    </li>
+                    <li
+                                        className="nav-item"
+                    >
+                                        <Unknown
+                                                            activeClass="active"
+                                                            className="nav-link"
+                                                            to="/sign-up"
+                                        >
+                                                            Sign up
+                                        </Unknown>
+                    </li>
+</ul>,
+                ],
+                "className": "container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "conduit",
+                    "className": "navbar-brand",
+                    "to": "/",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": <a
+                      class="navbar-brand"
+                      href="/"
+>
+                      conduit
+</a>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "conduit",
+                      "className": "navbar-brand",
+                      "href": "/",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "conduit",
+                    ],
+                    "type": "a",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": <ul
+                    class="nav navbar-nav pull-xs-right"
+>
+                    <li
+                                        class="nav-item"
+                    >
+                                        <a
+                                                            class="nav-link active"
+                                                            href="/"
+                                        >
+                                                            Home
+                                        </a>
+                    </li>
+                    <li
+                                        class="nav-item"
+                    >
+                                        <a
+                                                            class="nav-link"
+                                                            href="/new-post"
+                                        >
+                                                            <i
+                                                                                class="ion-compose"
+                                                            />
+                                                            New Post
+                                        </a>
+                    </li>
+                    <li
+                                        class="nav-item"
+                    >
+                                        <a
+                                                            class="nav-link"
+                                                            href="/settings"
+                                        >
+                                                            <i
+                                                                                class="ion-gear-a"
+                                                            />
+                                                            Settings
+                                        </a>
+                    </li>
+                    <li
+                                        class="nav-item"
+                    >
+                                        <a
+                                                            class="nav-link"
+                                                            href="/sign-up"
+                                        >
+                                                            Sign up
+                                        </a>
+                    </li>
+</ul>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <li
+                        className="nav-item"
+>
+                        <Unknown
+                                                activeClass="active"
+                                                className="nav-link"
+                                                to="/"
+                        >
+                                                Home
+                        </Unknown>
+</li>,
+                      <li
+                        className="nav-item"
+>
+                        <Unknown
+                                                activeClass="active"
+                                                className="nav-link"
+                                                to="/new-post"
+                        >
+                                                <i
+                                                                        className="ion-compose"
+                                                />
+                                                 New Post
+                        </Unknown>
+</li>,
+                      <li
+                        className="nav-item"
+>
+                        <Unknown
+                                                activeClass="active"
+                                                className="nav-link"
+                                                to="/settings"
+                        >
+                                                <i
+                                                                        className="ion-gear-a"
+                                                />
+                                                 Settings
+                        </Unknown>
+</li>,
+                      <li
+                        className="nav-item"
+>
+                        <Unknown
+                                                activeClass="active"
+                                                className="nav-link"
+                                                to="/sign-up"
+                        >
+                                                Sign up
+                        </Unknown>
+</li>,
+                    ],
+                    "className": "nav navbar-nav pull-xs-right",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <li
+                        class="nav-item"
+>
+                        <a
+                                                class="nav-link active"
+                                                href="/"
+                        >
+                                                Home
+                        </a>
+</li>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Unknown
+                          activeClass="active"
+                          className="nav-link"
+                          to="/"
+>
+                          Home
+</Unknown>,
+                        "className": "nav-item",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "activeClass": "active",
+                            "children": "Home",
+                            "className": "nav-link",
+                            "to": "/",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": <a
+                              class="nav-link active"
+                              href="/"
+>
+                              Home
+</a>,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Home",
+                              "className": "nav-link active",
+                              "href": "/",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "Home",
+                            ],
+                            "type": "a",
+                          },
+                          "type": [Function],
+                        },
+                      ],
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": <li
+                        class="nav-item"
+>
+                        <a
+                                                class="nav-link"
+                                                href="/new-post"
+                        >
+                                                <i
+                                                                        class="ion-compose"
+                                                />
+                                                New Post
+                        </a>
+</li>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Unknown
+                          activeClass="active"
+                          className="nav-link"
+                          to="/new-post"
+>
+                          <i
+                                                    className="ion-compose"
+                          />
+                           New Post
+</Unknown>,
+                        "className": "nav-item",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "activeClass": "active",
+                            "children": Array [
+                              <i
+                                className="ion-compose"
+/>,
+                              " New Post",
+                            ],
+                            "className": "nav-link",
+                            "to": "/new-post",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": <a
+                              class="nav-link"
+                              href="/new-post"
+>
+                              <i
+                                                            class="ion-compose"
+                              />
+                              New Post
+</a>,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                <i
+                                  className="ion-compose"
+/>,
+                                " New Post",
+                              ],
+                              "className": "nav-link",
+                              "href": "/new-post",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": <i
+                                  class="ion-compose"
+/>,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "className": "ion-compose",
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  undefined,
+                                ],
+                                "type": "i",
+                              },
+                              " New Post",
+                            ],
+                            "type": "a",
+                          },
+                          "type": [Function],
+                        },
+                      ],
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": <li
+                        class="nav-item"
+>
+                        <a
+                                                class="nav-link"
+                                                href="/settings"
+                        >
+                                                <i
+                                                                        class="ion-gear-a"
+                                                />
+                                                Settings
+                        </a>
+</li>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Unknown
+                          activeClass="active"
+                          className="nav-link"
+                          to="/settings"
+>
+                          <i
+                                                    className="ion-gear-a"
+                          />
+                           Settings
+</Unknown>,
+                        "className": "nav-item",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "activeClass": "active",
+                            "children": Array [
+                              <i
+                                className="ion-gear-a"
+/>,
+                              " Settings",
+                            ],
+                            "className": "nav-link",
+                            "to": "/settings",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": <a
+                              class="nav-link"
+                              href="/settings"
+>
+                              <i
+                                                            class="ion-gear-a"
+                              />
+                              Settings
+</a>,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                <i
+                                  className="ion-gear-a"
+/>,
+                                " Settings",
+                              ],
+                              "className": "nav-link",
+                              "href": "/settings",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": <i
+                                  class="ion-gear-a"
+/>,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "className": "ion-gear-a",
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  undefined,
+                                ],
+                                "type": "i",
+                              },
+                              " Settings",
+                            ],
+                            "type": "a",
+                          },
+                          "type": [Function],
+                        },
+                      ],
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": <li
+                        class="nav-item"
+>
+                        <a
+                                                class="nav-link"
+                                                href="/sign-up"
+                        >
+                                                Sign up
+                        </a>
+</li>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Unknown
+                          activeClass="active"
+                          className="nav-link"
+                          to="/sign-up"
+>
+                          Sign up
+</Unknown>,
+                        "className": "nav-item",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "activeClass": "active",
+                            "children": "Sign up",
+                            "className": "nav-link",
+                            "to": "/sign-up",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": <a
+                              class="nav-link"
+                              href="/sign-up"
+>
+                              Sign up
+</a>,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Sign up",
+                              "className": "nav-link",
+                              "href": "/sign-up",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "Sign up",
+                            ],
+                            "type": "a",
+                          },
+                          "type": [Function],
+                        },
+                      ],
+                      "type": "li",
+                    },
+                  ],
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "nav",
+        },
+        "type": [Function],
+      },
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
