@@ -3,9 +3,7 @@
 exports[`should match snapshot 1`] = `
 ReactWrapper {
   "length": 1,
-  Symbol(enzyme.__unrendered__): <Home(, )
-    previews={Array []}
-/>,
+  Symbol(enzyme.__unrendered__): <Home(, ) />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,9 +16,7 @@ ReactWrapper {
     "instance": null,
     "key": undefined,
     "nodeType": "function",
-    "props": Object {
-      "previews": Array [],
-    },
+    "props": Object {},
     "ref": null,
     "rendered": Object {
       "instance": <div
@@ -94,9 +90,7 @@ ReactWrapper {
                         <div
                                     className="col-md-9"
                         >
-                                    <Unknown
-                                                previews={Array []}
-                                    />
+                                    <Unknown />
                         </div>
                         <div
                                     className="col-md-3"
@@ -247,9 +241,7 @@ ReactWrapper {
               <div
                             className="col-md-9"
               >
-                            <Unknown
-                                          previews={Array []}
-                            />
+                            <Unknown />
               </div>
               <div
                             className="col-md-3"
@@ -287,9 +279,7 @@ ReactWrapper {
                   <div
                     className="col-md-9"
 >
-                    <Unknown
-                                        previews={Array []}
-                    />
+                    <Unknown />
 </div>,
                   <div
                     className="col-md-3"
@@ -312,9 +302,7 @@ ReactWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": <Unknown
-                      previews={Array []}
-/>,
+                    "children": <Unknown />,
                     "className": "col-md-9",
                   },
                   "ref": null,
@@ -323,9 +311,7 @@ ReactWrapper {
                       "instance": null,
                       "key": undefined,
                       "nodeType": "function",
-                      "props": Object {
-                        "previews": Array [],
-                      },
+                      "props": Object {},
                       "ref": null,
                       "rendered": Object {
                         "instance": <div>
@@ -405,9 +391,7 @@ ReactWrapper {
       "instance": null,
       "key": undefined,
       "nodeType": "function",
-      "props": Object {
-        "previews": Array [],
-      },
+      "props": Object {},
       "ref": null,
       "rendered": Object {
         "instance": <div
@@ -481,9 +465,7 @@ ReactWrapper {
                             <div
                                           className="col-md-9"
                             >
-                                          <Unknown
-                                                        previews={Array []}
-                                          />
+                                          <Unknown />
                             </div>
                             <div
                                           className="col-md-3"
@@ -634,9 +616,7 @@ ReactWrapper {
                 <div
                                 className="col-md-9"
                 >
-                                <Unknown
-                                                previews={Array []}
-                                />
+                                <Unknown />
                 </div>
                 <div
                                 className="col-md-3"
@@ -674,9 +654,7 @@ ReactWrapper {
                     <div
                       className="col-md-9"
 >
-                      <Unknown
-                                            previews={Array []}
-                      />
+                      <Unknown />
 </div>,
                     <div
                       className="col-md-3"
@@ -699,9 +677,7 @@ ReactWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": <Unknown
-                        previews={Array []}
-/>,
+                      "children": <Unknown />,
                       "className": "col-md-9",
                     },
                     "ref": null,
@@ -710,9 +686,7 @@ ReactWrapper {
                         "instance": null,
                         "key": undefined,
                         "nodeType": "function",
-                        "props": Object {
-                          "previews": Array [],
-                        },
+                        "props": Object {},
                         "ref": null,
                         "rendered": Object {
                           "instance": <div>

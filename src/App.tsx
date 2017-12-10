@@ -11,15 +11,6 @@ import PopularTags from './Home/PopularTags';
 import {LinkProps} from './link-props';
 import {NavLinkProps} from './nav-link-props';
 
-const AppFeedPicker = () => <FeedPicker activeFeed={'global'} loggedIn={false} />;
-const AppArticleListing = ArticleListing(AppFeedPicker, ReactRouterLink as ComponentClass<LinkProps>);
-
-const AppPopularTags = () => <PopularTags tags={[{name: 'programming', link: '/programming'}]} />;
-const AppHome = Home(AppPopularTags, AppArticleListing);
-
-const AppHeader = Header(ReactRouterNavLink as ComponentClass<NavLinkProps>);
-const AppFooter = Footer(ReactRouterLink as ComponentClass<LinkProps>);
-
 const articlePreviews: ArticlePreview[] = [
     {
         author: {
@@ -34,11 +25,23 @@ const articlePreviews: ArticlePreview[] = [
     },
 ];
 
+const AppFeedPicker = () => <FeedPicker activeFeed={'global'} loggedIn={false} />;
+const AppArticleListing = (() => {
+    const Result = ArticleListing(AppFeedPicker, ReactRouterLink as ComponentClass<LinkProps>);
+    return () => <Result previews={articlePreviews} />;
+})();
+
+const AppPopularTags = () => <PopularTags tags={[{name: 'programming', link: '/programming'}]} />;
+const AppHome = Home(AppPopularTags, AppArticleListing);
+
+const AppHeader = Header(ReactRouterNavLink as ComponentClass<NavLinkProps>);
+const AppFooter = Footer(ReactRouterLink as ComponentClass<LinkProps>);
+
 const App = () => (
     <BrowserRouter>
         <div>
             <AppHeader />
-            <AppHome previews={articlePreviews} />
+            <AppHome />
             <AppFooter />
         </div>
     </BrowserRouter>

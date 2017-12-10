@@ -8,7 +8,7 @@ const TestHome = Home(() => <div>Popular Tags</div>, () => <div>Article Listing<
 let sut: ReactWrapper;
 
 beforeEach(() => {
-    sut = mount(<TestHome previews={[]} />);
+    sut = mount(<TestHome />);
 });
 
 it('should match snapshot', () => {
