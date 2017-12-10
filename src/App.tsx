@@ -4,14 +4,14 @@ import Helmet from 'react-helmet';
 import {Route, Switch} from 'react-router';
 import {BrowserRouter, Link as ReactRouterLink, NavLink as ReactRouterNavLink} from 'react-router-dom';
 
-import Footer from './Footer';
-import Header from './Header';
-import Home from './Home';
-import ArticleListing, {ArticlePreview} from './Home/ArticleListing';
-import FeedPicker from './Home/ArticleListing/FeedPicker';
-import PopularTags from './Home/PopularTags';
-import {LinkProps} from './link-props';
-import {NavLinkProps} from './nav-link-props';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Home from './components/Home';
+import ArticleListing, {ArticlePreview} from './components/Home/ArticleListing';
+import FeedPicker from './components/Home/ArticleListing/FeedPicker';
+import PopularTags from './components/Home/PopularTags';
+import {LinkProps} from './components/link-props';
+import {NavLinkProps} from './components/nav-link-props';
 
 const AppArticleListing = (() => {
     const articlePreviews: ArticlePreview[] = [
