@@ -1,9 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should match snapshot 1`] = `
+exports[`should match snapshots 1`] = `
 ReactWrapper {
   "length": 1,
-  Symbol(enzyme.__unrendered__): <FeedPicker />,
+  Symbol(enzyme.__unrendered__): <FeedPicker
+    activeFeed="global"
+    loggedIn={false}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -16,7 +19,10 @@ ReactWrapper {
     "instance": null,
     "key": undefined,
     "nodeType": "function",
-    "props": Object {},
+    "props": Object {
+      "activeFeed": "global",
+      "loggedIn": false,
+    },
     "ref": null,
     "rendered": Object {
       "instance": <div
@@ -30,7 +36,6 @@ ReactWrapper {
                 >
                         <a
                                 class="nav-link disabled"
-                                href=""
                         >
                                 Your Feed
                         </a>
@@ -40,7 +45,6 @@ ReactWrapper {
                 >
                         <a
                                 class="nav-link active"
-                                href=""
                         >
                                 Global Feed
                         </a>
@@ -58,7 +62,7 @@ ReactWrapper {
           >
                     <a
                               className="nav-link disabled"
-                              href=""
+                              onClick={[Function]}
                     >
                               Your Feed
                     </a>
@@ -68,7 +72,7 @@ ReactWrapper {
           >
                     <a
                               className="nav-link active"
-                              href=""
+                              onClick={[Function]}
                     >
                               Global Feed
                     </a>
@@ -87,7 +91,6 @@ ReactWrapper {
             >
                         <a
                                     class="nav-link disabled"
-                                    href=""
                         >
                                     Your Feed
                         </a>
@@ -97,7 +100,6 @@ ReactWrapper {
             >
                         <a
                                     class="nav-link active"
-                                    href=""
                         >
                                     Global Feed
                         </a>
@@ -112,7 +114,7 @@ ReactWrapper {
 >
                 <a
                                 className="nav-link disabled"
-                                href=""
+                                onClick={[Function]}
                 >
                                 Your Feed
                 </a>
@@ -122,7 +124,7 @@ ReactWrapper {
 >
                 <a
                                 className="nav-link active"
-                                href=""
+                                onClick={[Function]}
                 >
                                 Global Feed
                 </a>
@@ -138,7 +140,6 @@ ReactWrapper {
 >
                 <a
                                 class="nav-link disabled"
-                                href=""
                 >
                                 Your Feed
                 </a>
@@ -148,7 +149,7 @@ ReactWrapper {
               "props": Object {
                 "children": <a
                   className="nav-link disabled"
-                  href=""
+                  onClick={[Function]}
 >
                   Your Feed
 </a>,
@@ -159,7 +160,6 @@ ReactWrapper {
                 Object {
                   "instance": <a
                     class="nav-link disabled"
-                    href=""
 >
                     Your Feed
 </a>,
@@ -168,7 +168,7 @@ ReactWrapper {
                   "props": Object {
                     "children": "Your Feed",
                     "className": "nav-link disabled",
-                    "href": "",
+                    "onClick": [Function],
                   },
                   "ref": null,
                   "rendered": Array [
@@ -185,7 +185,6 @@ ReactWrapper {
 >
                 <a
                                 class="nav-link active"
-                                href=""
                 >
                                 Global Feed
                 </a>
@@ -195,7 +194,7 @@ ReactWrapper {
               "props": Object {
                 "children": <a
                   className="nav-link active"
-                  href=""
+                  onClick={[Function]}
 >
                   Global Feed
 </a>,
@@ -206,7 +205,6 @@ ReactWrapper {
                 Object {
                   "instance": <a
                     class="nav-link active"
-                    href=""
 >
                     Global Feed
 </a>,
@@ -215,7 +213,7 @@ ReactWrapper {
                   "props": Object {
                     "children": "Global Feed",
                     "className": "nav-link active",
-                    "href": "",
+                    "onClick": [Function],
                   },
                   "ref": null,
                   "rendered": Array [
@@ -239,7 +237,10 @@ ReactWrapper {
       "instance": null,
       "key": undefined,
       "nodeType": "function",
-      "props": Object {},
+      "props": Object {
+        "activeFeed": "global",
+        "loggedIn": false,
+      },
       "ref": null,
       "rendered": Object {
         "instance": <div
@@ -253,7 +254,6 @@ ReactWrapper {
                     >
                               <a
                                         class="nav-link disabled"
-                                        href=""
                               >
                                         Your Feed
                               </a>
@@ -263,7 +263,6 @@ ReactWrapper {
                     >
                               <a
                                         class="nav-link active"
-                                        href=""
                               >
                                         Global Feed
                               </a>
@@ -281,7 +280,7 @@ ReactWrapper {
             >
                         <a
                                     className="nav-link disabled"
-                                    href=""
+                                    onClick={[Function]}
                         >
                                     Your Feed
                         </a>
@@ -291,7 +290,7 @@ ReactWrapper {
             >
                         <a
                                     className="nav-link active"
-                                    href=""
+                                    onClick={[Function]}
                         >
                                     Global Feed
                         </a>
@@ -310,7 +309,6 @@ ReactWrapper {
               >
                             <a
                                           class="nav-link disabled"
-                                          href=""
                             >
                                           Your Feed
                             </a>
@@ -320,7 +318,6 @@ ReactWrapper {
               >
                             <a
                                           class="nav-link active"
-                                          href=""
                             >
                                           Global Feed
                             </a>
@@ -335,7 +332,7 @@ ReactWrapper {
 >
                   <a
                                     className="nav-link disabled"
-                                    href=""
+                                    onClick={[Function]}
                   >
                                     Your Feed
                   </a>
@@ -345,7 +342,7 @@ ReactWrapper {
 >
                   <a
                                     className="nav-link active"
-                                    href=""
+                                    onClick={[Function]}
                   >
                                     Global Feed
                   </a>
@@ -361,7 +358,6 @@ ReactWrapper {
 >
                   <a
                                     class="nav-link disabled"
-                                    href=""
                   >
                                     Your Feed
                   </a>
@@ -371,7 +367,7 @@ ReactWrapper {
                 "props": Object {
                   "children": <a
                     className="nav-link disabled"
-                    href=""
+                    onClick={[Function]}
 >
                     Your Feed
 </a>,
@@ -382,7 +378,6 @@ ReactWrapper {
                   Object {
                     "instance": <a
                       class="nav-link disabled"
-                      href=""
 >
                       Your Feed
 </a>,
@@ -391,7 +386,7 @@ ReactWrapper {
                     "props": Object {
                       "children": "Your Feed",
                       "className": "nav-link disabled",
-                      "href": "",
+                      "onClick": [Function],
                     },
                     "ref": null,
                     "rendered": Array [
@@ -408,7 +403,6 @@ ReactWrapper {
 >
                   <a
                                     class="nav-link active"
-                                    href=""
                   >
                                     Global Feed
                   </a>
@@ -418,7 +412,7 @@ ReactWrapper {
                 "props": Object {
                   "children": <a
                     className="nav-link active"
-                    href=""
+                    onClick={[Function]}
 >
                     Global Feed
 </a>,
@@ -429,7 +423,6 @@ ReactWrapper {
                   Object {
                     "instance": <a
                       class="nav-link active"
-                      href=""
 >
                       Global Feed
 </a>,
@@ -438,7 +431,941 @@ ReactWrapper {
                     "props": Object {
                       "children": "Global Feed",
                       "className": "nav-link active",
-                      "href": "",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Global Feed",
+                    ],
+                    "type": "a",
+                  },
+                ],
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`should match snapshots 2`] = `
+ReactWrapper {
+  "length": 1,
+  Symbol(enzyme.__unrendered__): <FeedPicker
+    activeFeed="global"
+    loggedIn={true}
+    onGlobalFeedClicked={[Function]}
+    onUserFeedClicked={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "activeFeed": "global",
+      "loggedIn": true,
+      "onGlobalFeedClicked": [Function],
+      "onUserFeedClicked": [Function],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": <div
+        class="feed-toggle"
+>
+        <ul
+                class="nav nav-pills outline-active"
+        >
+                <li
+                        class="nav-item"
+                >
+                        <a
+                                class="nav-link "
+                        >
+                                Your Feed
+                        </a>
+                </li>
+                <li
+                        class="nav-item"
+                >
+                        <a
+                                class="nav-link active"
+                        >
+                                Global Feed
+                        </a>
+                </li>
+        </ul>
+</div>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ul
+          className="nav nav-pills outline-active"
+>
+          <li
+                    className="nav-item"
+          >
+                    <a
+                              className="nav-link "
+                              onClick={[Function]}
+                    >
+                              Your Feed
+                    </a>
+          </li>
+          <li
+                    className="nav-item"
+          >
+                    <a
+                              className="nav-link active"
+                              onClick={[Function]}
+                    >
+                              Global Feed
+                    </a>
+          </li>
+</ul>,
+        "className": "feed-toggle",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <ul
+            class="nav nav-pills outline-active"
+>
+            <li
+                        class="nav-item"
+            >
+                        <a
+                                    class="nav-link "
+                        >
+                                    Your Feed
+                        </a>
+            </li>
+            <li
+                        class="nav-item"
+            >
+                        <a
+                                    class="nav-link active"
+                        >
+                                    Global Feed
+                        </a>
+            </li>
+</ul>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li
+                className="nav-item"
+>
+                <a
+                                className="nav-link "
+                                onClick={[Function]}
+                >
+                                Your Feed
+                </a>
+</li>,
+              <li
+                className="nav-item"
+>
+                <a
+                                className="nav-link active"
+                                onClick={[Function]}
+                >
+                                Global Feed
+                </a>
+</li>,
+            ],
+            "className": "nav nav-pills outline-active",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <li
+                class="nav-item"
+>
+                <a
+                                class="nav-link "
+                >
+                                Your Feed
+                </a>
+</li>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  className="nav-link "
+                  onClick={[Function]}
+>
+                  Your Feed
+</a>,
+                "className": "nav-item",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <a
+                    class="nav-link "
+>
+                    Your Feed
+</a>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Your Feed",
+                    "className": "nav-link ",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Your Feed",
+                  ],
+                  "type": "a",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": <li
+                class="nav-item"
+>
+                <a
+                                class="nav-link active"
+                >
+                                Global Feed
+                </a>
+</li>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  className="nav-link active"
+                  onClick={[Function]}
+>
+                  Global Feed
+</a>,
+                "className": "nav-item",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <a
+                    class="nav-link active"
+>
+                    Global Feed
+</a>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Global Feed",
+                    "className": "nav-link active",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Global Feed",
+                  ],
+                  "type": "a",
+                },
+              ],
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "activeFeed": "global",
+        "loggedIn": true,
+        "onGlobalFeedClicked": [Function],
+        "onUserFeedClicked": [Function],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": <div
+          class="feed-toggle"
+>
+          <ul
+                    class="nav nav-pills outline-active"
+          >
+                    <li
+                              class="nav-item"
+                    >
+                              <a
+                                        class="nav-link "
+                              >
+                                        Your Feed
+                              </a>
+                    </li>
+                    <li
+                              class="nav-item"
+                    >
+                              <a
+                                        class="nav-link active"
+                              >
+                                        Global Feed
+                              </a>
+                    </li>
+          </ul>
+</div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <ul
+            className="nav nav-pills outline-active"
+>
+            <li
+                        className="nav-item"
+            >
+                        <a
+                                    className="nav-link "
+                                    onClick={[Function]}
+                        >
+                                    Your Feed
+                        </a>
+            </li>
+            <li
+                        className="nav-item"
+            >
+                        <a
+                                    className="nav-link active"
+                                    onClick={[Function]}
+                        >
+                                    Global Feed
+                        </a>
+            </li>
+</ul>,
+          "className": "feed-toggle",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <ul
+              class="nav nav-pills outline-active"
+>
+              <li
+                            class="nav-item"
+              >
+                            <a
+                                          class="nav-link "
+                            >
+                                          Your Feed
+                            </a>
+              </li>
+              <li
+                            class="nav-item"
+              >
+                            <a
+                                          class="nav-link active"
+                            >
+                                          Global Feed
+                            </a>
+              </li>
+</ul>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li
+                  className="nav-item"
+>
+                  <a
+                                    className="nav-link "
+                                    onClick={[Function]}
+                  >
+                                    Your Feed
+                  </a>
+</li>,
+                <li
+                  className="nav-item"
+>
+                  <a
+                                    className="nav-link active"
+                                    onClick={[Function]}
+                  >
+                                    Global Feed
+                  </a>
+</li>,
+              ],
+              "className": "nav nav-pills outline-active",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <li
+                  class="nav-item"
+>
+                  <a
+                                    class="nav-link "
+                  >
+                                    Your Feed
+                  </a>
+</li>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    className="nav-link "
+                    onClick={[Function]}
+>
+                    Your Feed
+</a>,
+                  "className": "nav-item",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <a
+                      class="nav-link "
+>
+                      Your Feed
+</a>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Your Feed",
+                      "className": "nav-link ",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Your Feed",
+                    ],
+                    "type": "a",
+                  },
+                ],
+                "type": "li",
+              },
+              Object {
+                "instance": <li
+                  class="nav-item"
+>
+                  <a
+                                    class="nav-link active"
+                  >
+                                    Global Feed
+                  </a>
+</li>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    className="nav-link active"
+                    onClick={[Function]}
+>
+                    Global Feed
+</a>,
+                  "className": "nav-item",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <a
+                      class="nav-link active"
+>
+                      Global Feed
+</a>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Global Feed",
+                      "className": "nav-link active",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Global Feed",
+                    ],
+                    "type": "a",
+                  },
+                ],
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`should match snapshots 3`] = `
+ReactWrapper {
+  "length": 1,
+  Symbol(enzyme.__unrendered__): <FeedPicker
+    activeFeed="user"
+    loggedIn={true}
+    onGlobalFeedClicked={[Function]}
+    onUserFeedClicked={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "activeFeed": "user",
+      "loggedIn": true,
+      "onGlobalFeedClicked": [Function],
+      "onUserFeedClicked": [Function],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": <div
+        class="feed-toggle"
+>
+        <ul
+                class="nav nav-pills outline-active"
+        >
+                <li
+                        class="nav-item"
+                >
+                        <a
+                                class="nav-link active"
+                        >
+                                Your Feed
+                        </a>
+                </li>
+                <li
+                        class="nav-item"
+                >
+                        <a
+                                class="nav-link "
+                        >
+                                Global Feed
+                        </a>
+                </li>
+        </ul>
+</div>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ul
+          className="nav nav-pills outline-active"
+>
+          <li
+                    className="nav-item"
+          >
+                    <a
+                              className="nav-link active"
+                              onClick={[Function]}
+                    >
+                              Your Feed
+                    </a>
+          </li>
+          <li
+                    className="nav-item"
+          >
+                    <a
+                              className="nav-link "
+                              onClick={[Function]}
+                    >
+                              Global Feed
+                    </a>
+          </li>
+</ul>,
+        "className": "feed-toggle",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <ul
+            class="nav nav-pills outline-active"
+>
+            <li
+                        class="nav-item"
+            >
+                        <a
+                                    class="nav-link active"
+                        >
+                                    Your Feed
+                        </a>
+            </li>
+            <li
+                        class="nav-item"
+            >
+                        <a
+                                    class="nav-link "
+                        >
+                                    Global Feed
+                        </a>
+            </li>
+</ul>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li
+                className="nav-item"
+>
+                <a
+                                className="nav-link active"
+                                onClick={[Function]}
+                >
+                                Your Feed
+                </a>
+</li>,
+              <li
+                className="nav-item"
+>
+                <a
+                                className="nav-link "
+                                onClick={[Function]}
+                >
+                                Global Feed
+                </a>
+</li>,
+            ],
+            "className": "nav nav-pills outline-active",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <li
+                class="nav-item"
+>
+                <a
+                                class="nav-link active"
+                >
+                                Your Feed
+                </a>
+</li>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  className="nav-link active"
+                  onClick={[Function]}
+>
+                  Your Feed
+</a>,
+                "className": "nav-item",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <a
+                    class="nav-link active"
+>
+                    Your Feed
+</a>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Your Feed",
+                    "className": "nav-link active",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Your Feed",
+                  ],
+                  "type": "a",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": <li
+                class="nav-item"
+>
+                <a
+                                class="nav-link "
+                >
+                                Global Feed
+                </a>
+</li>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  className="nav-link "
+                  onClick={[Function]}
+>
+                  Global Feed
+</a>,
+                "className": "nav-item",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <a
+                    class="nav-link "
+>
+                    Global Feed
+</a>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Global Feed",
+                    "className": "nav-link ",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Global Feed",
+                  ],
+                  "type": "a",
+                },
+              ],
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "activeFeed": "user",
+        "loggedIn": true,
+        "onGlobalFeedClicked": [Function],
+        "onUserFeedClicked": [Function],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": <div
+          class="feed-toggle"
+>
+          <ul
+                    class="nav nav-pills outline-active"
+          >
+                    <li
+                              class="nav-item"
+                    >
+                              <a
+                                        class="nav-link active"
+                              >
+                                        Your Feed
+                              </a>
+                    </li>
+                    <li
+                              class="nav-item"
+                    >
+                              <a
+                                        class="nav-link "
+                              >
+                                        Global Feed
+                              </a>
+                    </li>
+          </ul>
+</div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <ul
+            className="nav nav-pills outline-active"
+>
+            <li
+                        className="nav-item"
+            >
+                        <a
+                                    className="nav-link active"
+                                    onClick={[Function]}
+                        >
+                                    Your Feed
+                        </a>
+            </li>
+            <li
+                        className="nav-item"
+            >
+                        <a
+                                    className="nav-link "
+                                    onClick={[Function]}
+                        >
+                                    Global Feed
+                        </a>
+            </li>
+</ul>,
+          "className": "feed-toggle",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <ul
+              class="nav nav-pills outline-active"
+>
+              <li
+                            class="nav-item"
+              >
+                            <a
+                                          class="nav-link active"
+                            >
+                                          Your Feed
+                            </a>
+              </li>
+              <li
+                            class="nav-item"
+              >
+                            <a
+                                          class="nav-link "
+                            >
+                                          Global Feed
+                            </a>
+              </li>
+</ul>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li
+                  className="nav-item"
+>
+                  <a
+                                    className="nav-link active"
+                                    onClick={[Function]}
+                  >
+                                    Your Feed
+                  </a>
+</li>,
+                <li
+                  className="nav-item"
+>
+                  <a
+                                    className="nav-link "
+                                    onClick={[Function]}
+                  >
+                                    Global Feed
+                  </a>
+</li>,
+              ],
+              "className": "nav nav-pills outline-active",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <li
+                  class="nav-item"
+>
+                  <a
+                                    class="nav-link active"
+                  >
+                                    Your Feed
+                  </a>
+</li>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    className="nav-link active"
+                    onClick={[Function]}
+>
+                    Your Feed
+</a>,
+                  "className": "nav-item",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <a
+                      class="nav-link active"
+>
+                      Your Feed
+</a>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Your Feed",
+                      "className": "nav-link active",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Your Feed",
+                    ],
+                    "type": "a",
+                  },
+                ],
+                "type": "li",
+              },
+              Object {
+                "instance": <li
+                  class="nav-item"
+>
+                  <a
+                                    class="nav-link "
+                  >
+                                    Global Feed
+                  </a>
+</li>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    className="nav-link "
+                    onClick={[Function]}
+>
+                    Global Feed
+</a>,
+                  "className": "nav-item",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <a
+                      class="nav-link "
+>
+                      Global Feed
+</a>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Global Feed",
+                      "className": "nav-link ",
+                      "onClick": [Function],
                     },
                     "ref": null,
                     "rendered": Array [
