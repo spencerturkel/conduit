@@ -30,7 +30,7 @@
       "static-before-instance",
       "variables-before-functions"
     ],
-    "no-any": true,
+    "no-any": false,
     "no-arg": true,
     "no-bitwise": true,
     "no-console": [
@@ -49,6 +49,7 @@
     "no-duplicate-variable": true,
     "no-eval": true,
     "no-empty": false,
+    "no-object-literal-type-assertion": false,
     "no-require-imports": false,
     "no-shadowed-variable": true,
     "no-string-literal": true,
@@ -57,6 +58,7 @@
     "no-unused-expression": true,
     "no-use-before-declare": true,
     "no-var-requires": false,
+    "ordered-imports": false,
     "radix": true,
     "switch-default": true,
     "trailing-comma": [
