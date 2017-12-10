@@ -19,7 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": <div>
         <Header(NavLink) />
-        <Home(AppPopularTags, AppArticleListing) />
+        <Home(AppPopularTags, ) />
         <Footer(Link) />
 </div>,
     },
@@ -31,7 +31,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Header(NavLink) />,
-          <Home(AppPopularTags, AppArticleListing) />,
+          <Home(AppPopularTags, ) />,
           <Footer(Link) />,
         ],
       },
@@ -77,7 +77,7 @@ ShallowWrapper {
       "props": Object {
         "children": <div>
           <Header(NavLink) />
-          <Home(AppPopularTags, AppArticleListing) />
+          <Home(AppPopularTags, ) />
           <Footer(Link) />
 </div>,
       },
@@ -89,7 +89,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Header(NavLink) />,
-            <Home(AppPopularTags, AppArticleListing) />,
+            <Home(AppPopularTags, ) />,
             <Footer(Link) />,
           ],
         },

@@ -6,12 +6,15 @@ import Footer from './Footer';
 import Header from './Header';
 import Home from './Home';
 import ArticleListing from './Home/ArticleListing';
+import FeedPicker from './Home/ArticleListing/FeedPicker';
 import PopularTags from './Home/PopularTags';
 import {LinkProps} from './link-props';
 import {NavLinkProps} from './nav-link-props';
 
+const AppFeedPicker = FeedPicker;
+const AppArticleListing = ArticleListing(AppFeedPicker);
+
 const AppPopularTags = () => <PopularTags tags={[{name: 'programming', link: '/programming'}]} />;
-const AppArticleListing = () => <ArticleListing />;
 const AppHome = Home(AppPopularTags, AppArticleListing);
 
 const AppHeader = Header(ReactRouterNavLink as ComponentClass<NavLinkProps>);

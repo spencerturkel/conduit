@@ -1,15 +1,12 @@
 import {mount, ReactWrapper} from 'enzyme';
 import * as React from 'react';
 
-import ArticleListing from './ArticleListing';
-
-const TestFeedPicker = () => <div>Feed Picker</div>;
-const TestArticleListing = ArticleListing(TestFeedPicker);
+import FeedPicker from './FeedPicker';
 
 let sut: ReactWrapper;
 
 beforeEach(() => {
-    sut = mount(<TestArticleListing />);
+    sut = mount(<FeedPicker />);
 });
 
 it('should match snapshot', () => {
