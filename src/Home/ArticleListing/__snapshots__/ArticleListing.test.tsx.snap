@@ -4,6 +4,7 @@ exports[`should match snapshot 1`] = `
 ReactWrapper {
   "length": 1,
   Symbol(enzyme.__unrendered__): <ArticleListing(TestFeedPicker)
+    onFavoriteCountClick={[Function]}
     previews={
         Array [
             Object {
@@ -13,9 +14,22 @@ ReactWrapper {
               },
               "createdAt": 2017-10-12T00:00:00.000Z,
               "description": "This is the description for the post.",
+              "favorited": true,
               "favoritesCount": 27,
               "slug": "test-slug",
               "title": "How to build webapps that scale",
+            },
+            Object {
+              "author": Object {
+                "image": "https://i.stack.imgur.com/xHWG8.jpg",
+                "username": "jake",
+              },
+              "createdAt": 2016-02-18T03:22:56.637Z,
+              "description": "So toothless",
+              "favorited": false,
+              "favoritesCount": 0,
+              "slug": "how-to-train-your-dragon-2",
+              "title": "How to train your dragon 2",
             },
           ]
     }
@@ -33,6 +47,7 @@ ReactWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
+      "onFavoriteCountClick": [Function],
       "previews": Array [
         Object {
           "author": Object {
@@ -41,9 +56,22 @@ ReactWrapper {
           },
           "createdAt": 2017-10-12T00:00:00.000Z,
           "description": "This is the description for the post.",
+          "favorited": true,
           "favoritesCount": 27,
           "slug": "test-slug",
           "title": "How to build webapps that scale",
+        },
+        Object {
+          "author": Object {
+            "image": "https://i.stack.imgur.com/xHWG8.jpg",
+            "username": "jake",
+          },
+          "createdAt": 2016-02-18T03:22:56.637Z,
+          "description": "So toothless",
+          "favorited": false,
+          "favoritesCount": 0,
+          "slug": "how-to-train-your-dragon-2",
+          "title": "How to train your dragon 2",
         },
       ],
     },
@@ -102,7 +130,7 @@ ReactWrapper {
                               </span>
                     </div>
                     <button
-                              class="btn btn-outline-primary btn-sm pull-xs-right"
+                              class="btn btn-primary btn-sm pull-xs-right"
                     >
                               <i
                                         class="ion-heart"
@@ -155,7 +183,8 @@ ReactWrapper {
                             </span>
               </div>
               <button
-                            className="btn btn-outline-primary btn-sm pull-xs-right"
+                            className="btn btn-primary btn-sm pull-xs-right"
+                            onClick={[Function]}
               >
                             <i
                                           className="ion-heart"
@@ -210,7 +239,7 @@ ReactWrapper {
                             </span>
               </div>
               <button
-                            class="btn btn-outline-primary btn-sm pull-xs-right"
+                            class="btn btn-primary btn-sm pull-xs-right"
               >
                             <i
                                           class="ion-heart"
@@ -245,7 +274,8 @@ ReactWrapper {
                   </span>
 </div>,
                 <button
-                  className="btn btn-outline-primary btn-sm pull-xs-right"
+                  className="btn btn-primary btn-sm pull-xs-right"
+                  onClick={[Function]}
 >
                   <i
                                     className="ion-heart"
@@ -398,7 +428,7 @@ ReactWrapper {
               },
               Object {
                 "instance": <button
-                  class="btn btn-outline-primary btn-sm pull-xs-right"
+                  class="btn btn-primary btn-sm pull-xs-right"
 >
                   <i
                                     class="ion-heart"
@@ -415,7 +445,8 @@ ReactWrapper {
                     " ",
                     27,
                   ],
-                  "className": "btn btn-outline-primary btn-sm pull-xs-right",
+                  "className": "btn btn-primary btn-sm pull-xs-right",
+                  "onClick": [Function],
                 },
                 "ref": null,
                 "rendered": Array [
@@ -549,6 +580,486 @@ ReactWrapper {
         ],
         "type": "div",
       },
+      Object {
+        "instance": <div
+          class="article-preview"
+>
+          <div
+                    class="article-meta"
+          >
+                    <a
+                              href="/profile/jake"
+                    >
+                              <img
+                                        src="https://i.stack.imgur.com/xHWG8.jpg"
+                              />
+                    </a>
+                    <div
+                              class="info"
+                    >
+                              <a
+                                        href="/profile/jake"
+                                        class="author"
+                              >
+                                        jake
+                              </a>
+                              <span
+                                        class="date"
+                              >
+                                        Wed Feb 17 2016
+                              </span>
+                    </div>
+                    <button
+                              class="btn btn-outline-primary btn-sm pull-xs-right"
+                    >
+                              <i
+                                        class="ion-heart"
+                              />
+                              0
+                    </button>
+          </div>
+          <a
+                    href="/article/how-to-train-your-dragon-2"
+                    class="preview-link"
+          >
+                    <h1>
+                              How to train your dragon 2
+                    </h1>
+                    <p>
+                              So toothless
+                    </p>
+                    <span>
+                              Read more...
+                    </span>
+          </a>
+</div>,
+        "key": "how-to-train-your-dragon-2",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="article-meta"
+>
+              <TestLink
+                            to="/profile/jake"
+              >
+                            <img
+                                          src="https://i.stack.imgur.com/xHWG8.jpg"
+                            />
+              </TestLink>
+              <div
+                            className="info"
+              >
+                            <TestLink
+                                          className="author"
+                                          to="/profile/jake"
+                            >
+                                          jake
+                            </TestLink>
+                            <span
+                                          className="date"
+                            >
+                                          Wed Feb 17 2016
+                            </span>
+              </div>
+              <button
+                            className="btn btn-outline-primary btn-sm pull-xs-right"
+                            onClick={[Function]}
+              >
+                            <i
+                                          className="ion-heart"
+                            />
+                             
+                            0
+              </button>
+</div>,
+            <TestLink
+              className="preview-link"
+              to="/article/how-to-train-your-dragon-2"
+>
+              <h1>
+                            How to train your dragon 2
+              </h1>
+              <p>
+                            So toothless
+              </p>
+              <span>
+                            Read more...
+              </span>
+</TestLink>,
+          ],
+          "className": "article-preview",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <div
+              class="article-meta"
+>
+              <a
+                            href="/profile/jake"
+              >
+                            <img
+                                          src="https://i.stack.imgur.com/xHWG8.jpg"
+                            />
+              </a>
+              <div
+                            class="info"
+              >
+                            <a
+                                          href="/profile/jake"
+                                          class="author"
+                            >
+                                          jake
+                            </a>
+                            <span
+                                          class="date"
+                            >
+                                          Wed Feb 17 2016
+                            </span>
+              </div>
+              <button
+                            class="btn btn-outline-primary btn-sm pull-xs-right"
+              >
+                            <i
+                                          class="ion-heart"
+                            />
+                            0
+              </button>
+</div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <TestLink
+                  to="/profile/jake"
+>
+                  <img
+                                    src="https://i.stack.imgur.com/xHWG8.jpg"
+                  />
+</TestLink>,
+                <div
+                  className="info"
+>
+                  <TestLink
+                                    className="author"
+                                    to="/profile/jake"
+                  >
+                                    jake
+                  </TestLink>
+                  <span
+                                    className="date"
+                  >
+                                    Wed Feb 17 2016
+                  </span>
+</div>,
+                <button
+                  className="btn btn-outline-primary btn-sm pull-xs-right"
+                  onClick={[Function]}
+>
+                  <i
+                                    className="ion-heart"
+                  />
+                   
+                  0
+</button>,
+              ],
+              "className": "article-meta",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <img
+                    src="https://i.stack.imgur.com/xHWG8.jpg"
+/>,
+                  "to": "/profile/jake",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": <a
+                    href="/profile/jake"
+>
+                    <img
+                                        src="https://i.stack.imgur.com/xHWG8.jpg"
+                    />
+</a>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      src="https://i.stack.imgur.com/xHWG8.jpg"
+/>,
+                    "href": "/profile/jake",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <img
+                        src="https://i.stack.imgur.com/xHWG8.jpg"
+/>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "src": "https://i.stack.imgur.com/xHWG8.jpg",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        undefined,
+                      ],
+                      "type": "img",
+                    },
+                  ],
+                  "type": "a",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": <div
+                  class="info"
+>
+                  <a
+                                    href="/profile/jake"
+                                    class="author"
+                  >
+                                    jake
+                  </a>
+                  <span
+                                    class="date"
+                  >
+                                    Wed Feb 17 2016
+                  </span>
+</div>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <TestLink
+                      className="author"
+                      to="/profile/jake"
+>
+                      jake
+</TestLink>,
+                    <span
+                      className="date"
+>
+                      Wed Feb 17 2016
+</span>,
+                  ],
+                  "className": "info",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "jake",
+                      "className": "author",
+                      "to": "/profile/jake",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": <a
+                        href="/profile/jake"
+                        class="author"
+>
+                        jake
+</a>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "jake",
+                        "className": "author",
+                        "href": "/profile/jake",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "jake",
+                      ],
+                      "type": "a",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": <span
+                      class="date"
+>
+                      Wed Feb 17 2016
+</span>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Wed Feb 17 2016",
+                      "className": "date",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Wed Feb 17 2016",
+                    ],
+                    "type": "span",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": <button
+                  class="btn btn-outline-primary btn-sm pull-xs-right"
+>
+                  <i
+                                    class="ion-heart"
+                  />
+                  0
+</button>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <i
+                      className="ion-heart"
+/>,
+                    " ",
+                    0,
+                  ],
+                  "className": "btn btn-outline-primary btn-sm pull-xs-right",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <i
+                      class="ion-heart"
+/>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "ion-heart",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      undefined,
+                    ],
+                    "type": "i",
+                  },
+                  " ",
+                  "0",
+                ],
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <h1>
+                  How to train your dragon 2
+</h1>,
+                <p>
+                  So toothless
+</p>,
+                <span>
+                  Read more...
+</span>,
+              ],
+              "className": "preview-link",
+              "to": "/article/how-to-train-your-dragon-2",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": <a
+                href="/article/how-to-train-your-dragon-2"
+                class="preview-link"
+>
+                <h1>
+                                How to train your dragon 2
+                </h1>
+                <p>
+                                So toothless
+                </p>
+                <span>
+                                Read more...
+                </span>
+</a>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h1>
+                    How to train your dragon 2
+</h1>,
+                  <p>
+                    So toothless
+</p>,
+                  <span>
+                    Read more...
+</span>,
+                ],
+                "className": "preview-link",
+                "href": "/article/how-to-train-your-dragon-2",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <h1>
+                    How to train your dragon 2
+</h1>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "How to train your dragon 2",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "How to train your dragon 2",
+                  ],
+                  "type": "h1",
+                },
+                Object {
+                  "instance": <p>
+                    So toothless
+</p>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "So toothless",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "So toothless",
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": <span>
+                    Read more...
+</span>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Read more...",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Read more...",
+                  ],
+                  "type": "span",
+                },
+              ],
+              "type": "a",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
     ],
     "type": [Function],
   },
@@ -558,6 +1069,7 @@ ReactWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
+        "onFavoriteCountClick": [Function],
         "previews": Array [
           Object {
             "author": Object {
@@ -566,9 +1078,22 @@ ReactWrapper {
             },
             "createdAt": 2017-10-12T00:00:00.000Z,
             "description": "This is the description for the post.",
+            "favorited": true,
             "favoritesCount": 27,
             "slug": "test-slug",
             "title": "How to build webapps that scale",
+          },
+          Object {
+            "author": Object {
+              "image": "https://i.stack.imgur.com/xHWG8.jpg",
+              "username": "jake",
+            },
+            "createdAt": 2016-02-18T03:22:56.637Z,
+            "description": "So toothless",
+            "favorited": false,
+            "favoritesCount": 0,
+            "slug": "how-to-train-your-dragon-2",
+            "title": "How to train your dragon 2",
           },
         ],
       },
@@ -627,7 +1152,7 @@ ReactWrapper {
                                     </span>
                         </div>
                         <button
-                                    class="btn btn-outline-primary btn-sm pull-xs-right"
+                                    class="btn btn-primary btn-sm pull-xs-right"
                         >
                                     <i
                                                 class="ion-heart"
@@ -680,7 +1205,8 @@ ReactWrapper {
                                 </span>
                 </div>
                 <button
-                                className="btn btn-outline-primary btn-sm pull-xs-right"
+                                className="btn btn-primary btn-sm pull-xs-right"
+                                onClick={[Function]}
                 >
                                 <i
                                                 className="ion-heart"
@@ -735,7 +1261,7 @@ ReactWrapper {
                                 </span>
                 </div>
                 <button
-                                class="btn btn-outline-primary btn-sm pull-xs-right"
+                                class="btn btn-primary btn-sm pull-xs-right"
                 >
                                 <i
                                                 class="ion-heart"
@@ -770,7 +1296,8 @@ ReactWrapper {
                     </span>
 </div>,
                   <button
-                    className="btn btn-outline-primary btn-sm pull-xs-right"
+                    className="btn btn-primary btn-sm pull-xs-right"
+                    onClick={[Function]}
 >
                     <i
                                         className="ion-heart"
@@ -923,7 +1450,7 @@ ReactWrapper {
                 },
                 Object {
                   "instance": <button
-                    class="btn btn-outline-primary btn-sm pull-xs-right"
+                    class="btn btn-primary btn-sm pull-xs-right"
 >
                     <i
                                         class="ion-heart"
@@ -940,7 +1467,8 @@ ReactWrapper {
                       " ",
                       27,
                     ],
-                    "className": "btn btn-outline-primary btn-sm pull-xs-right",
+                    "className": "btn btn-primary btn-sm pull-xs-right",
+                    "onClick": [Function],
                   },
                   "ref": null,
                   "rendered": Array [
@@ -1048,6 +1576,486 @@ ReactWrapper {
                     "ref": null,
                     "rendered": Array [
                       "This is the description for the post.",
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": <span>
+                      Read more...
+</span>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Read more...",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Read more...",
+                    ],
+                    "type": "span",
+                  },
+                ],
+                "type": "a",
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": <div
+            class="article-preview"
+>
+            <div
+                        class="article-meta"
+            >
+                        <a
+                                    href="/profile/jake"
+                        >
+                                    <img
+                                                src="https://i.stack.imgur.com/xHWG8.jpg"
+                                    />
+                        </a>
+                        <div
+                                    class="info"
+                        >
+                                    <a
+                                                href="/profile/jake"
+                                                class="author"
+                                    >
+                                                jake
+                                    </a>
+                                    <span
+                                                class="date"
+                                    >
+                                                Wed Feb 17 2016
+                                    </span>
+                        </div>
+                        <button
+                                    class="btn btn-outline-primary btn-sm pull-xs-right"
+                        >
+                                    <i
+                                                class="ion-heart"
+                                    />
+                                    0
+                        </button>
+            </div>
+            <a
+                        href="/article/how-to-train-your-dragon-2"
+                        class="preview-link"
+            >
+                        <h1>
+                                    How to train your dragon 2
+                        </h1>
+                        <p>
+                                    So toothless
+                        </p>
+                        <span>
+                                    Read more...
+                        </span>
+            </a>
+</div>,
+          "key": "how-to-train-your-dragon-2",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="article-meta"
+>
+                <TestLink
+                                to="/profile/jake"
+                >
+                                <img
+                                                src="https://i.stack.imgur.com/xHWG8.jpg"
+                                />
+                </TestLink>
+                <div
+                                className="info"
+                >
+                                <TestLink
+                                                className="author"
+                                                to="/profile/jake"
+                                >
+                                                jake
+                                </TestLink>
+                                <span
+                                                className="date"
+                                >
+                                                Wed Feb 17 2016
+                                </span>
+                </div>
+                <button
+                                className="btn btn-outline-primary btn-sm pull-xs-right"
+                                onClick={[Function]}
+                >
+                                <i
+                                                className="ion-heart"
+                                />
+                                 
+                                0
+                </button>
+</div>,
+              <TestLink
+                className="preview-link"
+                to="/article/how-to-train-your-dragon-2"
+>
+                <h1>
+                                How to train your dragon 2
+                </h1>
+                <p>
+                                So toothless
+                </p>
+                <span>
+                                Read more...
+                </span>
+</TestLink>,
+            ],
+            "className": "article-preview",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <div
+                class="article-meta"
+>
+                <a
+                                href="/profile/jake"
+                >
+                                <img
+                                                src="https://i.stack.imgur.com/xHWG8.jpg"
+                                />
+                </a>
+                <div
+                                class="info"
+                >
+                                <a
+                                                href="/profile/jake"
+                                                class="author"
+                                >
+                                                jake
+                                </a>
+                                <span
+                                                class="date"
+                                >
+                                                Wed Feb 17 2016
+                                </span>
+                </div>
+                <button
+                                class="btn btn-outline-primary btn-sm pull-xs-right"
+                >
+                                <i
+                                                class="ion-heart"
+                                />
+                                0
+                </button>
+</div>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <TestLink
+                    to="/profile/jake"
+>
+                    <img
+                                        src="https://i.stack.imgur.com/xHWG8.jpg"
+                    />
+</TestLink>,
+                  <div
+                    className="info"
+>
+                    <TestLink
+                                        className="author"
+                                        to="/profile/jake"
+                    >
+                                        jake
+                    </TestLink>
+                    <span
+                                        className="date"
+                    >
+                                        Wed Feb 17 2016
+                    </span>
+</div>,
+                  <button
+                    className="btn btn-outline-primary btn-sm pull-xs-right"
+                    onClick={[Function]}
+>
+                    <i
+                                        className="ion-heart"
+                    />
+                     
+                    0
+</button>,
+                ],
+                "className": "article-meta",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <img
+                      src="https://i.stack.imgur.com/xHWG8.jpg"
+/>,
+                    "to": "/profile/jake",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": <a
+                      href="/profile/jake"
+>
+                      <img
+                                            src="https://i.stack.imgur.com/xHWG8.jpg"
+                      />
+</a>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <img
+                        src="https://i.stack.imgur.com/xHWG8.jpg"
+/>,
+                      "href": "/profile/jake",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": <img
+                          src="https://i.stack.imgur.com/xHWG8.jpg"
+/>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "src": "https://i.stack.imgur.com/xHWG8.jpg",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          undefined,
+                        ],
+                        "type": "img",
+                      },
+                    ],
+                    "type": "a",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": <div
+                    class="info"
+>
+                    <a
+                                        href="/profile/jake"
+                                        class="author"
+                    >
+                                        jake
+                    </a>
+                    <span
+                                        class="date"
+                    >
+                                        Wed Feb 17 2016
+                    </span>
+</div>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <TestLink
+                        className="author"
+                        to="/profile/jake"
+>
+                        jake
+</TestLink>,
+                      <span
+                        className="date"
+>
+                        Wed Feb 17 2016
+</span>,
+                    ],
+                    "className": "info",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": "jake",
+                        "className": "author",
+                        "to": "/profile/jake",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": <a
+                          href="/profile/jake"
+                          class="author"
+>
+                          jake
+</a>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "jake",
+                          "className": "author",
+                          "href": "/profile/jake",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "jake",
+                        ],
+                        "type": "a",
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": <span
+                        class="date"
+>
+                        Wed Feb 17 2016
+</span>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Wed Feb 17 2016",
+                        "className": "date",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Wed Feb 17 2016",
+                      ],
+                      "type": "span",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": <button
+                    class="btn btn-outline-primary btn-sm pull-xs-right"
+>
+                    <i
+                                        class="ion-heart"
+                    />
+                    0
+</button>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <i
+                        className="ion-heart"
+/>,
+                      " ",
+                      0,
+                    ],
+                    "className": "btn btn-outline-primary btn-sm pull-xs-right",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <i
+                        class="ion-heart"
+/>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "ion-heart",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        undefined,
+                      ],
+                      "type": "i",
+                    },
+                    " ",
+                    "0",
+                  ],
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <h1>
+                    How to train your dragon 2
+</h1>,
+                  <p>
+                    So toothless
+</p>,
+                  <span>
+                    Read more...
+</span>,
+                ],
+                "className": "preview-link",
+                "to": "/article/how-to-train-your-dragon-2",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": <a
+                  href="/article/how-to-train-your-dragon-2"
+                  class="preview-link"
+>
+                  <h1>
+                                    How to train your dragon 2
+                  </h1>
+                  <p>
+                                    So toothless
+                  </p>
+                  <span>
+                                    Read more...
+                  </span>
+</a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h1>
+                      How to train your dragon 2
+</h1>,
+                    <p>
+                      So toothless
+</p>,
+                    <span>
+                      Read more...
+</span>,
+                  ],
+                  "className": "preview-link",
+                  "href": "/article/how-to-train-your-dragon-2",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <h1>
+                      How to train your dragon 2
+</h1>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "How to train your dragon 2",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "How to train your dragon 2",
+                    ],
+                    "type": "h1",
+                  },
+                  Object {
+                    "instance": <p>
+                      So toothless
+</p>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "So toothless",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "So toothless",
                     ],
                     "type": "p",
                   },

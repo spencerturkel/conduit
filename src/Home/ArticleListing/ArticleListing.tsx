@@ -11,6 +11,7 @@ export interface ArticlePreview {
     };
     createdAt: Date;
     description: string;
+    favorited: boolean;
     favoritesCount: number;
     slug: string;
     title: string;
@@ -18,13 +19,14 @@ export interface ArticlePreview {
 
 export interface ArticleListingProps {
     previews: ArticlePreview[];
+    onFavoriteCountClick: (slug: string) => void;
 }
 
 const ArticleListing = (
     FeedPicker: ComponentType,
     Link: ComponentType<LinkProps>,
 ): StatelessComponent<ArticleListingProps> => {
-    const sfc: StatelessComponent<ArticleListingProps> = ({previews}) => (
+    const sfc: StatelessComponent<ArticleListingProps> = ({onFavoriteCountClick, previews}) => (
         <>
             <FeedPicker />
 
@@ -40,7 +42,12 @@ const ArticleListing = (
                             </Link>
                             <span className="date">{preview.createdAt.toDateString()}</span>
                         </div>
-                        <button className="btn btn-outline-primary btn-sm pull-xs-right">
+                        <button
+                            className={`btn btn-${preview.favorited ? '' : 'outline-'}primary btn-sm pull-xs-right`}
+                            onClick={e => {
+                                e.preventDefault();
+                                onFavoriteCountClick(preview.slug);
+                            }}>
                             <i className="ion-heart" /> {preview.favoritesCount}
                         </button>
                     </div>
