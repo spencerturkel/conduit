@@ -3,7 +3,7 @@
 exports[`should match snapshot 1`] = `
 ReactWrapper {
   "length": 1,
-  Symbol(enzyme.__unrendered__): <PopularTags
+  Symbol(enzyme.__unrendered__): <PopularTags(TestLink)
     tags={
         Array [
             Object {
@@ -76,18 +76,18 @@ ReactWrapper {
           <div
             className="tag-list"
 >
-            <a
+            <TestLink
                         className="tag-pill tag-default"
-                        href="/programming"
+                        to="/programming"
             >
                         programming
-            </a>
-            <a
+            </TestLink>
+            <TestLink
                         className="tag-pill tag-default"
-                        href="/reactjs"
+                        to="/reactjs"
             >
                         reactjs
-            </a>
+            </TestLink>
 </div>,
         ],
         "className": "sidebar",
@@ -130,62 +130,86 @@ ReactWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <a
+              <TestLink
                 className="tag-pill tag-default"
-                href="/programming"
+                to="/programming"
 >
                 programming
-</a>,
-              <a
+</TestLink>,
+              <TestLink
                 className="tag-pill tag-default"
-                href="/reactjs"
+                to="/reactjs"
 >
                 reactjs
-</a>,
+</TestLink>,
             ],
             "className": "tag-list",
           },
           "ref": null,
           "rendered": Array [
             Object {
-              "instance": <a
-                href="/programming"
-                class="tag-pill tag-default"
->
-                programming
-</a>,
+              "instance": null,
               "key": "programming",
-              "nodeType": "host",
+              "nodeType": "function",
               "props": Object {
                 "children": "programming",
                 "className": "tag-pill tag-default",
-                "href": "/programming",
+                "to": "/programming",
               },
               "ref": null,
-              "rendered": Array [
-                "programming",
-              ],
-              "type": "a",
+              "rendered": Object {
+                "instance": <a
+                  href="/programming"
+                  class="tag-pill tag-default"
+>
+                  programming
+</a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "programming",
+                  "className": "tag-pill tag-default",
+                  "href": "/programming",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "programming",
+                ],
+                "type": "a",
+              },
+              "type": [Function],
             },
             Object {
-              "instance": <a
-                href="/reactjs"
-                class="tag-pill tag-default"
->
-                reactjs
-</a>,
+              "instance": null,
               "key": "reactjs",
-              "nodeType": "host",
+              "nodeType": "function",
               "props": Object {
                 "children": "reactjs",
                 "className": "tag-pill tag-default",
-                "href": "/reactjs",
+                "to": "/reactjs",
               },
               "ref": null,
-              "rendered": Array [
-                "reactjs",
-              ],
-              "type": "a",
+              "rendered": Object {
+                "instance": <a
+                  href="/reactjs"
+                  class="tag-pill tag-default"
+>
+                  reactjs
+</a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "reactjs",
+                  "className": "tag-pill tag-default",
+                  "href": "/reactjs",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "reactjs",
+                ],
+                "type": "a",
+              },
+              "type": [Function],
             },
           ],
           "type": "div",
@@ -247,18 +271,18 @@ ReactWrapper {
             <div
               className="tag-list"
 >
-              <a
+              <TestLink
                             className="tag-pill tag-default"
-                            href="/programming"
+                            to="/programming"
               >
                             programming
-              </a>
-              <a
+              </TestLink>
+              <TestLink
                             className="tag-pill tag-default"
-                            href="/reactjs"
+                            to="/reactjs"
               >
                             reactjs
-              </a>
+              </TestLink>
 </div>,
           ],
           "className": "sidebar",
@@ -301,62 +325,86 @@ ReactWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <a
+                <TestLink
                   className="tag-pill tag-default"
-                  href="/programming"
+                  to="/programming"
 >
                   programming
-</a>,
-                <a
+</TestLink>,
+                <TestLink
                   className="tag-pill tag-default"
-                  href="/reactjs"
+                  to="/reactjs"
 >
                   reactjs
-</a>,
+</TestLink>,
               ],
               "className": "tag-list",
             },
             "ref": null,
             "rendered": Array [
               Object {
-                "instance": <a
-                  href="/programming"
-                  class="tag-pill tag-default"
->
-                  programming
-</a>,
+                "instance": null,
                 "key": "programming",
-                "nodeType": "host",
+                "nodeType": "function",
                 "props": Object {
                   "children": "programming",
                   "className": "tag-pill tag-default",
-                  "href": "/programming",
+                  "to": "/programming",
                 },
                 "ref": null,
-                "rendered": Array [
-                  "programming",
-                ],
-                "type": "a",
+                "rendered": Object {
+                  "instance": <a
+                    href="/programming"
+                    class="tag-pill tag-default"
+>
+                    programming
+</a>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "programming",
+                    "className": "tag-pill tag-default",
+                    "href": "/programming",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "programming",
+                  ],
+                  "type": "a",
+                },
+                "type": [Function],
               },
               Object {
-                "instance": <a
-                  href="/reactjs"
-                  class="tag-pill tag-default"
->
-                  reactjs
-</a>,
+                "instance": null,
                 "key": "reactjs",
-                "nodeType": "host",
+                "nodeType": "function",
                 "props": Object {
                   "children": "reactjs",
                   "className": "tag-pill tag-default",
-                  "href": "/reactjs",
+                  "to": "/reactjs",
                 },
                 "ref": null,
-                "rendered": Array [
-                  "reactjs",
-                ],
-                "type": "a",
+                "rendered": Object {
+                  "instance": <a
+                    href="/reactjs"
+                    class="tag-pill tag-default"
+>
+                    reactjs
+</a>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "reactjs",
+                    "className": "tag-pill tag-default",
+                    "href": "/reactjs",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "reactjs",
+                  ],
+                  "type": "a",
+                },
+                "type": [Function],
               },
             ],
             "type": "div",
