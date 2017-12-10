@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducer action creators should match snapshot for fetchAll() 1`] = `
+Object {
+  "error": undefined,
+  "loading": true,
+  "tags": Array [],
+}
+`;
+
+exports[`reducer action creators should match snapshot for fetchAll() 2`] = `
+Object {
+  "error": undefined,
+  "loading": true,
+  "tags": Array [],
+}
+`;
+
+exports[`reducer action creators should match snapshot for fetchAll() 3`] = `
+Object {
+  "error": undefined,
+  "loading": true,
+  "tags": Array [
+    "hello",
+    "world",
+  ],
+}
+`;
+
+exports[`reducer action creators should match snapshot for fetchAll() 4`] = `
+Object {
+  "error": undefined,
+  "loading": true,
+  "tags": Array [
+    "hello",
+    "world",
+  ],
+}
+`;
+
+exports[`reducer action creators should match snapshot for fetchAll() 5`] = `
+Object {
+  "error": undefined,
+  "loading": true,
+  "tags": Array [
+    "hello",
+    "world",
+  ],
+}
+`;
+
+exports[`reducer action creators should match snapshot for fetchAllError() 1`] = `
+Object {
+  "error": "test error",
+  "loading": false,
+  "tags": Array [],
+}
+`;
+
+exports[`reducer action creators should match snapshot for fetchAllError() 2`] = `
+Object {
+  "error": "test error",
+  "loading": false,
+  "tags": Array [],
+}
+`;
+
+exports[`reducer action creators should match snapshot for fetchAllError() 3`] = `
+Object {
+  "error": "test error",
+  "loading": false,
+  "tags": Array [
+    "hello",
+    "world",
+  ],
+}
+`;
+
+exports[`reducer action creators should match snapshot for fetchAllError() 4`] = `
+Object {
+  "error": "test error",
+  "loading": false,
+  "tags": Array [
+    "hello",
+    "world",
+  ],
+}
+`;
+
+exports[`reducer action creators should match snapshot for fetchAllError() 5`] = `
+Object {
+  "error": "test error",
+  "loading": false,
+  "tags": Array [
+    "hello",
+    "world",
+  ],
+}
+`;
+
+exports[`reducer action creators should match snapshot for loadAll() 1`] = `
+Object {
+  "error": undefined,
+  "loading": false,
+  "tags": Array [
+    "tag one",
+    "tag two",
+    "tag three",
+  ],
+}
+`;
+
+exports[`reducer action creators should match snapshot for loadAll() 2`] = `
+Object {
+  "error": undefined,
+  "loading": false,
+  "tags": Array [
+    "tag one",
+    "tag two",
+    "tag three",
+  ],
+}
+`;
+
+exports[`reducer action creators should match snapshot for loadAll() 3`] = `
+Object {
+  "error": undefined,
+  "loading": false,
+  "tags": Array [
+    "tag one",
+    "tag two",
+    "tag three",
+  ],
+}
+`;
+
+exports[`reducer action creators should match snapshot for loadAll() 4`] = `
+Object {
+  "error": undefined,
+  "loading": false,
+  "tags": Array [
+    "tag one",
+    "tag two",
+    "tag three",
+  ],
+}
+`;
+
+exports[`reducer action creators should match snapshot for loadAll() 5`] = `
+Object {
+  "error": undefined,
+  "loading": false,
+  "tags": Array [
+    "tag one",
+    "tag two",
+    "tag three",
+  ],
+}
+`;
