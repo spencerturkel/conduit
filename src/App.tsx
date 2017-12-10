@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {ComponentClass, ComponentType} from 'react';
+import Helmet from 'react-helmet';
 import {Route, Switch} from 'react-router';
 import {BrowserRouter, Link as ReactRouterLink, NavLink as ReactRouterNavLink} from 'react-router-dom';
 
@@ -63,8 +64,29 @@ const App = () => (
         <div>
             <AppHeader />
             <Switch>
-                <Route path="/" exact={true} render={() => <AppHome />} />
-                <Route path="/" render={() => <div>Coming soon.</div>} />
+                <Route
+                    path="/"
+                    exact={true}
+                    render={() => (
+                        <>
+                            <Helmet>
+                                <title>Home — Conduit</title>
+                            </Helmet>
+                            <AppHome />
+                        </>
+                    )}
+                />
+                <Route
+                    path="/"
+                    render={() => (
+                        <>
+                            <Helmet>
+                                <title>Coming Soon — Conduit</title>
+                            </Helmet>
+                            <div>Coming soon.</div>
+                        </>
+                    )}
+                />
             </Switch>
             <AppFooter />
         </div>
