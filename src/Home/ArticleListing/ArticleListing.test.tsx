@@ -1,10 +1,13 @@
 import {mount, ReactWrapper} from 'enzyme';
 import * as React from 'react';
+import {StatelessComponent} from 'react';
 
+import {LinkProps} from '../../link-props';
 import ArticleListing, {ArticlePreview} from './ArticleListing';
 
 const TestFeedPicker = () => <div>Feed Picker</div>;
-const TestArticleListing = ArticleListing(TestFeedPicker);
+const TestLink: StatelessComponent<LinkProps> = ({to: href, ...rest}) => <a {...{href}} {...rest} />;
+const TestArticleListing = ArticleListing(TestFeedPicker, TestLink);
 
 const testProps: ArticlePreview[] = [
     {

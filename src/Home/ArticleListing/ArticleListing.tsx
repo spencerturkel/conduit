@@ -1,6 +1,9 @@
 import * as React from 'react';
 import {ComponentType, StatelessComponent} from 'react';
 
+import {LinkProps} from '../../link-props';
+import setDisplayName from '../../set-display-name';
+
 export interface ArticlePreview {
     author: {
         image: string;
@@ -17,34 +20,43 @@ export interface ArticleListingProps {
     previews: ArticlePreview[];
 }
 
-const ArticleListing = (FeedPicker: ComponentType): StatelessComponent<ArticleListingProps> => ({previews}) => (
-    <>
-        <FeedPicker />
+const ArticleListing = (
+    FeedPicker: ComponentType,
+    Link: ComponentType<LinkProps>,
+): StatelessComponent<ArticleListingProps> => {
+    const sfc: StatelessComponent<ArticleListingProps> = ({previews}) => (
+        <>
+            <FeedPicker />
 
-        {previews.map(preview => (
-            <div key={preview.slug} className="article-preview">
-                <div className="article-meta">
-                    <a href={'/profile/' + preview.author.username}>
-                        <img src={preview.author.image} />
-                    </a>
-                    <div className="info">
-                        <a href={'/profile/' + preview.author.username} className="author">
-                            {preview.author.username}
-                        </a>
-                        <span className="date">{preview.createdAt.toDateString()}</span>
+            {previews.map(preview => (
+                <div key={preview.slug} className="article-preview">
+                    <div className="article-meta">
+                        <Link to={'/profile/' + preview.author.username}>
+                            <img src={preview.author.image} />
+                        </Link>
+                        <div className="info">
+                            <Link to={'/profile/' + preview.author.username} className="author">
+                                {preview.author.username}
+                            </Link>
+                            <span className="date">{preview.createdAt.toDateString()}</span>
+                        </div>
+                        <button className="btn btn-outline-primary btn-sm pull-xs-right">
+                            <i className="ion-heart" /> {preview.favoritesCount}
+                        </button>
                     </div>
-                    <button className="btn btn-outline-primary btn-sm pull-xs-right">
-                        <i className="ion-heart" /> {preview.favoritesCount}
-                    </button>
+                    <Link to={'/article/' + preview.slug} className="preview-link">
+                        <h1>{preview.title}</h1>
+                        <p>{preview.description}</p>
+                        <span>Read more...</span>
+                    </Link>
                 </div>
-                <a href={'/article/' + preview.slug} className="preview-link">
-                    <h1>{preview.title}</h1>
-                    <p>{preview.description}</p>
-                    <span>Read more...</span>
-                </a>
-            </div>
-        ))}
-    </>
-);
+            ))}
+        </>
+    );
+
+    setDisplayName(sfc, ArticleListing, FeedPicker);
+
+    return sfc;
+};
 
 export default ArticleListing;

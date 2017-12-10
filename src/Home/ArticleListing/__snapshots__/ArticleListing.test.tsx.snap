@@ -3,7 +3,7 @@
 exports[`should match snapshot 1`] = `
 ReactWrapper {
   "length": 1,
-  Symbol(enzyme.__unrendered__): <Unknown
+  Symbol(enzyme.__unrendered__): <ArticleListing(TestFeedPicker)
     previews={
         Array [
             Object {
@@ -132,22 +132,22 @@ ReactWrapper {
             <div
               className="article-meta"
 >
-              <a
-                            href="/profile/jake"
+              <TestLink
+                            to="/profile/jake"
               >
                             <img
                                           src="https://i.stack.imgur.com/xHWG8.jpg"
                             />
-              </a>
+              </TestLink>
               <div
                             className="info"
               >
-                            <a
+                            <TestLink
                                           className="author"
-                                          href="/profile/jake"
+                                          to="/profile/jake"
                             >
                                           jake
-                            </a>
+                            </TestLink>
                             <span
                                           className="date"
                             >
@@ -164,9 +164,9 @@ ReactWrapper {
                             27
               </button>
 </div>,
-            <a
+            <TestLink
               className="preview-link"
-              href="/article/test-slug"
+              to="/article/test-slug"
 >
               <h1>
                             How to build webapps that scale
@@ -177,7 +177,7 @@ ReactWrapper {
               <span>
                             Read more...
               </span>
-</a>,
+</TestLink>,
           ],
           "className": "article-preview",
         },
@@ -222,22 +222,22 @@ ReactWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <a
-                  href="/profile/jake"
+                <TestLink
+                  to="/profile/jake"
 >
                   <img
                                     src="https://i.stack.imgur.com/xHWG8.jpg"
                   />
-</a>,
+</TestLink>,
                 <div
                   className="info"
 >
-                  <a
+                  <TestLink
                                     className="author"
-                                    href="/profile/jake"
+                                    to="/profile/jake"
                   >
                                     jake
-                  </a>
+                  </TestLink>
                   <span
                                     className="date"
                   >
@@ -259,40 +259,53 @@ ReactWrapper {
             "ref": null,
             "rendered": Array [
               Object {
-                "instance": <a
-                  href="/profile/jake"
->
-                  <img
-                                    src="https://i.stack.imgur.com/xHWG8.jpg"
-                  />
-</a>,
+                "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "function",
                 "props": Object {
                   "children": <img
                     src="https://i.stack.imgur.com/xHWG8.jpg"
 />,
-                  "href": "/profile/jake",
+                  "to": "/profile/jake",
                 },
                 "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": <img
+                "rendered": Object {
+                  "instance": <a
+                    href="/profile/jake"
+>
+                    <img
+                                        src="https://i.stack.imgur.com/xHWG8.jpg"
+                    />
+</a>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
                       src="https://i.stack.imgur.com/xHWG8.jpg"
 />,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "src": "https://i.stack.imgur.com/xHWG8.jpg",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      undefined,
-                    ],
-                    "type": "img",
+                    "href": "/profile/jake",
                   },
-                ],
-                "type": "a",
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <img
+                        src="https://i.stack.imgur.com/xHWG8.jpg"
+/>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "src": "https://i.stack.imgur.com/xHWG8.jpg",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        undefined,
+                      ],
+                      "type": "img",
+                    },
+                  ],
+                  "type": "a",
+                },
+                "type": [Function],
               },
               Object {
                 "instance": <div
@@ -314,12 +327,12 @@ ReactWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <a
+                    <TestLink
                       className="author"
-                      href="/profile/jake"
+                      to="/profile/jake"
 >
                       jake
-</a>,
+</TestLink>,
                     <span
                       className="date"
 >
@@ -331,24 +344,36 @@ ReactWrapper {
                 "ref": null,
                 "rendered": Array [
                   Object {
-                    "instance": <a
-                      href="/profile/jake"
-                      class="author"
->
-                      jake
-</a>,
+                    "instance": null,
                     "key": undefined,
-                    "nodeType": "host",
+                    "nodeType": "function",
                     "props": Object {
                       "children": "jake",
                       "className": "author",
-                      "href": "/profile/jake",
+                      "to": "/profile/jake",
                     },
                     "ref": null,
-                    "rendered": Array [
-                      "jake",
-                    ],
-                    "type": "a",
+                    "rendered": Object {
+                      "instance": <a
+                        href="/profile/jake"
+                        class="author"
+>
+                        jake
+</a>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "jake",
+                        "className": "author",
+                        "href": "/profile/jake",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "jake",
+                      ],
+                      "type": "a",
+                    },
+                    "type": [Function],
                   },
                   Object {
                     "instance": <span
@@ -418,22 +443,9 @@ ReactWrapper {
             "type": "div",
           },
           Object {
-            "instance": <a
-              href="/article/test-slug"
-              class="preview-link"
->
-              <h1>
-                            How to build webapps that scale
-              </h1>
-              <p>
-                            This is the description for the post.
-              </p>
-              <span>
-                            Read more...
-              </span>
-</a>,
+            "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "function",
             "props": Object {
               "children": Array [
                 <h1>
@@ -447,57 +459,92 @@ ReactWrapper {
 </span>,
               ],
               "className": "preview-link",
-              "href": "/article/test-slug",
+              "to": "/article/test-slug",
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": <h1>
-                  How to build webapps that scale
+            "rendered": Object {
+              "instance": <a
+                href="/article/test-slug"
+                class="preview-link"
+>
+                <h1>
+                                How to build webapps that scale
+                </h1>
+                <p>
+                                This is the description for the post.
+                </p>
+                <span>
+                                Read more...
+                </span>
+</a>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h1>
+                    How to build webapps that scale
 </h1>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "How to build webapps that scale",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "How to build webapps that scale",
-                ],
-                "type": "h1",
-              },
-              Object {
-                "instance": <p>
-                  This is the description for the post.
+                  <p>
+                    This is the description for the post.
 </p>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "This is the description for the post.",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "This is the description for the post.",
-                ],
-                "type": "p",
-              },
-              Object {
-                "instance": <span>
-                  Read more...
+                  <span>
+                    Read more...
 </span>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Read more...",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "Read more...",
                 ],
-                "type": "span",
+                "className": "preview-link",
+                "href": "/article/test-slug",
               },
-            ],
-            "type": "a",
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <h1>
+                    How to build webapps that scale
+</h1>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "How to build webapps that scale",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "How to build webapps that scale",
+                  ],
+                  "type": "h1",
+                },
+                Object {
+                  "instance": <p>
+                    This is the description for the post.
+</p>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "This is the description for the post.",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "This is the description for the post.",
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": <span>
+                    Read more...
+</span>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Read more...",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Read more...",
+                  ],
+                  "type": "span",
+                },
+              ],
+              "type": "a",
+            },
+            "type": [Function],
           },
         ],
         "type": "div",
@@ -610,22 +657,22 @@ ReactWrapper {
               <div
                 className="article-meta"
 >
-                <a
-                                href="/profile/jake"
+                <TestLink
+                                to="/profile/jake"
                 >
                                 <img
                                                 src="https://i.stack.imgur.com/xHWG8.jpg"
                                 />
-                </a>
+                </TestLink>
                 <div
                                 className="info"
                 >
-                                <a
+                                <TestLink
                                                 className="author"
-                                                href="/profile/jake"
+                                                to="/profile/jake"
                                 >
                                                 jake
-                                </a>
+                                </TestLink>
                                 <span
                                                 className="date"
                                 >
@@ -642,9 +689,9 @@ ReactWrapper {
                                 27
                 </button>
 </div>,
-              <a
+              <TestLink
                 className="preview-link"
-                href="/article/test-slug"
+                to="/article/test-slug"
 >
                 <h1>
                                 How to build webapps that scale
@@ -655,7 +702,7 @@ ReactWrapper {
                 <span>
                                 Read more...
                 </span>
-</a>,
+</TestLink>,
             ],
             "className": "article-preview",
           },
@@ -700,22 +747,22 @@ ReactWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <a
-                    href="/profile/jake"
+                  <TestLink
+                    to="/profile/jake"
 >
                     <img
                                         src="https://i.stack.imgur.com/xHWG8.jpg"
                     />
-</a>,
+</TestLink>,
                   <div
                     className="info"
 >
-                    <a
+                    <TestLink
                                         className="author"
-                                        href="/profile/jake"
+                                        to="/profile/jake"
                     >
                                         jake
-                    </a>
+                    </TestLink>
                     <span
                                         className="date"
                     >
@@ -737,40 +784,53 @@ ReactWrapper {
               "ref": null,
               "rendered": Array [
                 Object {
-                  "instance": <a
-                    href="/profile/jake"
->
-                    <img
-                                        src="https://i.stack.imgur.com/xHWG8.jpg"
-                    />
-</a>,
+                  "instance": null,
                   "key": undefined,
-                  "nodeType": "host",
+                  "nodeType": "function",
                   "props": Object {
                     "children": <img
                       src="https://i.stack.imgur.com/xHWG8.jpg"
 />,
-                    "href": "/profile/jake",
+                    "to": "/profile/jake",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": <img
+                  "rendered": Object {
+                    "instance": <a
+                      href="/profile/jake"
+>
+                      <img
+                                            src="https://i.stack.imgur.com/xHWG8.jpg"
+                      />
+</a>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <img
                         src="https://i.stack.imgur.com/xHWG8.jpg"
 />,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "src": "https://i.stack.imgur.com/xHWG8.jpg",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        undefined,
-                      ],
-                      "type": "img",
+                      "href": "/profile/jake",
                     },
-                  ],
-                  "type": "a",
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": <img
+                          src="https://i.stack.imgur.com/xHWG8.jpg"
+/>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "src": "https://i.stack.imgur.com/xHWG8.jpg",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          undefined,
+                        ],
+                        "type": "img",
+                      },
+                    ],
+                    "type": "a",
+                  },
+                  "type": [Function],
                 },
                 Object {
                   "instance": <div
@@ -792,12 +852,12 @@ ReactWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
-                      <a
+                      <TestLink
                         className="author"
-                        href="/profile/jake"
+                        to="/profile/jake"
 >
                         jake
-</a>,
+</TestLink>,
                       <span
                         className="date"
 >
@@ -809,24 +869,36 @@ ReactWrapper {
                   "ref": null,
                   "rendered": Array [
                     Object {
-                      "instance": <a
-                        href="/profile/jake"
-                        class="author"
->
-                        jake
-</a>,
+                      "instance": null,
                       "key": undefined,
-                      "nodeType": "host",
+                      "nodeType": "function",
                       "props": Object {
                         "children": "jake",
                         "className": "author",
-                        "href": "/profile/jake",
+                        "to": "/profile/jake",
                       },
                       "ref": null,
-                      "rendered": Array [
-                        "jake",
-                      ],
-                      "type": "a",
+                      "rendered": Object {
+                        "instance": <a
+                          href="/profile/jake"
+                          class="author"
+>
+                          jake
+</a>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "jake",
+                          "className": "author",
+                          "href": "/profile/jake",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "jake",
+                        ],
+                        "type": "a",
+                      },
+                      "type": [Function],
                     },
                     Object {
                       "instance": <span
@@ -896,22 +968,9 @@ ReactWrapper {
               "type": "div",
             },
             Object {
-              "instance": <a
-                href="/article/test-slug"
-                class="preview-link"
->
-                <h1>
-                                How to build webapps that scale
-                </h1>
-                <p>
-                                This is the description for the post.
-                </p>
-                <span>
-                                Read more...
-                </span>
-</a>,
+              "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "function",
               "props": Object {
                 "children": Array [
                   <h1>
@@ -925,57 +984,92 @@ ReactWrapper {
 </span>,
                 ],
                 "className": "preview-link",
-                "href": "/article/test-slug",
+                "to": "/article/test-slug",
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": <h1>
-                    How to build webapps that scale
+              "rendered": Object {
+                "instance": <a
+                  href="/article/test-slug"
+                  class="preview-link"
+>
+                  <h1>
+                                    How to build webapps that scale
+                  </h1>
+                  <p>
+                                    This is the description for the post.
+                  </p>
+                  <span>
+                                    Read more...
+                  </span>
+</a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h1>
+                      How to build webapps that scale
 </h1>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "How to build webapps that scale",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "How to build webapps that scale",
-                  ],
-                  "type": "h1",
-                },
-                Object {
-                  "instance": <p>
-                    This is the description for the post.
+                    <p>
+                      This is the description for the post.
 </p>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "This is the description for the post.",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "This is the description for the post.",
-                  ],
-                  "type": "p",
-                },
-                Object {
-                  "instance": <span>
-                    Read more...
+                    <span>
+                      Read more...
 </span>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Read more...",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Read more...",
                   ],
-                  "type": "span",
+                  "className": "preview-link",
+                  "href": "/article/test-slug",
                 },
-              ],
-              "type": "a",
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <h1>
+                      How to build webapps that scale
+</h1>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "How to build webapps that scale",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "How to build webapps that scale",
+                    ],
+                    "type": "h1",
+                  },
+                  Object {
+                    "instance": <p>
+                      This is the description for the post.
+</p>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "This is the description for the post.",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "This is the description for the post.",
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": <span>
+                      Read more...
+</span>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Read more...",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Read more...",
+                    ],
+                    "type": "span",
+                  },
+                ],
+                "type": "a",
+              },
+              "type": [Function],
             },
           ],
           "type": "div",
