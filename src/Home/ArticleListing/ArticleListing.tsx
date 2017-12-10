@@ -1,55 +1,50 @@
 import * as React from 'react';
 import {ComponentType, StatelessComponent} from 'react';
 
-const ArticleListing = (FeedPicker: ComponentType): StatelessComponent =>
-    (() => (
-        <>
-            <FeedPicker />
+export interface ArticlePreview {
+    author: {
+        image: string;
+        username: string;
+    };
+    createdAt: Date;
+    description: string;
+    favoritesCount: number;
+    slug: string;
+    title: string;
+}
 
-            <div className="article-preview">
+export interface ArticleListingProps {
+    previews: ArticlePreview[];
+}
+
+const ArticleListing = (FeedPicker: ComponentType): StatelessComponent<ArticleListingProps> => ({previews}) => (
+    <>
+        <FeedPicker />
+
+        {previews.map(preview => (
+            <div key={preview.slug} className="article-preview">
                 <div className="article-meta">
-                    <a href="/profile">
-                        <img src="http://i.imgur.com/Qr71crq.jpg" />
+                    <a href={'/profile/' + preview.author.username}>
+                        <img src={preview.author.image} />
                     </a>
                     <div className="info">
-                        <a href="" className="author">
-                            Eric Simons
+                        <a href={'/profile/' + preview.author.username} className="author">
+                            {preview.author.username}
                         </a>
-                        <span className="date">January 20th</span>
+                        <span className="date">{preview.createdAt.toDateString()}</span>
                     </div>
                     <button className="btn btn-outline-primary btn-sm pull-xs-right">
-                        <i className="ion-heart" /> 29
+                        <i className="ion-heart" /> {preview.favoritesCount}
                     </button>
                 </div>
-                <a href="" className="preview-link">
-                    <h1>How to build webapps that scale</h1>
-                    <p>This is the description for the post.</p>
+                <a href={'/article/' + preview.slug} className="preview-link">
+                    <h1>{preview.title}</h1>
+                    <p>{preview.description}</p>
                     <span>Read more...</span>
                 </a>
             </div>
-
-            <div className="article-preview">
-                <div className="article-meta">
-                    <a href="/profile">
-                        <img src="http://i.imgur.com/N4VcUeJ.jpg" />
-                    </a>
-                    <div className="info">
-                        <a href="" className="author">
-                            Albert Pai
-                        </a>
-                        <span className="date">January 20th</span>
-                    </div>
-                    <button className="btn btn-outline-primary btn-sm pull-xs-right">
-                        <i className="ion-heart" /> 32
-                    </button>
-                </div>
-                <a href="" className="preview-link">
-                    <h1>The song you won't ever stop singing. No matter how hard you try.</h1>
-                    <p>This is the description for the post.</p>
-                    <span>Read more...</span>
-                </a>
-            </div>
-        </>
-    )) as StatelessComponent;
+        ))}
+    </>
+);
 
 export default ArticleListing;

@@ -1,15 +1,29 @@
 import {mount, ReactWrapper} from 'enzyme';
 import * as React from 'react';
 
-import ArticleListing from './ArticleListing';
+import ArticleListing, {ArticlePreview} from './ArticleListing';
 
 const TestFeedPicker = () => <div>Feed Picker</div>;
 const TestArticleListing = ArticleListing(TestFeedPicker);
 
+const testProps: ArticlePreview[] = [
+    {
+        author: {
+            image: 'https://i.stack.imgur.com/xHWG8.jpg',
+            username: 'jake',
+        },
+        createdAt: new Date('2017-10-12'),
+        description: 'This is the description for the post.',
+        favoritesCount: 27,
+        slug: 'test-slug',
+        title: 'How to build webapps that scale',
+    },
+];
+
 let sut: ReactWrapper;
 
 beforeEach(() => {
-    sut = mount(<TestArticleListing />);
+    sut = mount(<TestArticleListing previews={testProps} />);
 });
 
 it('should match snapshot', () => {

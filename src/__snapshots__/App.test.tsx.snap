@@ -19,7 +19,23 @@ ShallowWrapper {
     "props": Object {
       "children": <div>
         <Header(NavLink) />
-        <Home(AppPopularTags, ) />
+        <Home(AppPopularTags, )
+                previews={
+                        Array [
+                                Object {
+                                  "author": Object {
+                                    "image": "https://i.stack.imgur.com/xHWG8.jpg",
+                                    "username": "jake",
+                                  },
+                                  "createdAt": 2017-12-10T00:00:00.000Z,
+                                  "description": "This is the description for the post.",
+                                  "favoritesCount": 27,
+                                  "slug": "test-slug",
+                                  "title": "How to build webapps that scale",
+                                },
+                              ]
+                }
+        />
         <Footer(Link) />
 </div>,
     },
@@ -31,7 +47,23 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Header(NavLink) />,
-          <Home(AppPopularTags, ) />,
+          <Home(AppPopularTags, )
+            previews={
+                        Array [
+                                    Object {
+                                      "author": Object {
+                                        "image": "https://i.stack.imgur.com/xHWG8.jpg",
+                                        "username": "jake",
+                                      },
+                                      "createdAt": 2017-12-10T00:00:00.000Z,
+                                      "description": "This is the description for the post.",
+                                      "favoritesCount": 27,
+                                      "slug": "test-slug",
+                                      "title": "How to build webapps that scale",
+                                    },
+                                  ]
+            }
+/>,
           <Footer(Link) />,
         ],
       },
@@ -50,7 +82,21 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "previews": Array [
+              Object {
+                "author": Object {
+                  "image": "https://i.stack.imgur.com/xHWG8.jpg",
+                  "username": "jake",
+                },
+                "createdAt": 2017-12-10T00:00:00.000Z,
+                "description": "This is the description for the post.",
+                "favoritesCount": 27,
+                "slug": "test-slug",
+                "title": "How to build webapps that scale",
+              },
+            ],
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -77,7 +123,23 @@ ShallowWrapper {
       "props": Object {
         "children": <div>
           <Header(NavLink) />
-          <Home(AppPopularTags, ) />
+          <Home(AppPopularTags, )
+                    previews={
+                              Array [
+                                        Object {
+                                          "author": Object {
+                                            "image": "https://i.stack.imgur.com/xHWG8.jpg",
+                                            "username": "jake",
+                                          },
+                                          "createdAt": 2017-12-10T00:00:00.000Z,
+                                          "description": "This is the description for the post.",
+                                          "favoritesCount": 27,
+                                          "slug": "test-slug",
+                                          "title": "How to build webapps that scale",
+                                        },
+                                      ]
+                    }
+          />
           <Footer(Link) />
 </div>,
       },
@@ -89,7 +151,23 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Header(NavLink) />,
-            <Home(AppPopularTags, ) />,
+            <Home(AppPopularTags, )
+              previews={
+                            Array [
+                                          Object {
+                                            "author": Object {
+                                              "image": "https://i.stack.imgur.com/xHWG8.jpg",
+                                              "username": "jake",
+                                            },
+                                            "createdAt": 2017-12-10T00:00:00.000Z,
+                                            "description": "This is the description for the post.",
+                                            "favoritesCount": 27,
+                                            "slug": "test-slug",
+                                            "title": "How to build webapps that scale",
+                                          },
+                                        ]
+              }
+/>,
             <Footer(Link) />,
           ],
         },
@@ -108,7 +186,21 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "function",
-            "props": Object {},
+            "props": Object {
+              "previews": Array [
+                Object {
+                  "author": Object {
+                    "image": "https://i.stack.imgur.com/xHWG8.jpg",
+                    "username": "jake",
+                  },
+                  "createdAt": 2017-12-10T00:00:00.000Z,
+                  "description": "This is the description for the post.",
+                  "favoritesCount": 27,
+                  "slug": "test-slug",
+                  "title": "How to build webapps that scale",
+                },
+              ],
+            },
             "ref": null,
             "rendered": null,
             "type": [Function],

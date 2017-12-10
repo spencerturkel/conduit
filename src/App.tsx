@@ -5,7 +5,7 @@ import {BrowserRouter, Link as ReactRouterLink, NavLink as ReactRouterNavLink} f
 import Footer from './Footer';
 import Header from './Header';
 import Home from './Home';
-import ArticleListing from './Home/ArticleListing';
+import ArticleListing, {ArticlePreview} from './Home/ArticleListing';
 import FeedPicker from './Home/ArticleListing/FeedPicker';
 import PopularTags from './Home/PopularTags';
 import {LinkProps} from './link-props';
@@ -20,11 +20,25 @@ const AppHome = Home(AppPopularTags, AppArticleListing);
 const AppHeader = Header(ReactRouterNavLink as ComponentClass<NavLinkProps>);
 const AppFooter = Footer(ReactRouterLink as ComponentClass<LinkProps>);
 
+const articlePreviews: ArticlePreview[] = [
+    {
+        author: {
+            image: 'https://i.stack.imgur.com/xHWG8.jpg',
+            username: 'jake',
+        },
+        createdAt: new Date('2017-12-10'),
+        description: 'This is the description for the post.',
+        favoritesCount: 27,
+        slug: 'test-slug',
+        title: 'How to build webapps that scale',
+    },
+];
+
 const App = () => (
     <BrowserRouter>
         <div>
             <AppHeader />
-            <AppHome />
+            <AppHome previews={articlePreviews} />
             <AppFooter />
         </div>
     </BrowserRouter>

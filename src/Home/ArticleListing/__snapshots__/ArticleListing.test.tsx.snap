@@ -3,7 +3,23 @@
 exports[`should match snapshot 1`] = `
 ReactWrapper {
   "length": 1,
-  Symbol(enzyme.__unrendered__): <Unknown />,
+  Symbol(enzyme.__unrendered__): <Unknown
+    previews={
+        Array [
+            Object {
+              "author": Object {
+                "image": "https://i.stack.imgur.com/xHWG8.jpg",
+                "username": "jake",
+              },
+              "createdAt": 2017-10-12T00:00:00.000Z,
+              "description": "This is the description for the post.",
+              "favoritesCount": 27,
+              "slug": "test-slug",
+              "title": "How to build webapps that scale",
+            },
+          ]
+    }
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -16,7 +32,21 @@ ReactWrapper {
     "instance": null,
     "key": undefined,
     "nodeType": "function",
-    "props": Object {},
+    "props": Object {
+      "previews": Array [
+        Object {
+          "author": Object {
+            "image": "https://i.stack.imgur.com/xHWG8.jpg",
+            "username": "jake",
+          },
+          "createdAt": 2017-10-12T00:00:00.000Z,
+          "description": "This is the description for the post.",
+          "favoritesCount": 27,
+          "slug": "test-slug",
+          "title": "How to build webapps that scale",
+        },
+      ],
+    },
     "ref": null,
     "rendered": Array [
       Object {
@@ -50,25 +80,25 @@ ReactWrapper {
                     class="article-meta"
           >
                     <a
-                              href="/profile"
+                              href="/profile/jake"
                     >
                               <img
-                                        src="http://i.imgur.com/Qr71crq.jpg"
+                                        src="https://i.stack.imgur.com/xHWG8.jpg"
                               />
                     </a>
                     <div
                               class="info"
                     >
                               <a
-                                        href=""
+                                        href="/profile/jake"
                                         class="author"
                               >
-                                        Eric Simons
+                                        jake
                               </a>
                               <span
                                         class="date"
                               >
-                                        January 20th
+                                        Wed Oct 11 2017
                               </span>
                     </div>
                     <button
@@ -77,11 +107,11 @@ ReactWrapper {
                               <i
                                         class="ion-heart"
                               />
-                              29
+                              27
                     </button>
           </div>
           <a
-                    href=""
+                    href="/article/test-slug"
                     class="preview-link"
           >
                     <h1>
@@ -95,7 +125,7 @@ ReactWrapper {
                     </span>
           </a>
 </div>,
-        "key": undefined,
+        "key": "test-slug",
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -103,10 +133,10 @@ ReactWrapper {
               className="article-meta"
 >
               <a
-                            href="/profile"
+                            href="/profile/jake"
               >
                             <img
-                                          src="http://i.imgur.com/Qr71crq.jpg"
+                                          src="https://i.stack.imgur.com/xHWG8.jpg"
                             />
               </a>
               <div
@@ -114,14 +144,14 @@ ReactWrapper {
               >
                             <a
                                           className="author"
-                                          href=""
+                                          href="/profile/jake"
                             >
-                                          Eric Simons
+                                          jake
                             </a>
                             <span
                                           className="date"
                             >
-                                          January 20th
+                                          Wed Oct 11 2017
                             </span>
               </div>
               <button
@@ -130,12 +160,13 @@ ReactWrapper {
                             <i
                                           className="ion-heart"
                             />
-                             29
+                             
+                            27
               </button>
 </div>,
             <a
               className="preview-link"
-              href=""
+              href="/article/test-slug"
 >
               <h1>
                             How to build webapps that scale
@@ -157,25 +188,25 @@ ReactWrapper {
               class="article-meta"
 >
               <a
-                            href="/profile"
+                            href="/profile/jake"
               >
                             <img
-                                          src="http://i.imgur.com/Qr71crq.jpg"
+                                          src="https://i.stack.imgur.com/xHWG8.jpg"
                             />
               </a>
               <div
                             class="info"
               >
                             <a
-                                          href=""
+                                          href="/profile/jake"
                                           class="author"
                             >
-                                          Eric Simons
+                                          jake
                             </a>
                             <span
                                           class="date"
                             >
-                                          January 20th
+                                          Wed Oct 11 2017
                             </span>
               </div>
               <button
@@ -184,7 +215,7 @@ ReactWrapper {
                             <i
                                           class="ion-heart"
                             />
-                            29
+                            27
               </button>
 </div>,
             "key": undefined,
@@ -192,10 +223,10 @@ ReactWrapper {
             "props": Object {
               "children": Array [
                 <a
-                  href="/profile"
+                  href="/profile/jake"
 >
                   <img
-                                    src="http://i.imgur.com/Qr71crq.jpg"
+                                    src="https://i.stack.imgur.com/xHWG8.jpg"
                   />
 </a>,
                 <div
@@ -203,14 +234,14 @@ ReactWrapper {
 >
                   <a
                                     className="author"
-                                    href=""
+                                    href="/profile/jake"
                   >
-                                    Eric Simons
+                                    jake
                   </a>
                   <span
                                     className="date"
                   >
-                                    January 20th
+                                    Wed Oct 11 2017
                   </span>
 </div>,
                 <button
@@ -219,7 +250,8 @@ ReactWrapper {
                   <i
                                     className="ion-heart"
                   />
-                   29
+                   
+                  27
 </button>,
               ],
               "className": "article-meta",
@@ -228,30 +260,30 @@ ReactWrapper {
             "rendered": Array [
               Object {
                 "instance": <a
-                  href="/profile"
+                  href="/profile/jake"
 >
                   <img
-                                    src="http://i.imgur.com/Qr71crq.jpg"
+                                    src="https://i.stack.imgur.com/xHWG8.jpg"
                   />
 </a>,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
                   "children": <img
-                    src="http://i.imgur.com/Qr71crq.jpg"
+                    src="https://i.stack.imgur.com/xHWG8.jpg"
 />,
-                  "href": "/profile",
+                  "href": "/profile/jake",
                 },
                 "ref": null,
                 "rendered": Array [
                   Object {
                     "instance": <img
-                      src="http://i.imgur.com/Qr71crq.jpg"
+                      src="https://i.stack.imgur.com/xHWG8.jpg"
 />,
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "src": "http://i.imgur.com/Qr71crq.jpg",
+                      "src": "https://i.stack.imgur.com/xHWG8.jpg",
                     },
                     "ref": null,
                     "rendered": Array [
@@ -267,15 +299,15 @@ ReactWrapper {
                   class="info"
 >
                   <a
-                                    href=""
+                                    href="/profile/jake"
                                     class="author"
                   >
-                                    Eric Simons
+                                    jake
                   </a>
                   <span
                                     class="date"
                   >
-                                    January 20th
+                                    Wed Oct 11 2017
                   </span>
 </div>,
                 "key": undefined,
@@ -284,14 +316,14 @@ ReactWrapper {
                   "children": Array [
                     <a
                       className="author"
-                      href=""
+                      href="/profile/jake"
 >
-                      Eric Simons
+                      jake
 </a>,
                     <span
                       className="date"
 >
-                      January 20th
+                      Wed Oct 11 2017
 </span>,
                   ],
                   "className": "info",
@@ -300,21 +332,21 @@ ReactWrapper {
                 "rendered": Array [
                   Object {
                     "instance": <a
-                      href=""
+                      href="/profile/jake"
                       class="author"
 >
-                      Eric Simons
+                      jake
 </a>,
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "Eric Simons",
+                      "children": "jake",
                       "className": "author",
-                      "href": "",
+                      "href": "/profile/jake",
                     },
                     "ref": null,
                     "rendered": Array [
-                      "Eric Simons",
+                      "jake",
                     ],
                     "type": "a",
                   },
@@ -322,17 +354,17 @@ ReactWrapper {
                     "instance": <span
                       class="date"
 >
-                      January 20th
+                      Wed Oct 11 2017
 </span>,
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "January 20th",
+                      "children": "Wed Oct 11 2017",
                       "className": "date",
                     },
                     "ref": null,
                     "rendered": Array [
-                      "January 20th",
+                      "Wed Oct 11 2017",
                     ],
                     "type": "span",
                   },
@@ -346,7 +378,7 @@ ReactWrapper {
                   <i
                                     class="ion-heart"
                   />
-                  29
+                  27
 </button>,
                 "key": undefined,
                 "nodeType": "host",
@@ -355,7 +387,8 @@ ReactWrapper {
                     <i
                       className="ion-heart"
 />,
-                    " 29",
+                    " ",
+                    27,
                   ],
                   "className": "btn btn-outline-primary btn-sm pull-xs-right",
                 },
@@ -376,7 +409,8 @@ ReactWrapper {
                     ],
                     "type": "i",
                   },
-                  " 29",
+                  " ",
+                  "27",
                 ],
                 "type": "button",
               },
@@ -385,7 +419,7 @@ ReactWrapper {
           },
           Object {
             "instance": <a
-              href=""
+              href="/article/test-slug"
               class="preview-link"
 >
               <h1>
@@ -413,7 +447,7 @@ ReactWrapper {
 </span>,
               ],
               "className": "preview-link",
-              "href": "",
+              "href": "/article/test-slug",
             },
             "ref": null,
             "rendered": Array [
@@ -468,432 +502,6 @@ ReactWrapper {
         ],
         "type": "div",
       },
-      Object {
-        "instance": <div
-          class="article-preview"
->
-          <div
-                    class="article-meta"
-          >
-                    <a
-                              href="/profile"
-                    >
-                              <img
-                                        src="http://i.imgur.com/N4VcUeJ.jpg"
-                              />
-                    </a>
-                    <div
-                              class="info"
-                    >
-                              <a
-                                        href=""
-                                        class="author"
-                              >
-                                        Albert Pai
-                              </a>
-                              <span
-                                        class="date"
-                              >
-                                        January 20th
-                              </span>
-                    </div>
-                    <button
-                              class="btn btn-outline-primary btn-sm pull-xs-right"
-                    >
-                              <i
-                                        class="ion-heart"
-                              />
-                              32
-                    </button>
-          </div>
-          <a
-                    href=""
-                    class="preview-link"
-          >
-                    <h1>
-                              The song you won't ever stop singing. No matter how hard you try.
-                    </h1>
-                    <p>
-                              This is the description for the post.
-                    </p>
-                    <span>
-                              Read more...
-                    </span>
-          </a>
-</div>,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <div
-              className="article-meta"
->
-              <a
-                            href="/profile"
-              >
-                            <img
-                                          src="http://i.imgur.com/N4VcUeJ.jpg"
-                            />
-              </a>
-              <div
-                            className="info"
-              >
-                            <a
-                                          className="author"
-                                          href=""
-                            >
-                                          Albert Pai
-                            </a>
-                            <span
-                                          className="date"
-                            >
-                                          January 20th
-                            </span>
-              </div>
-              <button
-                            className="btn btn-outline-primary btn-sm pull-xs-right"
-              >
-                            <i
-                                          className="ion-heart"
-                            />
-                             32
-              </button>
-</div>,
-            <a
-              className="preview-link"
-              href=""
->
-              <h1>
-                            The song you won't ever stop singing. No matter how hard you try.
-              </h1>
-              <p>
-                            This is the description for the post.
-              </p>
-              <span>
-                            Read more...
-              </span>
-</a>,
-          ],
-          "className": "article-preview",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": <div
-              class="article-meta"
->
-              <a
-                            href="/profile"
-              >
-                            <img
-                                          src="http://i.imgur.com/N4VcUeJ.jpg"
-                            />
-              </a>
-              <div
-                            class="info"
-              >
-                            <a
-                                          href=""
-                                          class="author"
-                            >
-                                          Albert Pai
-                            </a>
-                            <span
-                                          class="date"
-                            >
-                                          January 20th
-                            </span>
-              </div>
-              <button
-                            class="btn btn-outline-primary btn-sm pull-xs-right"
-              >
-                            <i
-                                          class="ion-heart"
-                            />
-                            32
-              </button>
-</div>,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <a
-                  href="/profile"
->
-                  <img
-                                    src="http://i.imgur.com/N4VcUeJ.jpg"
-                  />
-</a>,
-                <div
-                  className="info"
->
-                  <a
-                                    className="author"
-                                    href=""
-                  >
-                                    Albert Pai
-                  </a>
-                  <span
-                                    className="date"
-                  >
-                                    January 20th
-                  </span>
-</div>,
-                <button
-                  className="btn btn-outline-primary btn-sm pull-xs-right"
->
-                  <i
-                                    className="ion-heart"
-                  />
-                   32
-</button>,
-              ],
-              "className": "article-meta",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": <a
-                  href="/profile"
->
-                  <img
-                                    src="http://i.imgur.com/N4VcUeJ.jpg"
-                  />
-</a>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <img
-                    src="http://i.imgur.com/N4VcUeJ.jpg"
-/>,
-                  "href": "/profile",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": <img
-                      src="http://i.imgur.com/N4VcUeJ.jpg"
-/>,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "src": "http://i.imgur.com/N4VcUeJ.jpg",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      undefined,
-                    ],
-                    "type": "img",
-                  },
-                ],
-                "type": "a",
-              },
-              Object {
-                "instance": <div
-                  class="info"
->
-                  <a
-                                    href=""
-                                    class="author"
-                  >
-                                    Albert Pai
-                  </a>
-                  <span
-                                    class="date"
-                  >
-                                    January 20th
-                  </span>
-</div>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <a
-                      className="author"
-                      href=""
->
-                      Albert Pai
-</a>,
-                    <span
-                      className="date"
->
-                      January 20th
-</span>,
-                  ],
-                  "className": "info",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": <a
-                      href=""
-                      class="author"
->
-                      Albert Pai
-</a>,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Albert Pai",
-                      "className": "author",
-                      "href": "",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "Albert Pai",
-                    ],
-                    "type": "a",
-                  },
-                  Object {
-                    "instance": <span
-                      class="date"
->
-                      January 20th
-</span>,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "January 20th",
-                      "className": "date",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "January 20th",
-                    ],
-                    "type": "span",
-                  },
-                ],
-                "type": "div",
-              },
-              Object {
-                "instance": <button
-                  class="btn btn-outline-primary btn-sm pull-xs-right"
->
-                  <i
-                                    class="ion-heart"
-                  />
-                  32
-</button>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <i
-                      className="ion-heart"
-/>,
-                    " 32",
-                  ],
-                  "className": "btn btn-outline-primary btn-sm pull-xs-right",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": <i
-                      class="ion-heart"
-/>,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "ion-heart",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      undefined,
-                    ],
-                    "type": "i",
-                  },
-                  " 32",
-                ],
-                "type": "button",
-              },
-            ],
-            "type": "div",
-          },
-          Object {
-            "instance": <a
-              href=""
-              class="preview-link"
->
-              <h1>
-                            The song you won't ever stop singing. No matter how hard you try.
-              </h1>
-              <p>
-                            This is the description for the post.
-              </p>
-              <span>
-                            Read more...
-              </span>
-</a>,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <h1>
-                  The song you won't ever stop singing. No matter how hard you try.
-</h1>,
-                <p>
-                  This is the description for the post.
-</p>,
-                <span>
-                  Read more...
-</span>,
-              ],
-              "className": "preview-link",
-              "href": "",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": <h1>
-                  The song you won't ever stop singing. No matter how hard you try.
-</h1>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "The song you won't ever stop singing. No matter how hard you try.",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "The song you won't ever stop singing. No matter how hard you try.",
-                ],
-                "type": "h1",
-              },
-              Object {
-                "instance": <p>
-                  This is the description for the post.
-</p>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "This is the description for the post.",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "This is the description for the post.",
-                ],
-                "type": "p",
-              },
-              Object {
-                "instance": <span>
-                  Read more...
-</span>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Read more...",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "Read more...",
-                ],
-                "type": "span",
-              },
-            ],
-            "type": "a",
-          },
-        ],
-        "type": "div",
-      },
     ],
     "type": [Function],
   },
@@ -902,7 +510,21 @@ ReactWrapper {
       "instance": null,
       "key": undefined,
       "nodeType": "function",
-      "props": Object {},
+      "props": Object {
+        "previews": Array [
+          Object {
+            "author": Object {
+              "image": "https://i.stack.imgur.com/xHWG8.jpg",
+              "username": "jake",
+            },
+            "createdAt": 2017-10-12T00:00:00.000Z,
+            "description": "This is the description for the post.",
+            "favoritesCount": 27,
+            "slug": "test-slug",
+            "title": "How to build webapps that scale",
+          },
+        ],
+      },
       "ref": null,
       "rendered": Array [
         Object {
@@ -936,25 +558,25 @@ ReactWrapper {
                         class="article-meta"
             >
                         <a
-                                    href="/profile"
+                                    href="/profile/jake"
                         >
                                     <img
-                                                src="http://i.imgur.com/Qr71crq.jpg"
+                                                src="https://i.stack.imgur.com/xHWG8.jpg"
                                     />
                         </a>
                         <div
                                     class="info"
                         >
                                     <a
-                                                href=""
+                                                href="/profile/jake"
                                                 class="author"
                                     >
-                                                Eric Simons
+                                                jake
                                     </a>
                                     <span
                                                 class="date"
                                     >
-                                                January 20th
+                                                Wed Oct 11 2017
                                     </span>
                         </div>
                         <button
@@ -963,11 +585,11 @@ ReactWrapper {
                                     <i
                                                 class="ion-heart"
                                     />
-                                    29
+                                    27
                         </button>
             </div>
             <a
-                        href=""
+                        href="/article/test-slug"
                         class="preview-link"
             >
                         <h1>
@@ -981,7 +603,7 @@ ReactWrapper {
                         </span>
             </a>
 </div>,
-          "key": undefined,
+          "key": "test-slug",
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -989,10 +611,10 @@ ReactWrapper {
                 className="article-meta"
 >
                 <a
-                                href="/profile"
+                                href="/profile/jake"
                 >
                                 <img
-                                                src="http://i.imgur.com/Qr71crq.jpg"
+                                                src="https://i.stack.imgur.com/xHWG8.jpg"
                                 />
                 </a>
                 <div
@@ -1000,14 +622,14 @@ ReactWrapper {
                 >
                                 <a
                                                 className="author"
-                                                href=""
+                                                href="/profile/jake"
                                 >
-                                                Eric Simons
+                                                jake
                                 </a>
                                 <span
                                                 className="date"
                                 >
-                                                January 20th
+                                                Wed Oct 11 2017
                                 </span>
                 </div>
                 <button
@@ -1016,12 +638,13 @@ ReactWrapper {
                                 <i
                                                 className="ion-heart"
                                 />
-                                 29
+                                 
+                                27
                 </button>
 </div>,
               <a
                 className="preview-link"
-                href=""
+                href="/article/test-slug"
 >
                 <h1>
                                 How to build webapps that scale
@@ -1043,25 +666,25 @@ ReactWrapper {
                 class="article-meta"
 >
                 <a
-                                href="/profile"
+                                href="/profile/jake"
                 >
                                 <img
-                                                src="http://i.imgur.com/Qr71crq.jpg"
+                                                src="https://i.stack.imgur.com/xHWG8.jpg"
                                 />
                 </a>
                 <div
                                 class="info"
                 >
                                 <a
-                                                href=""
+                                                href="/profile/jake"
                                                 class="author"
                                 >
-                                                Eric Simons
+                                                jake
                                 </a>
                                 <span
                                                 class="date"
                                 >
-                                                January 20th
+                                                Wed Oct 11 2017
                                 </span>
                 </div>
                 <button
@@ -1070,7 +693,7 @@ ReactWrapper {
                                 <i
                                                 class="ion-heart"
                                 />
-                                29
+                                27
                 </button>
 </div>,
               "key": undefined,
@@ -1078,10 +701,10 @@ ReactWrapper {
               "props": Object {
                 "children": Array [
                   <a
-                    href="/profile"
+                    href="/profile/jake"
 >
                     <img
-                                        src="http://i.imgur.com/Qr71crq.jpg"
+                                        src="https://i.stack.imgur.com/xHWG8.jpg"
                     />
 </a>,
                   <div
@@ -1089,14 +712,14 @@ ReactWrapper {
 >
                     <a
                                         className="author"
-                                        href=""
+                                        href="/profile/jake"
                     >
-                                        Eric Simons
+                                        jake
                     </a>
                     <span
                                         className="date"
                     >
-                                        January 20th
+                                        Wed Oct 11 2017
                     </span>
 </div>,
                   <button
@@ -1105,7 +728,8 @@ ReactWrapper {
                     <i
                                         className="ion-heart"
                     />
-                     29
+                     
+                    27
 </button>,
                 ],
                 "className": "article-meta",
@@ -1114,30 +738,30 @@ ReactWrapper {
               "rendered": Array [
                 Object {
                   "instance": <a
-                    href="/profile"
+                    href="/profile/jake"
 >
                     <img
-                                        src="http://i.imgur.com/Qr71crq.jpg"
+                                        src="https://i.stack.imgur.com/xHWG8.jpg"
                     />
 </a>,
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
                     "children": <img
-                      src="http://i.imgur.com/Qr71crq.jpg"
+                      src="https://i.stack.imgur.com/xHWG8.jpg"
 />,
-                    "href": "/profile",
+                    "href": "/profile/jake",
                   },
                   "ref": null,
                   "rendered": Array [
                     Object {
                       "instance": <img
-                        src="http://i.imgur.com/Qr71crq.jpg"
+                        src="https://i.stack.imgur.com/xHWG8.jpg"
 />,
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "src": "http://i.imgur.com/Qr71crq.jpg",
+                        "src": "https://i.stack.imgur.com/xHWG8.jpg",
                       },
                       "ref": null,
                       "rendered": Array [
@@ -1153,15 +777,15 @@ ReactWrapper {
                     class="info"
 >
                     <a
-                                        href=""
+                                        href="/profile/jake"
                                         class="author"
                     >
-                                        Eric Simons
+                                        jake
                     </a>
                     <span
                                         class="date"
                     >
-                                        January 20th
+                                        Wed Oct 11 2017
                     </span>
 </div>,
                   "key": undefined,
@@ -1170,14 +794,14 @@ ReactWrapper {
                     "children": Array [
                       <a
                         className="author"
-                        href=""
+                        href="/profile/jake"
 >
-                        Eric Simons
+                        jake
 </a>,
                       <span
                         className="date"
 >
-                        January 20th
+                        Wed Oct 11 2017
 </span>,
                     ],
                     "className": "info",
@@ -1186,21 +810,21 @@ ReactWrapper {
                   "rendered": Array [
                     Object {
                       "instance": <a
-                        href=""
+                        href="/profile/jake"
                         class="author"
 >
-                        Eric Simons
+                        jake
 </a>,
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": "Eric Simons",
+                        "children": "jake",
                         "className": "author",
-                        "href": "",
+                        "href": "/profile/jake",
                       },
                       "ref": null,
                       "rendered": Array [
-                        "Eric Simons",
+                        "jake",
                       ],
                       "type": "a",
                     },
@@ -1208,17 +832,17 @@ ReactWrapper {
                       "instance": <span
                         class="date"
 >
-                        January 20th
+                        Wed Oct 11 2017
 </span>,
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": "January 20th",
+                        "children": "Wed Oct 11 2017",
                         "className": "date",
                       },
                       "ref": null,
                       "rendered": Array [
-                        "January 20th",
+                        "Wed Oct 11 2017",
                       ],
                       "type": "span",
                     },
@@ -1232,7 +856,7 @@ ReactWrapper {
                     <i
                                         class="ion-heart"
                     />
-                    29
+                    27
 </button>,
                   "key": undefined,
                   "nodeType": "host",
@@ -1241,7 +865,8 @@ ReactWrapper {
                       <i
                         className="ion-heart"
 />,
-                      " 29",
+                      " ",
+                      27,
                     ],
                     "className": "btn btn-outline-primary btn-sm pull-xs-right",
                   },
@@ -1262,7 +887,8 @@ ReactWrapper {
                       ],
                       "type": "i",
                     },
-                    " 29",
+                    " ",
+                    "27",
                   ],
                   "type": "button",
                 },
@@ -1271,7 +897,7 @@ ReactWrapper {
             },
             Object {
               "instance": <a
-                href=""
+                href="/article/test-slug"
                 class="preview-link"
 >
                 <h1>
@@ -1299,7 +925,7 @@ ReactWrapper {
 </span>,
                 ],
                 "className": "preview-link",
-                "href": "",
+                "href": "/article/test-slug",
               },
               "ref": null,
               "rendered": Array [
@@ -1315,432 +941,6 @@ ReactWrapper {
                   "ref": null,
                   "rendered": Array [
                     "How to build webapps that scale",
-                  ],
-                  "type": "h1",
-                },
-                Object {
-                  "instance": <p>
-                    This is the description for the post.
-</p>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "This is the description for the post.",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "This is the description for the post.",
-                  ],
-                  "type": "p",
-                },
-                Object {
-                  "instance": <span>
-                    Read more...
-</span>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Read more...",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Read more...",
-                  ],
-                  "type": "span",
-                },
-              ],
-              "type": "a",
-            },
-          ],
-          "type": "div",
-        },
-        Object {
-          "instance": <div
-            class="article-preview"
->
-            <div
-                        class="article-meta"
-            >
-                        <a
-                                    href="/profile"
-                        >
-                                    <img
-                                                src="http://i.imgur.com/N4VcUeJ.jpg"
-                                    />
-                        </a>
-                        <div
-                                    class="info"
-                        >
-                                    <a
-                                                href=""
-                                                class="author"
-                                    >
-                                                Albert Pai
-                                    </a>
-                                    <span
-                                                class="date"
-                                    >
-                                                January 20th
-                                    </span>
-                        </div>
-                        <button
-                                    class="btn btn-outline-primary btn-sm pull-xs-right"
-                        >
-                                    <i
-                                                class="ion-heart"
-                                    />
-                                    32
-                        </button>
-            </div>
-            <a
-                        href=""
-                        class="preview-link"
-            >
-                        <h1>
-                                    The song you won't ever stop singing. No matter how hard you try.
-                        </h1>
-                        <p>
-                                    This is the description for the post.
-                        </p>
-                        <span>
-                                    Read more...
-                        </span>
-            </a>
-</div>,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <div
-                className="article-meta"
->
-                <a
-                                href="/profile"
-                >
-                                <img
-                                                src="http://i.imgur.com/N4VcUeJ.jpg"
-                                />
-                </a>
-                <div
-                                className="info"
-                >
-                                <a
-                                                className="author"
-                                                href=""
-                                >
-                                                Albert Pai
-                                </a>
-                                <span
-                                                className="date"
-                                >
-                                                January 20th
-                                </span>
-                </div>
-                <button
-                                className="btn btn-outline-primary btn-sm pull-xs-right"
-                >
-                                <i
-                                                className="ion-heart"
-                                />
-                                 32
-                </button>
-</div>,
-              <a
-                className="preview-link"
-                href=""
->
-                <h1>
-                                The song you won't ever stop singing. No matter how hard you try.
-                </h1>
-                <p>
-                                This is the description for the post.
-                </p>
-                <span>
-                                Read more...
-                </span>
-</a>,
-            ],
-            "className": "article-preview",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": <div
-                class="article-meta"
->
-                <a
-                                href="/profile"
-                >
-                                <img
-                                                src="http://i.imgur.com/N4VcUeJ.jpg"
-                                />
-                </a>
-                <div
-                                class="info"
-                >
-                                <a
-                                                href=""
-                                                class="author"
-                                >
-                                                Albert Pai
-                                </a>
-                                <span
-                                                class="date"
-                                >
-                                                January 20th
-                                </span>
-                </div>
-                <button
-                                class="btn btn-outline-primary btn-sm pull-xs-right"
-                >
-                                <i
-                                                class="ion-heart"
-                                />
-                                32
-                </button>
-</div>,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <a
-                    href="/profile"
->
-                    <img
-                                        src="http://i.imgur.com/N4VcUeJ.jpg"
-                    />
-</a>,
-                  <div
-                    className="info"
->
-                    <a
-                                        className="author"
-                                        href=""
-                    >
-                                        Albert Pai
-                    </a>
-                    <span
-                                        className="date"
-                    >
-                                        January 20th
-                    </span>
-</div>,
-                  <button
-                    className="btn btn-outline-primary btn-sm pull-xs-right"
->
-                    <i
-                                        className="ion-heart"
-                    />
-                     32
-</button>,
-                ],
-                "className": "article-meta",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": <a
-                    href="/profile"
->
-                    <img
-                                        src="http://i.imgur.com/N4VcUeJ.jpg"
-                    />
-</a>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <img
-                      src="http://i.imgur.com/N4VcUeJ.jpg"
-/>,
-                    "href": "/profile",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": <img
-                        src="http://i.imgur.com/N4VcUeJ.jpg"
-/>,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "src": "http://i.imgur.com/N4VcUeJ.jpg",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        undefined,
-                      ],
-                      "type": "img",
-                    },
-                  ],
-                  "type": "a",
-                },
-                Object {
-                  "instance": <div
-                    class="info"
->
-                    <a
-                                        href=""
-                                        class="author"
-                    >
-                                        Albert Pai
-                    </a>
-                    <span
-                                        class="date"
-                    >
-                                        January 20th
-                    </span>
-</div>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <a
-                        className="author"
-                        href=""
->
-                        Albert Pai
-</a>,
-                      <span
-                        className="date"
->
-                        January 20th
-</span>,
-                    ],
-                    "className": "info",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": <a
-                        href=""
-                        class="author"
->
-                        Albert Pai
-</a>,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Albert Pai",
-                        "className": "author",
-                        "href": "",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        "Albert Pai",
-                      ],
-                      "type": "a",
-                    },
-                    Object {
-                      "instance": <span
-                        class="date"
->
-                        January 20th
-</span>,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "January 20th",
-                        "className": "date",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        "January 20th",
-                      ],
-                      "type": "span",
-                    },
-                  ],
-                  "type": "div",
-                },
-                Object {
-                  "instance": <button
-                    class="btn btn-outline-primary btn-sm pull-xs-right"
->
-                    <i
-                                        class="ion-heart"
-                    />
-                    32
-</button>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <i
-                        className="ion-heart"
-/>,
-                      " 32",
-                    ],
-                    "className": "btn btn-outline-primary btn-sm pull-xs-right",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": <i
-                        class="ion-heart"
-/>,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "className": "ion-heart",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        undefined,
-                      ],
-                      "type": "i",
-                    },
-                    " 32",
-                  ],
-                  "type": "button",
-                },
-              ],
-              "type": "div",
-            },
-            Object {
-              "instance": <a
-                href=""
-                class="preview-link"
->
-                <h1>
-                                The song you won't ever stop singing. No matter how hard you try.
-                </h1>
-                <p>
-                                This is the description for the post.
-                </p>
-                <span>
-                                Read more...
-                </span>
-</a>,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <h1>
-                    The song you won't ever stop singing. No matter how hard you try.
-</h1>,
-                  <p>
-                    This is the description for the post.
-</p>,
-                  <span>
-                    Read more...
-</span>,
-                ],
-                "className": "preview-link",
-                "href": "",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": <h1>
-                    The song you won't ever stop singing. No matter how hard you try.
-</h1>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "The song you won't ever stop singing. No matter how hard you try.",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "The song you won't ever stop singing. No matter how hard you try.",
                   ],
                   "type": "h1",
                 },
