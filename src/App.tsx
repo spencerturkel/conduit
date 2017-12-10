@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {ComponentClass, ComponentType} from 'react';
+import {Route, Switch} from 'react-router';
 import {BrowserRouter, Link as ReactRouterLink, NavLink as ReactRouterNavLink} from 'react-router-dom';
 
 import Footer from './Footer';
@@ -61,7 +62,10 @@ const App = () => (
     <BrowserRouter>
         <div>
             <AppHeader />
-            <AppHome />
+            <Switch>
+                <Route path="/" exact={true} render={() => <AppHome />} />
+                <Route path="/" render={() => <div>Coming soon.</div>} />
+            </Switch>
             <AppFooter />
         </div>
     </BrowserRouter>

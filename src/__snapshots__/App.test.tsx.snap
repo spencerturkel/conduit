@@ -19,7 +19,17 @@ ShallowWrapper {
     "props": Object {
       "children": <div>
         <Header(NavLink) />
-        <Home(, ) />
+        <Switch>
+                <Route
+                        exact={true}
+                        path="/"
+                        render={[Function]}
+                />
+                <Route
+                        path="/"
+                        render={[Function]}
+                />
+        </Switch>
         <Footer(Link) />
 </div>,
     },
@@ -31,7 +41,17 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Header(NavLink) />,
-          <Home(, ) />,
+          <Switch>
+            <Route
+                        exact={true}
+                        path="/"
+                        render={[Function]}
+            />
+            <Route
+                        path="/"
+                        render={[Function]}
+            />
+</Switch>,
           <Footer(Link) />,
         ],
       },
@@ -49,10 +69,48 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Route
+                exact={true}
+                path="/"
+                render={[Function]}
+/>,
+              <Route
+                path="/"
+                render={[Function]}
+/>,
+            ],
+          },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
         Object {
@@ -77,7 +135,17 @@ ShallowWrapper {
       "props": Object {
         "children": <div>
           <Header(NavLink) />
-          <Home(, ) />
+          <Switch>
+                    <Route
+                              exact={true}
+                              path="/"
+                              render={[Function]}
+                    />
+                    <Route
+                              path="/"
+                              render={[Function]}
+                    />
+          </Switch>
           <Footer(Link) />
 </div>,
       },
@@ -89,7 +157,17 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Header(NavLink) />,
-            <Home(, ) />,
+            <Switch>
+              <Route
+                            exact={true}
+                            path="/"
+                            render={[Function]}
+              />
+              <Route
+                            path="/"
+                            render={[Function]}
+              />
+</Switch>,
             <Footer(Link) />,
           ],
         },
@@ -107,10 +185,48 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
-            "props": Object {},
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Route
+                  exact={true}
+                  path="/"
+                  render={[Function]}
+/>,
+                <Route
+                  path="/"
+                  render={[Function]}
+/>,
+              ],
+            },
             "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "exact": true,
+                  "path": "/",
+                  "render": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "path": "/",
+                  "render": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
             "type": [Function],
           },
           Object {
