@@ -1,3 +1,6 @@
+import {Observable} from 'rxjs/Observable';
+import {first, map, switchMapTo} from 'rxjs/operators';
+
 export enum ActionType {
     FETCH_ALL = '[conduit][tags] Fetch All',
     FETCH_ALL_ERROR = '[conduit][tags] Fetch All Error',
@@ -47,3 +50,10 @@ export const reducer = (state: State | undefined = initialState, action: Action)
             return state;
     }
 };
+
+export const fetchAll$ = (tags$: Observable<string[]>) => (actions$: Observable<Action>): Observable<Action> =>
+    actions$.pipe(first(({type}) => type === ActionType.FETCH_ALL), switchMapTo(tags$), map(loadAll));
+
+export const selectError = (state: State) => state.error;
+export const selectLoading = (state: State) => state.loading;
+export const selectTags = (state: State) => state.tags;
