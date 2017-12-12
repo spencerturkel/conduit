@@ -1,5 +1,5 @@
 import {Observable} from 'rxjs/Observable';
-import {first, map, switchMapTo} from 'rxjs/operators';
+import {first, map, switchMap} from 'rxjs/operators';
 
 export enum ActionType {
     FETCH_ALL = '[conduit][tags] Fetch All',
@@ -51,8 +51,8 @@ export const reducer = (state: State | undefined = initialState, action: Action)
     }
 };
 
-export const fetchAll$ = (tags$: Observable<string[]>) => (actions$: Observable<Action>): Observable<Action> =>
-    actions$.pipe(first(({type}) => type === ActionType.FETCH_ALL), switchMapTo(tags$), map(loadAll));
+export const fetchAll$ = (tags$: () => Observable<string[]>) => (actions$: Observable<Action>): Observable<Action> =>
+    actions$.pipe(first(({type}) => type === ActionType.FETCH_ALL), switchMap(() => tags$()), map(loadAll));
 
 export const selectError = (state: State) => state.error;
 export const selectLoading = (state: State) => state.loading;
