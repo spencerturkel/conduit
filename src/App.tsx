@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {ComponentClass, ComponentType} from 'react';
+import {ComponentClass} from 'react';
 import Helmet from 'react-helmet';
 import {Route, Switch} from 'react-router';
 import {BrowserRouter, Link as ReactRouterLink, NavLink as ReactRouterNavLink} from 'react-router-dom';
