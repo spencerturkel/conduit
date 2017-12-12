@@ -49,9 +49,9 @@ const AppArticleListing = (() => {
 })();
 
 const AppPopularTags = (() => {
-    const Result = PopularTags(ReactRouterLink as ComponentType<LinkProps>);
+    const Result = PopularTags();
 
-    return () => <Result tags={[{name: 'programming', link: '/programming'}]} />;
+    return () => <Result onTagClicked={tag => alert('clicked ' + tag)} tags={['programming', 'reactjs']} />;
 })();
 
 const AppHome = Home(AppPopularTags, AppArticleListing);

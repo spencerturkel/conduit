@@ -3,17 +3,12 @@
 exports[`should match snapshot 1`] = `
 ReactWrapper {
   "length": 1,
-  Symbol(enzyme.__unrendered__): <PopularTags(TestLink)
+  Symbol(enzyme.__unrendered__): <PopularTags()
+    onTagClicked={[Function]}
     tags={
         Array [
-            Object {
-              "link": "/programming",
-              "name": "programming",
-            },
-            Object {
-              "link": "/reactjs",
-              "name": "reactjs",
-            },
+            "programming",
+            "reactjs",
           ]
     }
 />,
@@ -30,15 +25,10 @@ ReactWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
+      "onTagClicked": [Function],
       "tags": Array [
-        Object {
-          "link": "/programming",
-          "name": "programming",
-        },
-        Object {
-          "link": "/reactjs",
-          "name": "reactjs",
-        },
+        "programming",
+        "reactjs",
       ],
     },
     "ref": null,
@@ -52,18 +42,18 @@ ReactWrapper {
         <div
                 class="tag-list"
         >
-                <a
-                        href="/programming"
+                <button
+                        type="button"
                         class="tag-pill tag-default"
                 >
                         programming
-                </a>
-                <a
-                        href="/reactjs"
+                </button>
+                <button
+                        type="button"
                         class="tag-pill tag-default"
                 >
                         reactjs
-                </a>
+                </button>
         </div>
 </div>,
       "key": undefined,
@@ -76,18 +66,20 @@ ReactWrapper {
           <div
             className="tag-list"
 >
-            <TestLink
+            <button
                         className="tag-pill tag-default"
-                        to="/programming"
+                        onClick={[Function]}
+                        type="button"
             >
                         programming
-            </TestLink>
-            <TestLink
+            </button>
+            <button
                         className="tag-pill tag-default"
-                        to="/reactjs"
+                        onClick={[Function]}
+                        type="button"
             >
                         reactjs
-            </TestLink>
+            </button>
 </div>,
         ],
         "className": "sidebar",
@@ -113,103 +105,83 @@ ReactWrapper {
           "instance": <div
             class="tag-list"
 >
-            <a
-                        href="/programming"
+            <button
+                        type="button"
                         class="tag-pill tag-default"
             >
                         programming
-            </a>
-            <a
-                        href="/reactjs"
+            </button>
+            <button
+                        type="button"
                         class="tag-pill tag-default"
             >
                         reactjs
-            </a>
+            </button>
 </div>,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <TestLink
+              <button
                 className="tag-pill tag-default"
-                to="/programming"
+                onClick={[Function]}
+                type="button"
 >
                 programming
-</TestLink>,
-              <TestLink
+</button>,
+              <button
                 className="tag-pill tag-default"
-                to="/reactjs"
+                onClick={[Function]}
+                type="button"
 >
                 reactjs
-</TestLink>,
+</button>,
             ],
             "className": "tag-list",
           },
           "ref": null,
           "rendered": Array [
             Object {
-              "instance": null,
+              "instance": <button
+                type="button"
+                class="tag-pill tag-default"
+>
+                programming
+</button>,
               "key": "programming",
-              "nodeType": "function",
+              "nodeType": "host",
               "props": Object {
                 "children": "programming",
                 "className": "tag-pill tag-default",
-                "to": "/programming",
+                "onClick": [Function],
+                "type": "button",
               },
               "ref": null,
-              "rendered": Object {
-                "instance": <a
-                  href="/programming"
-                  class="tag-pill tag-default"
->
-                  programming
-</a>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "programming",
-                  "className": "tag-pill tag-default",
-                  "href": "/programming",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "programming",
-                ],
-                "type": "a",
-              },
-              "type": [Function],
+              "rendered": Array [
+                "programming",
+              ],
+              "type": "button",
             },
             Object {
-              "instance": null,
+              "instance": <button
+                type="button"
+                class="tag-pill tag-default"
+>
+                reactjs
+</button>,
               "key": "reactjs",
-              "nodeType": "function",
+              "nodeType": "host",
               "props": Object {
                 "children": "reactjs",
                 "className": "tag-pill tag-default",
-                "to": "/reactjs",
+                "onClick": [Function],
+                "type": "button",
               },
               "ref": null,
-              "rendered": Object {
-                "instance": <a
-                  href="/reactjs"
-                  class="tag-pill tag-default"
->
-                  reactjs
-</a>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "reactjs",
-                  "className": "tag-pill tag-default",
-                  "href": "/reactjs",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "reactjs",
-                ],
-                "type": "a",
-              },
-              "type": [Function],
+              "rendered": Array [
+                "reactjs",
+              ],
+              "type": "button",
             },
           ],
           "type": "div",
@@ -225,15 +197,10 @@ ReactWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
+        "onTagClicked": [Function],
         "tags": Array [
-          Object {
-            "link": "/programming",
-            "name": "programming",
-          },
-          Object {
-            "link": "/reactjs",
-            "name": "reactjs",
-          },
+          "programming",
+          "reactjs",
         ],
       },
       "ref": null,
@@ -247,18 +214,18 @@ ReactWrapper {
           <div
                     class="tag-list"
           >
-                    <a
-                              href="/programming"
+                    <button
+                              type="button"
                               class="tag-pill tag-default"
                     >
                               programming
-                    </a>
-                    <a
-                              href="/reactjs"
+                    </button>
+                    <button
+                              type="button"
                               class="tag-pill tag-default"
                     >
                               reactjs
-                    </a>
+                    </button>
           </div>
 </div>,
         "key": undefined,
@@ -271,18 +238,20 @@ ReactWrapper {
             <div
               className="tag-list"
 >
-              <TestLink
+              <button
                             className="tag-pill tag-default"
-                            to="/programming"
+                            onClick={[Function]}
+                            type="button"
               >
                             programming
-              </TestLink>
-              <TestLink
+              </button>
+              <button
                             className="tag-pill tag-default"
-                            to="/reactjs"
+                            onClick={[Function]}
+                            type="button"
               >
                             reactjs
-              </TestLink>
+              </button>
 </div>,
           ],
           "className": "sidebar",
@@ -308,103 +277,83 @@ ReactWrapper {
             "instance": <div
               class="tag-list"
 >
-              <a
-                            href="/programming"
+              <button
+                            type="button"
                             class="tag-pill tag-default"
               >
                             programming
-              </a>
-              <a
-                            href="/reactjs"
+              </button>
+              <button
+                            type="button"
                             class="tag-pill tag-default"
               >
                             reactjs
-              </a>
+              </button>
 </div>,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <TestLink
+                <button
                   className="tag-pill tag-default"
-                  to="/programming"
+                  onClick={[Function]}
+                  type="button"
 >
                   programming
-</TestLink>,
-                <TestLink
+</button>,
+                <button
                   className="tag-pill tag-default"
-                  to="/reactjs"
+                  onClick={[Function]}
+                  type="button"
 >
                   reactjs
-</TestLink>,
+</button>,
               ],
               "className": "tag-list",
             },
             "ref": null,
             "rendered": Array [
               Object {
-                "instance": null,
+                "instance": <button
+                  type="button"
+                  class="tag-pill tag-default"
+>
+                  programming
+</button>,
                 "key": "programming",
-                "nodeType": "function",
+                "nodeType": "host",
                 "props": Object {
                   "children": "programming",
                   "className": "tag-pill tag-default",
-                  "to": "/programming",
+                  "onClick": [Function],
+                  "type": "button",
                 },
                 "ref": null,
-                "rendered": Object {
-                  "instance": <a
-                    href="/programming"
-                    class="tag-pill tag-default"
->
-                    programming
-</a>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "programming",
-                    "className": "tag-pill tag-default",
-                    "href": "/programming",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "programming",
-                  ],
-                  "type": "a",
-                },
-                "type": [Function],
+                "rendered": Array [
+                  "programming",
+                ],
+                "type": "button",
               },
               Object {
-                "instance": null,
+                "instance": <button
+                  type="button"
+                  class="tag-pill tag-default"
+>
+                  reactjs
+</button>,
                 "key": "reactjs",
-                "nodeType": "function",
+                "nodeType": "host",
                 "props": Object {
                   "children": "reactjs",
                   "className": "tag-pill tag-default",
-                  "to": "/reactjs",
+                  "onClick": [Function],
+                  "type": "button",
                 },
                 "ref": null,
-                "rendered": Object {
-                  "instance": <a
-                    href="/reactjs"
-                    class="tag-pill tag-default"
->
-                    reactjs
-</a>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "reactjs",
-                    "className": "tag-pill tag-default",
-                    "href": "/reactjs",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "reactjs",
-                  ],
-                  "type": "a",
-                },
-                "type": [Function],
+                "rendered": Array [
+                  "reactjs",
+                ],
+                "type": "button",
               },
             ],
             "type": "div",
