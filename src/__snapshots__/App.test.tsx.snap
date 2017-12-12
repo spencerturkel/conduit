@@ -17,118 +17,36 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <div>
-        <Header(NavLink) />
-        <Switch>
-                <Route
-                        exact={true}
-                        path="/"
-                        render={[Function]}
-                />
-                <Route
-                        path="/"
-                        render={[Function]}
-                />
-        </Switch>
-        <Footer(Link) />
-</div>,
+      "children": <Provider
+        store={
+                Object {
+                        "dispatch": [Function],
+                        "getState": [Function],
+                        "replaceReducer": [Function],
+                        "subscribe": [Function],
+                        Symbol(observable): [Function],
+                      }
+        }
+>
+        <div>
+                <Header(NavLink) />
+                <Switch>
+                        <Route
+                                exact={true}
+                                path="/"
+                                render={[Function]}
+                        />
+                        <Route
+                                path="/"
+                                render={[Function]}
+                        />
+                </Switch>
+                <Footer(Link) />
+        </div>
+</Provider>,
     },
     "ref": null,
     "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <Header(NavLink) />,
-          <Switch>
-            <Route
-                        exact={true}
-                        path="/"
-                        render={[Function]}
-            />
-            <Route
-                        path="/"
-                        render={[Function]}
-            />
-</Switch>,
-          <Footer(Link) />,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Route
-                exact={true}
-                path="/"
-                render={[Function]}
-/>,
-              <Route
-                path="/"
-                render={[Function]}
-/>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "exact": true,
-                "path": "/",
-                "render": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "path": "/",
-                "render": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": "div",
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "class",
@@ -148,6 +66,13 @@ ShallowWrapper {
           </Switch>
           <Footer(Link) />
 </div>,
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        },
       },
       "ref": null,
       "rendered": Object {
@@ -240,6 +165,167 @@ ShallowWrapper {
           },
         ],
         "type": "div",
+      },
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <Provider
+          store={
+                    Object {
+                              "dispatch": [Function],
+                              "getState": [Function],
+                              "replaceReducer": [Function],
+                              "subscribe": [Function],
+                              Symbol(observable): [Function],
+                            }
+          }
+>
+          <div>
+                    <Header(NavLink) />
+                    <Switch>
+                              <Route
+                                        exact={true}
+                                        path="/"
+                                        render={[Function]}
+                              />
+                              <Route
+                                        path="/"
+                                        render={[Function]}
+                              />
+                    </Switch>
+                    <Footer(Link) />
+          </div>
+</Provider>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <div>
+            <Header(NavLink) />
+            <Switch>
+                        <Route
+                                    exact={true}
+                                    path="/"
+                                    render={[Function]}
+                        />
+                        <Route
+                                    path="/"
+                                    render={[Function]}
+                        />
+            </Switch>
+            <Footer(Link) />
+</div>,
+          "store": Object {
+            "dispatch": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+            Symbol(observable): [Function],
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Header(NavLink) />,
+              <Switch>
+                <Route
+                                exact={true}
+                                path="/"
+                                render={[Function]}
+                />
+                <Route
+                                path="/"
+                                render={[Function]}
+                />
+</Switch>,
+              <Footer(Link) />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Route
+                    exact={true}
+                    path="/"
+                    render={[Function]}
+/>,
+                  <Route
+                    path="/"
+                    render={[Function]}
+/>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "exact": true,
+                    "path": "/",
+                    "render": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "path": "/",
+                    "render": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        "type": [Function],
       },
       "type": [Function],
     },

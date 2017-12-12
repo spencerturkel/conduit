@@ -3,6 +3,8 @@ import {ComponentClass} from 'react';
 import Helmet from 'react-helmet';
 import {Route, Switch} from 'react-router';
 import {BrowserRouter, Link as ReactRouterLink, NavLink as ReactRouterNavLink} from 'react-router-dom';
+import {connect, Provider} from 'react-redux';
+import {createSelector} from 'reselect';
 
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -12,6 +14,8 @@ import FeedPicker from './components/Home/ArticleListing/FeedPicker';
 import PopularTags from './components/Home/PopularTags';
 import {LinkProps} from './components/link-props';
 import {NavLinkProps} from './components/nav-link-props';
+import {reducers, tags} from './state';
+import {combineReducers, createStore} from 'redux';
 
 const AppArticleListing = (() => {
     const articlePreviews: ArticlePreview[] = [
@@ -49,9 +53,9 @@ const AppArticleListing = (() => {
 })();
 
 const AppPopularTags = (() => {
-    const Result = PopularTags();
+    const Result = connect(createSelector(tags.selectTags, allTags => ({tags: allTags})))(PopularTags());
 
-    return () => <Result onTagClicked={tag => alert('clicked ' + tag)} tags={['programming', 'reactjs']} />;
+    return () => <Result onTagClicked={tag => alert('clicked ' + tag)} />;
 })();
 
 const AppHome = Home(AppPopularTags, AppArticleListing);
@@ -59,37 +63,47 @@ const AppHome = Home(AppPopularTags, AppArticleListing);
 const AppHeader = Header(ReactRouterNavLink as ComponentClass<NavLinkProps>);
 const AppFooter = Footer(ReactRouterLink as ComponentClass<LinkProps>);
 
+const store = (() => {
+    return createStore(combineReducers(reducers));
+})();
+
 const App = () => (
     <BrowserRouter>
-        <div>
-            <AppHeader />
-            <Switch>
-                <Route
-                    path="/"
-                    exact={true}
-                    render={() => (
-                        <>
-                            <Helmet>
-                                <title>Home — Conduit</title>
-                            </Helmet>
-                            <AppHome />
-                        </>
-                    )}
-                />
-                <Route
-                    path="/"
-                    render={() => (
-                        <>
-                            <Helmet>
-                                <title>Coming Soon — Conduit</title>
-                            </Helmet>
-                            <div>Coming soon.</div>
-                        </>
-                    )}
-                />
-            </Switch>
-            <AppFooter />
-        </div>
+        <Provider store={store}>
+            <div>
+                <AppHeader />
+                <Switch>
+                    <Route
+                        path="/"
+                        exact={true}
+                        render={() => {
+                            store.dispatch(tags.loadAll(['hello', 'world']));
+
+                            return (
+                                <>
+                                    <Helmet>
+                                        <title>Home — Conduit</title>
+                                    </Helmet>
+                                    <AppHome />
+                                </>
+                            );
+                        }}
+                    />
+                    <Route
+                        path="/"
+                        render={() => (
+                            <>
+                                <Helmet>
+                                    <title>Coming Soon — Conduit</title>
+                                </Helmet>
+                                <div>Coming soon.</div>
+                            </>
+                        )}
+                    />
+                </Switch>
+                <AppFooter />
+            </div>
+        </Provider>
     </BrowserRouter>
 );
 
