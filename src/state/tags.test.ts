@@ -42,7 +42,7 @@ describe('epics', () => {
         it('should emit LOAD_ALL actions after the first FETCH_ALL action', () => {
             const tags$ = scheduler.createColdObservable<string[]>('--a--b|', {a: [], b: ['hello', 'world']});
 
-            const sut = fetchAll$(tags$);
+            const sut = fetchAll$(() => tags$);
 
             const actions$ = scheduler.createColdObservable<Action>('-a--b', {a: {type: 'unknown'}, b: fetchAll()});
 
@@ -54,7 +54,7 @@ describe('epics', () => {
         it('should catch and report errors in the tag source without completing', () => {
             const tags$ = scheduler.createColdObservable<string[]>('#', undefined, 'err');
 
-            const sut = fetchAll$(tags$);
+            const sut = fetchAll$(() => tags$);
 
             const actions$ = scheduler.createColdObservable<Action>('ab', {a: fetchAll(), b: fetchAll()});
 
