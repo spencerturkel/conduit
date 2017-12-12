@@ -4,6 +4,8 @@ import Helmet from 'react-helmet';
 import {Route, Switch} from 'react-router';
 import {BrowserRouter, Link as ReactRouterLink, NavLink as ReactRouterNavLink} from 'react-router-dom';
 import {connect, Provider} from 'react-redux';
+import {applyMiddleware, combineReducers, createStore} from 'redux';
+import {combineEpics, createEpicMiddleware} from 'redux-observable';
 import {createSelector} from 'reselect';
 
 import Footer from './components/Footer';
@@ -14,8 +16,8 @@ import FeedPicker from './components/Home/ArticleListing/FeedPicker';
 import PopularTags from './components/Home/PopularTags';
 import {LinkProps} from './components/link-props';
 import {NavLinkProps} from './components/nav-link-props';
-import {reducers, tags} from './state';
-import {combineReducers, createStore} from 'redux';
+import * as services from './services';
+import * as state from './state';
 
 const AppArticleListing = (() => {
     const articlePreviews: ArticlePreview[] = [
@@ -53,7 +55,7 @@ const AppArticleListing = (() => {
 })();
 
 const AppPopularTags = (() => {
-    const Result = connect(createSelector(tags.selectTags, allTags => ({tags: allTags})))(PopularTags());
+    const Result = connect(createSelector(state.tags.selectTags, allTags => ({tags: allTags})))(PopularTags());
 
     return () => <Result onTagClicked={tag => alert('clicked ' + tag)} />;
 })();
@@ -63,9 +65,10 @@ const AppHome = Home(AppPopularTags, AppArticleListing);
 const AppHeader = Header(ReactRouterNavLink as ComponentClass<NavLinkProps>);
 const AppFooter = Footer(ReactRouterLink as ComponentClass<LinkProps>);
 
-const store = (() => {
-    return createStore(combineReducers(reducers));
-})();
+const store = createStore(
+    combineReducers(state.reducers),
+    applyMiddleware(createEpicMiddleware(combineEpics(state.tags.fetchAll$(services.tags$)))),
+);
 
 const App = () => (
     <BrowserRouter>
@@ -77,7 +80,7 @@ const App = () => (
                         path="/"
                         exact={true}
                         render={() => {
-                            store.dispatch(tags.loadAll(['hello', 'world']));
+                            store.dispatch(state.tags.fetchAll());
 
                             return (
                                 <>
