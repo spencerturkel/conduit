@@ -93,13 +93,24 @@ const App = () => (
                         }}
                     />
                     <Route
-                        path="/"
+                        path="/:todo(new-post|settings|sign-up|profile\\/[^\\/]*|article\\/[^\\/]*)"
                         render={() => (
                             <>
                                 <Helmet>
                                     <title>Coming Soon — Conduit</title>
                                 </Helmet>
                                 <div>Coming soon.</div>
+                            </>
+                        )}
+                    />
+                    <Route
+                        render={() => (
+                            <>
+                                <Helmet>
+                                    <title>Not Found — Conduit</title>
+                                </Helmet>
+                                <div>404 Not Found.</div>
+                                <ReactRouterLink to="/">Click here to go home.</ReactRouterLink>
                             </>
                         )}
                     />

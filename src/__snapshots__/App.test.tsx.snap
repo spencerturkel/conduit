@@ -37,7 +37,10 @@ ShallowWrapper {
                                 render={[Function]}
                         />
                         <Route
-                                path="/"
+                                path="/:todo(new-post|settings|sign-up|profile\\\\/[^\\\\/]*|article\\\\/[^\\\\/]*)"
+                                render={[Function]}
+                        />
+                        <Route
                                 render={[Function]}
                         />
                 </Switch>
@@ -60,7 +63,10 @@ ShallowWrapper {
                               render={[Function]}
                     />
                     <Route
-                              path="/"
+                              path="/:todo(new-post|settings|sign-up|profile\\\\/[^\\\\/]*|article\\\\/[^\\\\/]*)"
+                              render={[Function]}
+                    />
+                    <Route
                               render={[Function]}
                     />
           </Switch>
@@ -89,7 +95,10 @@ ShallowWrapper {
                             render={[Function]}
               />
               <Route
-                            path="/"
+                            path="/:todo(new-post|settings|sign-up|profile\\\\/[^\\\\/]*|article\\\\/[^\\\\/]*)"
+                            render={[Function]}
+              />
+              <Route
                             render={[Function]}
               />
 </Switch>,
@@ -119,7 +128,10 @@ ShallowWrapper {
                   render={[Function]}
 />,
                 <Route
-                  path="/"
+                  path="/:todo(new-post|settings|sign-up|profile\\\\/[^\\\\/]*|article\\\\/[^\\\\/]*)"
+                  render={[Function]}
+/>,
+                <Route
                   render={[Function]}
 />,
               ],
@@ -144,7 +156,18 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "path": "/",
+                  "path": "/:todo(new-post|settings|sign-up|profile\\\\/[^\\\\/]*|article\\\\/[^\\\\/]*)",
+                  "render": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
                   "render": [Function],
                 },
                 "ref": null,
@@ -196,7 +219,10 @@ ShallowWrapper {
                                         render={[Function]}
                               />
                               <Route
-                                        path="/"
+                                        path="/:todo(new-post|settings|sign-up|profile\\\\/[^\\\\/]*|article\\\\/[^\\\\/]*)"
+                                        render={[Function]}
+                              />
+                              <Route
                                         render={[Function]}
                               />
                     </Switch>
@@ -219,7 +245,10 @@ ShallowWrapper {
                                     render={[Function]}
                         />
                         <Route
-                                    path="/"
+                                    path="/:todo(new-post|settings|sign-up|profile\\\\/[^\\\\/]*|article\\\\/[^\\\\/]*)"
+                                    render={[Function]}
+                        />
+                        <Route
                                     render={[Function]}
                         />
             </Switch>
@@ -248,7 +277,10 @@ ShallowWrapper {
                                 render={[Function]}
                 />
                 <Route
-                                path="/"
+                                path="/:todo(new-post|settings|sign-up|profile\\\\/[^\\\\/]*|article\\\\/[^\\\\/]*)"
+                                render={[Function]}
+                />
+                <Route
                                 render={[Function]}
                 />
 </Switch>,
@@ -278,7 +310,10 @@ ShallowWrapper {
                     render={[Function]}
 />,
                   <Route
-                    path="/"
+                    path="/:todo(new-post|settings|sign-up|profile\\\\/[^\\\\/]*|article\\\\/[^\\\\/]*)"
+                    render={[Function]}
+/>,
+                  <Route
                     render={[Function]}
 />,
                 ],
@@ -303,7 +338,18 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "path": "/",
+                    "path": "/:todo(new-post|settings|sign-up|profile\\\\/[^\\\\/]*|article\\\\/[^\\\\/]*)",
+                    "render": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
                     "render": [Function],
                   },
                   "ref": null,
