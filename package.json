@@ -4,19 +4,23 @@
   "private": true,
   "scripts": {
     "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build && react-snapshot",
+    "build": "react-scripts-ts build",
+    "build:CI": "bash -c \"CI=true react-scripts-ts build\"",
     "test": "react-scripts-ts test --env=jsdom",
-    "test:CI": "bash -c 'CI=true npm test'",
-    "eject": "react-scripts-ts eject",
-    "postreceive": "npm run build",
-    "precommit": "lint-staged",
-    "prepush": "lint-staged && bash -c 'CI=true npm run build'",
-    "prettier": "bash -c 'prettier ./src/**/*.ts ./src/**/*.tsx -l'",
-    "prettier:write": "bash -c 'prettier ./src/**/*.ts ./src/**/*.tsx --write'",
+    "test:coverage": "npm run -s test -- --coverage",
+    "test:CI": "bash -c \"CI=true npm run -s test\"",
+    "snapshot": "react-snapshot",
+    "dist": "npm run -s build:CI && npm run -s snapshot",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "prettier": "prettier \"./src/**/*.ts\" \"./src/**/*.tsx\"",
+    "prettier:list": "npm run -s prettier -- --list-different",
+    "prettier:write": "npm run -s prettier -- --write",
     "tslint": "tslint --project tsconfig.json",
     "tslint:check": "tslint-config-prettier-check ./tslint.json",
-    "tslint:fix": "tslint --project tsconfig.json --fix",
-    "fix": "npm run tslint:fix && npm run prettier:write"
+    "tslint:fix": "npm run -s tslint -- --fix",
+    "fix": "npm run tslint:fix && npm run prettier:write",
+    "precommit": "lint-staged",
+    "prepush": "lint-staged && npm run -s build:CI"
   },
   "lint-staged": {
     "definitions/**/*.ts": [
@@ -24,12 +28,12 @@
       "npm run prettier"
     ],
     "src/**/*.{ts,tsx}": [
-      "npm run tslint",
-      "npm run prettier",
-      "npm run test:CI"
+      "npm run -s tslint",
+      "npm run -s prettier",
+      "npm run -s test:CI"
     ],
     "tslint.json": [
-      "npm run tslint:check"
+      "npm run -s tslint:check"
     ]
   },
   "dependencies": {
