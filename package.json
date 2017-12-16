@@ -25,11 +25,11 @@
   "lint-staged": {
     "definitions/**/*.ts": [
       "npm run tslint",
-      "npm run prettier"
+      "npm run prettier:list"
     ],
     "src/**/*.{ts,tsx}": [
       "npm run -s tslint",
-      "npm run -s prettier",
+      "npm run -s prettier:list",
       "npm run -s test:CI"
     ],
     "tslint.json": [
