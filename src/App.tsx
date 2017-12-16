@@ -18,6 +18,7 @@ import {LinkProps} from './components/link-props';
 import {NavLinkProps} from './components/nav-link-props';
 import * as services from './services';
 import * as state from './state';
+import {ajax} from 'rxjs/observable/dom/ajax';
 
 const AppArticleListing = (() => {
     const articlePreviews: ArticlePreview[] = [
@@ -67,7 +68,7 @@ const AppFooter = Footer(ReactRouterLink as ComponentClass<LinkProps>);
 
 const store = createStore(
     combineReducers(state.reducers),
-    applyMiddleware(createEpicMiddleware(combineEpics(state.tags.fetchAll$(services.tags$)))),
+    applyMiddleware(createEpicMiddleware(combineEpics(state.tags.fetchAll$(services.tags$(ajax))))),
 );
 
 const App = () => (
