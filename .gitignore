@@ -17,7 +17,7 @@
 !public/**/*
 
 !scripts
-!scripts/prepush.ps1
+!scripts/prepush.sh
 
 !src
 !src/**/*
