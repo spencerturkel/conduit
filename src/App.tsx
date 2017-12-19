@@ -1,10 +1,10 @@
 import * as React from 'react';
-import {ComponentClass} from 'react';
+import {ComponentClass, ComponentType} from 'react';
 import Helmet from 'react-helmet';
 import {Route, Switch} from 'react-router';
 import {BrowserRouter, Link as ReactRouterLink, NavLink as ReactRouterNavLink} from 'react-router-dom';
 import {Provider} from 'react-redux';
-import {applyMiddleware, combineReducers, createStore} from 'redux';
+import {Action, applyMiddleware, combineReducers, createStore} from 'redux';
 import {combineEpics, createEpicMiddleware} from 'redux-observable';
 import {ajax} from 'rxjs/observable/dom/ajax';
 
@@ -24,8 +24,10 @@ const store = createStore(
     applyMiddleware(createEpicMiddleware(combineEpics(state.tags.fetchAll$(services.tags$(ajax))))),
 );
 
-const HomeAsync = (() => {
-    const Loader = AsyncComponent(() => import('./containers/Home'));
+const ConnectedAsyncComponent = (
+    importFn: () => Promise<{default: ComponentType<{dispatch: (action: Action) => void}>}>,
+) => {
+    const Loader = AsyncComponent(importFn);
     return () => (
         <Loader
             renderLoading={() => <div>Loading...</div>}
@@ -33,7 +35,9 @@ const HomeAsync = (() => {
             renderComponent={Component => <Component dispatch={store.dispatch} />}
         />
     );
-})();
+};
+
+const HomeAsync = ConnectedAsyncComponent(() => import('./containers/Home'));
 
 const App = () => (
     <BrowserRouter>
