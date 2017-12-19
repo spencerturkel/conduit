@@ -2,7 +2,6 @@ import {Component, ComponentType, ReactNode} from 'react';
 import setDisplayName from '../components/set-display-name';
 
 export interface AsyncComponentProps {
-    importPath: string;
     renderComponent: (componentType: ComponentType) => ReactNode;
     renderError: (error: any) => ReactNode;
     renderLoading: () => ReactNode;
@@ -19,9 +18,7 @@ type AsyncComponentStateValue =
     | {state: AsyncComponentState.Loading}
     | {state: AsyncComponentState.Rendering; component: ComponentType};
 
-const AsyncComponent = (
-    importFn: (path: string) => Promise<{default: ComponentType}>,
-): ComponentType<AsyncComponentProps> => {
+const AsyncComponent = (importFn: () => Promise<{default: ComponentType}>): ComponentType<AsyncComponentProps> => {
     const result = class AsyncComponentImplementation extends Component<AsyncComponentProps, AsyncComponentStateValue> {
         constructor(readonly props: AsyncComponentProps) {
             super(props);
@@ -29,7 +26,7 @@ const AsyncComponent = (
         }
 
         componentDidMount(): void {
-            importFn(this.props.importPath)
+            importFn()
                 .then(({default: component}: {default: ComponentType}) =>
                     this.setState({
                         state: AsyncComponentState.Rendering,

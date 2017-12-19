@@ -3,65 +3,18 @@ import {ComponentClass} from 'react';
 import Helmet from 'react-helmet';
 import {Route, Switch} from 'react-router';
 import {BrowserRouter, Link as ReactRouterLink, NavLink as ReactRouterNavLink} from 'react-router-dom';
-import {connect, Provider} from 'react-redux';
+import {Provider} from 'react-redux';
 import {applyMiddleware, combineReducers, createStore} from 'redux';
 import {combineEpics, createEpicMiddleware} from 'redux-observable';
-import {createSelector} from 'reselect';
+import {ajax} from 'rxjs/observable/dom/ajax';
 
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Home from './components/Home';
-import ArticleListing, {ArticlePreview} from './components/Home/ArticleListing';
-import FeedPicker from './components/Home/ArticleListing/FeedPicker';
-import PopularTags from './components/Home/PopularTags';
 import {LinkProps} from './components/link-props';
 import {NavLinkProps} from './components/nav-link-props';
 import * as services from './services';
 import * as state from './state';
-import {ajax} from 'rxjs/observable/dom/ajax';
-
-const AppArticleListing = (() => {
-    const articlePreviews: ArticlePreview[] = [
-        {
-            author: {
-                image: 'https://i.stack.imgur.com/xHWG8.jpg',
-                username: 'jake',
-            },
-            createdAt: new Date('2017-10-12'),
-            description: 'This is the description for the post.',
-            favorited: true,
-            favoritesCount: 27,
-            slug: 'test-slug',
-            title: 'How to build webapps that scale',
-        },
-        {
-            slug: 'how-to-train-your-dragon-2',
-            title: 'How to train your dragon 2',
-            description: 'So toothless',
-            createdAt: new Date('2016-02-18T03:22:56.637Z'),
-            favorited: false,
-            favoritesCount: 0,
-            author: {
-                username: 'jake',
-                image: 'https://i.stack.imgur.com/xHWG8.jpg',
-            },
-        },
-    ];
-
-    const AppFeedPicker = () => <FeedPicker activeFeed={'global'} loggedIn={false} />;
-
-    const Result = ArticleListing(AppFeedPicker, ReactRouterLink as ComponentClass<LinkProps>);
-
-    return () => <Result previews={articlePreviews} onFavoriteCountClick={slug => alert(`Favorited slug ${slug}`)} />;
-})();
-
-const AppPopularTags = (() => {
-    const Result = connect(createSelector(state.tags.selectTags, allTags => ({tags: allTags})))(PopularTags());
-
-    return () => <Result onTagClicked={tag => alert('clicked ' + tag)} />;
-})();
-
-const AppHome = Home(AppPopularTags, AppArticleListing);
+import AsyncComponent from './containers/async-component';
 
 const AppHeader = Header(ReactRouterNavLink as ComponentClass<NavLinkProps>);
 const AppFooter = Footer(ReactRouterLink as ComponentClass<LinkProps>);
@@ -70,6 +23,17 @@ const store = createStore(
     combineReducers(state.reducers),
     applyMiddleware(createEpicMiddleware(combineEpics(state.tags.fetchAll$(services.tags$(ajax))))),
 );
+
+const HomeAsync = (() => {
+    const Loader = AsyncComponent(() => import('./containers/Home'));
+    return () => (
+        <Loader
+            renderLoading={() => <div>Loading...</div>}
+            renderError={error => <div>Error: {JSON.stringify(error)}</div>}
+            renderComponent={Component => <Component />}
+        />
+    );
+})();
 
 const App = () => (
     <BrowserRouter>
@@ -88,7 +52,7 @@ const App = () => (
                                     <Helmet>
                                         <title>Home — Conduit</title>
                                     </Helmet>
-                                    <AppHome />
+                                    <HomeAsync />
                                 </>
                             );
                         }}

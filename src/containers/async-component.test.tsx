@@ -4,7 +4,6 @@ import * as React from 'react';
 import AsyncComponent, {AsyncComponentProps} from './async-component';
 
 const defaultProps: AsyncComponentProps = {
-    importPath: '',
     renderLoading: () => null,
     renderError: () => null,
     renderComponent: () => null,
@@ -17,16 +16,13 @@ it('should have the correct display name', () => {
 });
 
 it('should begin importing from importPath when it mounts', () => {
-    const path = Math.random().toString();
-
     const importFn = jest.fn(() => new Promise<any>(() => undefined));
 
     const Sut = AsyncComponent(importFn);
 
-    mount(<Sut {...defaultProps} importPath={path} />);
+    mount(<Sut {...defaultProps} />);
 
     expect(importFn).toHaveBeenCalledTimes(1);
-    expect(importFn).toHaveBeenCalledWith(path);
 });
 
 it('should render from renderLoading when it mounts', () => {
