@@ -30,7 +30,7 @@ const HomeAsync = (() => {
         <Loader
             renderLoading={() => <div>Loading...</div>}
             renderError={error => <div>Error: {JSON.stringify(error)}</div>}
-            renderComponent={Component => <Component />}
+            renderComponent={Component => <Component dispatch={store.dispatch} />}
         />
     );
 })();
@@ -44,18 +44,14 @@ const App = () => (
                     <Route
                         path="/"
                         exact={true}
-                        render={() => {
-                            store.dispatch(state.tags.fetchAll());
-
-                            return (
-                                <>
-                                    <Helmet>
-                                        <title>Home — Conduit</title>
-                                    </Helmet>
-                                    <HomeAsync />
-                                </>
-                            );
-                        }}
+                        render={() => (
+                            <>
+                                <Helmet>
+                                    <title>Home — Conduit</title>
+                                </Helmet>
+                                <HomeAsync />
+                            </>
+                        )}
                     />
                     <Route
                         path="/:todo(new-post|settings|sign-up|profile\\/[^\\/]*|article\\/[^\\/]*)"

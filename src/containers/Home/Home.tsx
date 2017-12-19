@@ -1,7 +1,8 @@
 import * as React from 'react';
-import {ComponentClass} from 'react';
+import {ComponentClass, Component} from 'react';
 import {Link as ReactRouterLink} from 'react-router-dom';
 import {connect} from 'react-redux';
+import {Action} from 'redux';
 import {createSelector} from 'reselect';
 
 import Home from '../../components/Home';
@@ -9,7 +10,7 @@ import ArticleListing, {ArticlePreview} from '../../components/Home/ArticleListi
 import FeedPicker from '../../components/Home/ArticleListing/FeedPicker';
 import PopularTags from '../../components/Home/PopularTags';
 import {LinkProps} from '../../components/link-props';
-import * as state from '../../state';
+import {tags} from '../../state';
 
 const AppArticleListing = (() => {
     const articlePreviews: ArticlePreview[] = [
@@ -47,11 +48,19 @@ const AppArticleListing = (() => {
 })();
 
 const AppPopularTags = (() => {
-    const Result = connect(createSelector(state.tags.selectTags, allTags => ({tags: allTags})))(PopularTags());
+    const Result = connect(createSelector(tags.selectTags, allTags => ({tags: allTags})))(PopularTags());
 
     return () => <Result onTagClicked={tag => alert('clicked ' + tag)} />;
 })();
 
 const HomeContainer = Home(AppPopularTags, AppArticleListing);
 
-export default HomeContainer;
+export default class extends Component<{dispatch: (action: Action) => void}> {
+    componentDidMount() {
+        this.props.dispatch(tags.fetchAll());
+    }
+
+    render() {
+        return <HomeContainer />;
+    }
+}
