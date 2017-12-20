@@ -1,16 +1,22 @@
 import * as React from 'react';
-import {ComponentClass, Component} from 'react';
+import {ComponentClass} from 'react';
 import {Link as ReactRouterLink} from 'react-router-dom';
 import {connect} from 'react-redux';
-import {Action} from 'redux';
 import {createSelector} from 'reselect';
+import {ajax} from 'rxjs/observable/dom/ajax';
+import {combineReducers} from 'redux';
 
 import Home from '../../components/Home';
 import ArticleListing, {ArticlePreview} from '../../components/Home/ArticleListing';
 import FeedPicker from '../../components/Home/ArticleListing/FeedPicker';
 import PopularTags from '../../components/Home/PopularTags';
 import {LinkProps} from '../../components/link-props';
-import {tags} from '../../state';
+import {ContainerProps, AsyncReducer} from '../container-props';
+import {reducers, tags} from './state';
+import {tags$} from '../../services';
+
+const asyncReducer: AsyncReducer = {name: 'Home', reducer: combineReducers(reducers)};
+const selectState = (state: any) => state[asyncReducer.name];
 
 const AppArticleListing = (() => {
     const articlePreviews: ArticlePreview[] = [
@@ -48,19 +54,19 @@ const AppArticleListing = (() => {
 })();
 
 const AppPopularTags = (() => {
-    const Result = connect(createSelector(tags.selectTags, allTags => ({tags: allTags})))(PopularTags());
+    const Result = connect(createSelector(selectState, createSelector(tags.selectTags, allTags => ({tags: allTags}))))(
+        PopularTags(),
+    );
 
     return () => <Result onTagClicked={tag => alert('clicked ' + tag)} />;
 })();
 
 const HomeContainer = Home(AppPopularTags, AppArticleListing);
 
-export default class extends Component<{dispatch: (action: Action) => void}> {
-    componentDidMount() {
-        this.props.dispatch(tags.fetchAll());
-    }
+export default ({addReducer, addEpic, dispatch}: ContainerProps) => {
+    addReducer(asyncReducer);
+    addEpic(tags.fetchAll$(tags$(ajax)));
+    dispatch(tags.fetchAll());
 
-    render() {
-        return <HomeContainer />;
-    }
-}
+    return HomeContainer;
+};

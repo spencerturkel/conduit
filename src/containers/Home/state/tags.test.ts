@@ -14,7 +14,7 @@ const testStates = (transform: (initial: State | undefined) => any) => {
     expect(transform({error: 'some error', loading: false, tags: ['hello', 'world']})).toMatchSnapshot();
 };
 
-describe('reducer', () => {
+describe('reducers', () => {
     it('should return initial state given an unknown action and an undefined state', () => {
         const state = reducer(undefined, {type: Math.random().toString()} as Action);
 
