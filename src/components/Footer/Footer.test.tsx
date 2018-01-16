@@ -1,29 +1,29 @@
-import {mount, ReactWrapper} from 'enzyme';
-import * as React from 'react';
-import {ReactElement} from 'react';
+import { mount, ReactWrapper } from "enzyme";
+import * as React from "react";
+import { ReactElement } from "react";
 
-import {LinkProps} from '../link-props';
-import Footer from './Footer';
+import { LinkProps } from "../link-props";
+import Footer from "./Footer";
 
-function Link({className, children, to}: LinkProps): ReactElement<LinkProps> {
-    return (
-        <a className={className} href={to}>
-            {children}
-        </a>
-    );
+function Link({ className, children, to }: LinkProps): ReactElement<LinkProps> {
+  return (
+    <a className={className} href={to}>
+      {children}
+    </a>
+  );
 }
 
 function TestFooter(): ReactElement<{}> {
-    const Result = Footer(Link);
-    return <Result />;
+  const Result = Footer(Link);
+  return <Result />;
 }
 
 let sut: ReactWrapper;
 
 beforeEach(() => {
-    sut = mount(<TestFooter />);
+  sut = mount(<TestFooter />);
 });
 
-it('should match snapshot', () => {
-    expect(sut).toMatchSnapshot();
+it("should match snapshot", () => {
+  expect(sut).toMatchSnapshot();
 });

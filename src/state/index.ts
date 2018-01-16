@@ -1,5 +1,7 @@
-import {ReducersMapObject} from 'redux';
+import { ReducersMapObject } from "redux";
 
-const nonEmptyReducerMapKey = 'Non-Empty ReducerMap Key';
+const nonEmptyReducerMapKey = "Non-Empty ReducerMap Key";
 
-export const reducers: ReducersMapObject = {[nonEmptyReducerMapKey]: () => null};
+export const reducers: ReducersMapObject = {
+  [nonEmptyReducerMapKey]: () => null
+};

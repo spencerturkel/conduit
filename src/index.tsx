@@ -1,8 +1,8 @@
-import * as React from 'react';
-import {render} from 'react-snapshot';
+import * as React from "react";
+import { render } from "react-snapshot";
 
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import App from "./App";
+import registerServiceWorker from "./registerServiceWorker";
 
-render(<App />, document.getElementById('root') as HTMLElement);
+render(<App />, document.getElementById("root") as HTMLElement);
 registerServiceWorker();

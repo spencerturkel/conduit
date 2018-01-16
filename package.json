@@ -5,12 +5,11 @@
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
-    "build:CI": "bash -c \"CI=true react-scripts-ts build\"",
     "test": "react-scripts-ts test --env=jsdom",
     "test:coverage": "npm run -s test -- --coverage",
     "test:CI": "bash -c \"CI=true npm run -s test\"",
     "snapshot": "react-snapshot",
-    "dist": "npm run -s build:CI && npm run -s snapshot",
+    "dist": "npm run -s build && npm run -s snapshot",
     "typecheck": "tsc --project tsconfig.json --noEmit",
     "prettier": "prettier \"./src/**/*.ts\" \"./src/**/*.tsx\"",
     "prettier:list": "npm run -s prettier -- --list-different",
@@ -20,7 +19,9 @@
     "tslint:fix": "npm run -s tslint -- --fix",
     "fix": "npm run tslint:fix && npm run prettier:write",
     "precommit": "lint-staged",
-    "prepush": "bash ./scripts/prepush.sh"
+    "prepush": "bash ./scripts/prepush.sh",
+    "predeploy": "npm run -s dist",
+    "deploy": "gh-pages -d build"
   },
   "lint-staged": {
     "definitions/**/*.ts": [
@@ -36,9 +37,11 @@
       "npm run -s tslint:check"
     ]
   },
+  "homepage": "https://spencerturkel.github.io/conduit/",
   "dependencies": {
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
+    "gh-pages": "^1.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",

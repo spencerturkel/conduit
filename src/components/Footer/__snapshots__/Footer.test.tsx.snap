@@ -38,7 +38,7 @@ ReactWrapper {
                     <span
                               class="attribution"
                     >
-                              An interactive learning project from 
+                              An interactive learning project from
                               <a
                                         href="https://thinkster.io"
                               >
@@ -63,7 +63,8 @@ ReactWrapper {
             <span
                         className="attribution"
             >
-                        An interactive learning project from 
+                        An interactive learning project from
+                         
                         <a
                                     href="https://thinkster.io"
                         >
@@ -88,7 +89,7 @@ ReactWrapper {
               <span
                             class="attribution"
               >
-                            An interactive learning project from 
+                            An interactive learning project from
                             <a
                                           href="https://thinkster.io"
                             >
@@ -110,7 +111,8 @@ ReactWrapper {
                 <span
                   className="attribution"
 >
-                  An interactive learning project from 
+                  An interactive learning project from
+                   
                   <a
                                     href="https://thinkster.io"
                   >
@@ -159,7 +161,7 @@ ReactWrapper {
                 "instance": <span
                   class="attribution"
 >
-                  An interactive learning project from 
+                  An interactive learning project from
                   <a
                                     href="https://thinkster.io"
                   >
@@ -171,7 +173,8 @@ ReactWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "An interactive learning project from ",
+                    "An interactive learning project from",
+                    " ",
                     <a
                       href="https://thinkster.io"
 >
@@ -183,7 +186,8 @@ ReactWrapper {
                 },
                 "ref": null,
                 "rendered": Array [
-                  "An interactive learning project from ",
+                  "An interactive learning project from",
+                  " ",
                   Object {
                     "instance": <a
                       href="https://thinkster.io"
@@ -243,7 +247,7 @@ ReactWrapper {
                         <span
                                     class="attribution"
                         >
-                                    An interactive learning project from 
+                                    An interactive learning project from
                                     <a
                                                 href="https://thinkster.io"
                                     >
@@ -268,7 +272,8 @@ ReactWrapper {
               <span
                             className="attribution"
               >
-                            An interactive learning project from 
+                            An interactive learning project from
+                             
                             <a
                                           href="https://thinkster.io"
                             >
@@ -293,7 +298,7 @@ ReactWrapper {
                 <span
                                 class="attribution"
                 >
-                                An interactive learning project from 
+                                An interactive learning project from
                                 <a
                                                 href="https://thinkster.io"
                                 >
@@ -315,7 +320,8 @@ ReactWrapper {
                   <span
                     className="attribution"
 >
-                    An interactive learning project from 
+                    An interactive learning project from
+                     
                     <a
                                         href="https://thinkster.io"
                     >
@@ -364,7 +370,7 @@ ReactWrapper {
                   "instance": <span
                     class="attribution"
 >
-                    An interactive learning project from 
+                    An interactive learning project from
                     <a
                                         href="https://thinkster.io"
                     >
@@ -376,7 +382,8 @@ ReactWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
-                      "An interactive learning project from ",
+                      "An interactive learning project from",
+                      " ",
                       <a
                         href="https://thinkster.io"
 >
@@ -388,7 +395,8 @@ ReactWrapper {
                   },
                   "ref": null,
                   "rendered": Array [
-                    "An interactive learning project from ",
+                    "An interactive learning project from",
+                    " ",
                     Object {
                       "instance": <a
                         href="https://thinkster.io"

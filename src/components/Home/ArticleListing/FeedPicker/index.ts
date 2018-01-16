@@ -1,2 +1,2 @@
-export {default} from './FeedPicker';
-export * from './FeedPicker';
+export { default } from "./FeedPicker";
+export * from "./FeedPicker";

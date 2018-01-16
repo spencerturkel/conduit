@@ -1,2 +1,2 @@
-export {default} from './PopularTags';
-export * from './PopularTags';
+export { default } from "./PopularTags";
+export * from "./PopularTags";

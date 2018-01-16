@@ -17,6 +17,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+      "basename": "/conduit/",
       "children": <Provider
         store={
                 Object {
@@ -199,6 +200,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "basename": "/conduit/",
         "children": <Provider
           store={
                     Object {
